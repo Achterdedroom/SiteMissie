@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sitemissie | Luxe websites met uitstraling en resultaat</title>
+<meta name="description" content="Sitemissie bouwt luxe, moderne websites met krachtige uitstraling, vloeiende visuals, mobiel sterke opbouw en een heldere route naar contact." />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#faf7f2" />
+<link rel="canonical" href="https://sitemissie.nl/" />
+<meta property="og:locale" content="nl_NL" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sitemissie" />
+<meta property="og:title" content="Sitemissie | Luxe websites met uitstraling" />
+<meta property="og:description" content="Websites met uitstraling, vertrouwen en een duidelijke contactflow." />
+<meta property="og:url" content="https://sitemissie.nl/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Sitemissie | Luxe webdesign" />
+<meta name="twitter:description" content="Luxe, moderne websites voor ondernemers die serieus online willen staan." />
+<style>
+:root{
+  --bg:#faf7f2;
+  --bg-soft:#f3ede2;
+  --surface:rgba(255,255,255,.62);
+  --surface-strong:#ffffff;
+  --text:#141313;
+  --muted:#6b665f;
+  --line:rgba(20,19,19,.10);
+  --line-strong:rgba(20,19,19,.18);
+  --shadow:0 28px 90px rgba(31,26,14,.08);
+  --radius-xl:34px;
+  --radius-lg:26px;
+  --radius-md:20px;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --c1:#7a5cff;
+  --c2:#ff6aa9;
+  --c3:#ffaa2b;
+  --c4:#20d6c7;
+  --c5:#4eb26a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;background:var(--bg)}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#fffdf8 0%,#faf7f2 100%);color:var(--text);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 280 280' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{text-decoration:none;color:inherit}
+button{font:inherit;color:inherit}
+section{position:relative;overflow:hidden}
+img,svg{display:block;max-width:100%}
+::selection{background:#171717;color:#fff}
+.wrap{width:min(1440px,100%);margin:0 auto;padding:0 clamp(18px,4vw,76px)}
+.narrow{max-width:920px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#6a48f1}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.65}
+h1,h2,h3,h4,p{margin:0}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:.92;letter-spacing:-.065em}
+h1{font-size:clamp(58px,9vw,148px)}
+h2{font-size:clamp(42px,6.8vw,104px)}
+h3{font-size:clamp(26px,3vw,48px)}
+p{font-size:clamp(15px,1.08vw,18px);line-height:1.68;color:var(--muted)}
+.lead{font-family:var(--serif);font-size:clamp(22px,2.45vw,36px);line-height:1.14;letter-spacing:-.045em;color:#1a1a1a}
+.small{font-size:13px;line-height:1.6}
+.section{padding:clamp(72px,9vw,150px) 0}
+.section.tight{padding:clamp(56px,7vw,104px) 0}
+.chapter{display:grid;grid-template-columns:130px minmax(0,1fr);gap:clamp(24px,5vw,88px)}
+.chapter-no{padding-top:10px;font-size:12px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#8b5cf6}
+.glass{background:var(--surface);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.55);box-shadow:var(--shadow)}
+.gradient-text{background:linear-gradient(135deg,var(--c1),var(--c2) 32%,var(--c3) 62%,var(--c4));-webkit-background-clip:text;background-clip:text;color:transparent}
+.blob{position:absolute;border-radius:50%;filter:blur(12px);opacity:.38;pointer-events:none;mix-blend-mode:multiply}
+.blob.a{width:360px;height:360px;top:-120px;right:-90px;background:radial-gradient(circle,var(--c1),transparent 65%)}
+.blob.b{width:300px;height:300px;bottom:-100px;left:-100px;background:radial-gradient(circle,var(--c3),transparent 65%)}
+.blob.c{width:280px;height:280px;top:36%;right:15%;background:radial-gradient(circle,var(--c4),transparent 68%)}
+.blob.d{width:240px;height:240px;bottom:12%;right:-50px;background:radial-gradient(circle,var(--c2),transparent 65%)}
+.grid-fade{position:absolute;inset:0;background:linear-gradient(rgba(20,19,19,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(20,19,19,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(circle at 50% 30%,black,transparent 76%);pointer-events:none;opacity:.5}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:9000;background:linear-gradient(180deg,#fffdf9 0%,#f7f0e5 100%);display:grid;grid-template-rows:auto 1fr auto;padding:clamp(20px,4vw,56px);transition:opacity .9s var(--ease),visibility .9s var(--ease)}
+.loader.hide{opacity:0;visibility:hidden;pointer-events:none}
+.loader-top,.loader-bottom{display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#7a746d;position:relative;z-index:2}
+.loader-center{display:grid;place-items:center;position:relative;z-index:2;text-align:center}
+.loader-aura{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 36%,rgba(122,92,255,.22),transparent 22rem),radial-gradient(circle at 68% 52%,rgba(255,106,169,.18),transparent 18rem),radial-gradient(circle at 36% 55%,rgba(32,214,199,.18),transparent 18rem)}
+.loader-title{font-family:var(--serif);font-size:clamp(66px,12vw,180px);line-height:.82;letter-spacing:-.085em;color:#141313}
+.loader-sub{margin-top:16px;font-size:clamp(14px,1.3vw,18px);color:#68635e}
+
+.runner-stage{position:relative;width:min(520px,90vw);height:280px;margin:18px auto 0}
+.runner-grid{position:absolute;inset:12px 0 26px;background:linear-gradient(rgba(20,19,19,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(20,19,19,.045) 1px,transparent 1px);background-size:34px 34px;mask-image:radial-gradient(circle at 50% 48%,black,transparent 78%);opacity:.7}
+.runner-orbit{position:absolute;border-radius:50%;border:1px solid rgba(20,19,19,.08);pointer-events:none}
+.runner-orbit.orbit-a{width:240px;height:240px;left:50%;top:16px;transform:translateX(-50%);animation:orbitSpin 12s linear infinite}
+.runner-orbit.orbit-b{width:320px;height:180px;left:50%;top:42px;transform:translateX(-50%);animation:orbitSpinReverse 10s linear infinite}
+.runner-orbit.orbit-c{width:420px;height:110px;left:50%;bottom:34px;transform:translateX(-50%);border-color:rgba(20,19,19,.06)}
+.runner-particles span{position:absolute;width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c4));filter:blur(.2px);opacity:.7}
+.runner-particles span:nth-child(1){left:22%;top:28%;animation:particleFloat 3.2s ease-in-out infinite}
+.runner-particles span:nth-child(2){left:30%;top:58%;animation:particleFloat 4.1s ease-in-out infinite .4s}
+.runner-particles span:nth-child(3){right:26%;top:24%;animation:particleFloat 3.6s ease-in-out infinite .8s}
+.runner-particles span:nth-child(4){right:20%;top:54%;animation:particleFloat 4.6s ease-in-out infinite .2s}
+.runner-particles span:nth-child(5){left:50%;top:14%;animation:particleFloat 5s ease-in-out infinite .6s}
+.runner-glow{position:absolute;inset:12px 30px 24px;border-radius:50%;filter:blur(20px);background:conic-gradient(from 0deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c1));animation:hueSpin 9s linear infinite;opacity:.26}
+.runner-floor{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);width:300px;height:22px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(20,19,19,.14),rgba(20,19,19,0) 72%);filter:blur(4px)}
+.runner-trails{position:absolute;inset:0;pointer-events:none}
+.runner-trails span{position:absolute;height:14px;border-radius:999px;background:linear-gradient(90deg,rgba(122,92,255,0),rgba(122,92,255,.24),rgba(255,106,169,.18),rgba(32,214,199,.05));filter:blur(1px)}
+.runner-trails .t1{width:160px;left:110px;top:130px;animation:trailDrift 1s linear infinite}
+.runner-trails .t2{width:120px;left:130px;top:156px;animation:trailDrift 1.1s linear infinite .15s}
+.runner-trails .t3{width:86px;left:150px;top:182px;animation:trailDrift 1.2s linear infinite .35s}
+.runner-shell{position:absolute;inset:0;display:grid;place-items:center}
+.runner-svg{width:min(520px,90vw);height:auto;overflow:visible;filter:drop-shadow(0 16px 40px rgba(80,39,170,.15))}
+.runner-rig{transform-origin:184px 138px;animation:runnerFloat .65s ease-in-out infinite alternate}
+.runner-energy{fill:none;stroke:url(#runnerAura);stroke-width:8;stroke-linecap:round;opacity:.38;stroke-dasharray:18 16;animation:energyFlow 2.2s linear infinite}
+.runner-energy.e2{stroke-width:5;opacity:.24;stroke-dasharray:10 18;animation-duration:2.8s}
+.runner-core{fill:none;stroke:url(#runnerLine);stroke-width:13;stroke-linecap:round;stroke-linejoin:round}
+.runner-detail{fill:none;stroke:rgba(255,255,255,.56);stroke-width:4;stroke-linecap:round;opacity:.75}
+.runner-joint{fill:#ffffff;stroke:url(#runnerLine);stroke-width:4}
+.runner-head-glow{fill:url(#runnerHeadGlow);opacity:.45;animation:pulseHalo 1.2s ease-in-out infinite alternate}
+.runner-head{fill:url(#runnerHeadFill);stroke:url(#runnerLine);stroke-width:5}
+.runner-visor{fill:none;stroke:rgba(255,255,255,.75);stroke-width:3.5;stroke-linecap:round}
+.runner-shoe{fill:#fff;stroke:url(#runnerLine);stroke-width:4}
+.arm-back-upper{transform-origin:184px 112px;animation:armBackUpper .58s ease-in-out infinite alternate}
+.arm-back-lower{transform-origin:153px 130px;animation:armBackLower .58s ease-in-out infinite alternate}
+.arm-front-upper{transform-origin:184px 112px;animation:armFrontUpper .58s ease-in-out infinite alternate}
+.arm-front-lower{transform-origin:219px 96px;animation:armFrontLower .58s ease-in-out infinite alternate}
+.leg-back-upper{transform-origin:167px 155px;animation:legBackUpper .58s ease-in-out infinite alternate}
+.leg-back-lower{transform-origin:141px 183px;animation:legBackLower .58s ease-in-out infinite alternate}
+.leg-front-upper{transform-origin:167px 155px;animation:legFrontUpper .58s ease-in-out infinite alternate}
+.leg-front-lower{transform-origin:198px 182px;animation:legFrontLower .58s ease-in-out infinite alternate}
+.foot-back{transform-origin:129px 224px;animation:footBack .58s ease-in-out infinite alternate}
+.foot-front{transform-origin:226px 219px;animation:footFront .58s ease-in-out infinite alternate}
+@keyframes armBackUpper{from{transform:rotate(28deg)}to{transform:rotate(-34deg)}}
+@keyframes armBackLower{from{transform:rotate(36deg)}to{transform:rotate(-28deg)}}
+@keyframes armFrontUpper{from{transform:rotate(-46deg)}to{transform:rotate(28deg)}}
+@keyframes armFrontLower{from{transform:rotate(-28deg)}to{transform:rotate(20deg)}}
+@keyframes legBackUpper{from{transform:rotate(32deg)}to{transform:rotate(-26deg)}}
+@keyframes legBackLower{from{transform:rotate(18deg)}to{transform:rotate(42deg)}}
+@keyframes legFrontUpper{from{transform:rotate(-34deg)}to{transform:rotate(30deg)}}
+@keyframes legFrontLower{from{transform:rotate(42deg)}to{transform:rotate(-18deg)}}
+@keyframes footBack{from{transform:rotate(-2deg)}to{transform:rotate(18deg)}}
+@keyframes footFront{from{transform:rotate(-18deg)}to{transform:rotate(8deg)}}
+@keyframes runnerFloat{from{transform:translateY(-3px)}to{transform:translateY(6px)}}
+@keyframes pulseHalo{from{opacity:.32;transform:scale(.96)}to{opacity:.58;transform:scale(1.04)}}
+@keyframes trailDrift{from{transform:translateX(0);opacity:.68}to{transform:translateX(-34px);opacity:0}}
+@keyframes particleFloat{0%,100%{transform:translateY(0) scale(1);opacity:.3}50%{transform:translateY(-16px) scale(1.22);opacity:.92}}
+@keyframes orbitSpin{to{transform:translateX(-50%) rotate(360deg)}}
+@keyframes orbitSpinReverse{to{transform:translateX(-50%) rotate(-360deg)}}
+@keyframes hueSpin{to{transform:rotate(360deg)}}
+@keyframes energyFlow{to{stroke-dashoffset:-180}}
+.loader-progress{margin-top:10px}.loader-progress{margin-top:10px}
+.loader-percent{font-family:var(--serif);font-size:clamp(38px,5vw,72px);letter-spacing:-.06em;color:#171717}
+.loader-line-wrap{display:flex;justify-content:center;margin-top:10px}
+.loader-line{width:min(250px,60vw);height:10px;border-radius:999px;background:rgba(20,19,19,.08);position:relative;overflow:hidden}
+.loader-fill{height:100%;width:0%;border-radius:999px;background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4));transition:width .18s linear;box-shadow:0 0 18px rgba(122,92,255,.2)}
+.loader-choice{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px;opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease),transform .5s var(--ease);pointer-events:none}
+.loader.ready .loader-choice{opacity:1;transform:none;pointer-events:auto}
+.choice-btn{border:1px solid var(--line);background:rgba(255,255,255,.8);color:#171717;border-radius:999px;padding:14px 20px;cursor:pointer;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s var(--ease),background .25s,border-color .25s,box-shadow .25s;box-shadow:0 8px 30px rgba(20,19,19,.05)}
+.choice-btn.primary{background:#171717;color:#fff}
+.choice-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(20,19,19,.10)}
+
+/* nav */
+.topbar{position:fixed;top:16px;left:clamp(12px,2.8vw,42px);right:clamp(12px,2.8vw,42px);z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 18px;border-radius:999px;background:rgba(255,255,255,.62);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.7);box-shadow:0 16px 50px rgba(20,19,19,.08)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+.brand-mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;font-family:var(--serif);font-style:italic;box-shadow:0 14px 28px rgba(122,92,255,.18)}
+.nav{display:flex;align-items:center;gap:2px}
+.nav a{padding:10px 12px;border-radius:999px;font-size:12px;font-weight:700;color:#655f58;transition:color .2s,background .2s}
+.nav a:hover{background:#fff;color:#171717}
+.top-actions{display:flex;align-items:center;gap:8px}
+.sound-toggle{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.8);cursor:pointer;font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#615b54;transition:.25s}
+.sound-toggle:hover,.sound-toggle.active{color:#171717;border-color:rgba(122,92,255,.28);box-shadow:0 8px 24px rgba(122,92,255,.12)}
+.sound-bars{display:flex;align-items:center;gap:2px;height:16px}
+.sound-bars i{display:block;width:2px;height:6px;border-radius:2px;background:currentColor}
+.sound-toggle.active .sound-bars i:nth-child(1){animation:soundbar .6s ease-in-out infinite alternate}
+.sound-toggle.active .sound-bars i:nth-child(2){animation:soundbar .6s ease-in-out infinite alternate .1s}
+.sound-toggle.active .sound-bars i:nth-child(3){animation:soundbar .6s ease-in-out infinite alternate .2s}
+.sound-toggle.active .sound-bars i:nth-child(4){animation:soundbar .6s ease-in-out infinite alternate .05s}
+@keyframes soundbar{to{height:15px}}
+.cta-small,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:999px;font-size:14px;font-weight:800;letter-spacing:.01em;white-space:nowrap;transition:transform .25s var(--ease),box-shadow .25s,background .25s,border-color .25s,color .25s}
+.cta-small{min-height:42px;padding:0 18px;background:#171717;color:#fff;box-shadow:0 12px 28px rgba(20,19,19,.12)}
+.cta-small:hover,.btn:hover{transform:translateY(-2px)}
+.mobile-menu{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.8);cursor:pointer}
+.mobile-panel{position:fixed;inset:0;z-index:999;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .35s var(--ease)}
+.mobile-panel.open{opacity:1;pointer-events:auto}
+.mobile-panel nav{display:grid;gap:20px;text-align:center}
+.mobile-panel a{font-family:var(--serif);font-size:clamp(42px,11vw,82px);letter-spacing:-.06em;line-height:.92}
+
+.btn{border:1px solid #171717;background:#171717;color:#fff;box-shadow:0 16px 34px rgba(20,19,19,.10)}
+.btn.ghost{background:rgba(255,255,255,.7);color:#171717;border-color:var(--line)}
+.btn.light{background:#fff;color:#171717;border-color:#fff}
+.btn:hover{box-shadow:0 16px 38px rgba(20,19,19,.14)}
+.hero{min-height:100svh;display:grid;align-items:center;padding-top:118px;background:radial-gradient(circle at 12% 16%,rgba(122,92,255,.16),transparent 24rem),radial-gradient(circle at 88% 12%,rgba(255,170,43,.14),transparent 20rem),radial-gradient(circle at 82% 68%,rgba(32,214,199,.16),transparent 20rem),linear-gradient(180deg,#fffdf9 0%,#faf7f2 100%)}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,430px);gap:clamp(34px,6vw,96px);align-items:end}
+.hero-copy{display:grid;gap:26px;position:relative}
+.hero-copy h1{max-width:980px}
+.hero-copy h1 em{font-style:italic}
+.hero-card{padding:26px;border-radius:28px;position:relative}
+.hero-card::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(122,92,255,.45),rgba(255,106,169,.22),rgba(32,214,199,.35));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:clamp(42px,6vw,86px)}
+.meta-card{padding:22px;border-radius:24px;position:relative}
+.meta-card strong{display:block;font-family:var(--serif);font-size:clamp(24px,2vw,34px);font-weight:400;letter-spacing:-.04em;color:#171717}
+.meta-card span{display:block;margin-top:6px;font-size:12px;font-weight:750;letter-spacing:.1em;text-transform:uppercase;color:#6e675f}
+.statement{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,420px);gap:clamp(28px,5vw,78px);align-items:end}
+.statement-card{padding:28px;border-radius:28px;position:relative}
+.statement-card::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 18%,rgba(255,106,169,.14),transparent 12rem);pointer-events:none;border-radius:inherit}
+.price-band{background:linear-gradient(180deg,#f7f2e7 0%,#fff9ef 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.price-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
+.price-head p{max-width:460px}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.price{padding:28px;border-radius:28px;position:relative;overflow:hidden}
+.price::after{content:"";position:absolute;inset:auto -30px -30px auto;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,rgba(122,92,255,.12),transparent 68%);pointer-events:none}
+.price.featured{background:#171717;color:#fff}
+.price.featured p,.price.featured li{color:rgba(255,255,255,.72)}
+.price-badge{display:inline-flex;padding:7px 12px;border-radius:999px;border:1px solid currentColor;font-size:10px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#7a5cff;margin-bottom:24px}
+.price.featured .price-badge{color:#ffd26d}
+.price h3{margin-bottom:18px;font-size:clamp(30px,3vw,46px)}
+.amount{font-family:var(--serif);font-size:clamp(52px,5.5vw,86px);line-height:.85;letter-spacing:-.08em;margin-bottom:18px;color:#171717}
+.price.featured .amount{color:#fff}
+.amount small{display:block;margin-top:8px;font-family:var(--sans);font-size:11px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:#6f695f}
+.price.featured .amount small{color:rgba(255,255,255,.5)}
+.price ul{display:grid;gap:10px;list-style:none;padding:0;margin:24px 0 28px}
+.price li{font-size:14px;color:#666158}
+.price li::before{content:"/";margin-right:9px;color:#ff7ab2;font-weight:900}
+.services{margin-top:44px;border-top:1px solid var(--line)}
+.service{display:grid;grid-template-columns:70px minmax(200px,.7fr) minmax(0,1fr);gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.service-number{font-size:12px;font-weight:850;letter-spacing:.12em;color:#ff6aa9}
+.service p{max-width:520px}
+.work-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,420px);gap:36px;align-items:end;margin-bottom:42px}
+.showcase{display:grid;grid-template-columns:minmax(230px,330px) minmax(0,1fr);gap:clamp(22px,4vw,58px)}
+.work-list{display:grid;gap:8px;align-content:start}
+.work-btn{width:100%;text-align:left;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#171717;border-radius:20px;padding:18px;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s,background .25s}
+.work-btn:hover,.work-btn.active{transform:translateX(4px);background:#fff;box-shadow:0 18px 40px rgba(20,19,19,.10)}
+.work-btn small{display:block;margin-bottom:8px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:#7a5cff}
+.work-btn strong{display:block;font-family:var(--serif);font-size:30px;font-weight:400;letter-spacing:-.05em;line-height:1}
+.work-btn span{display:block;margin-top:7px;font-size:13px;color:#615b54}
+.preview-stage{min-height:640px;padding:clamp(14px,2vw,22px);border-radius:32px;position:relative;background:rgba(255,255,255,.20);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.55);box-shadow:0 26px 90px rgba(20,19,19,.14)}
+.browser{height:100%;min-height:592px;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(20,19,19,.08)}
+.browser-top{height:42px;display:flex;align-items:center;gap:12px;padding:0 16px;background:#f4efe6;border-bottom:1px solid rgba(20,19,19,.07)}
+.dots{width:9px;height:9px;border-radius:50%;background:#ff6e67;box-shadow:17px 0 #ffbf43,34px 0 #30cf73}
+.urlbar{flex:1;max-width:280px;height:10px;border-radius:999px;background:rgba(20,19,19,.08)}
+.mini{display:none;min-height:550px;padding:22px;color:#171717}
+.mini.active{display:grid;animation:previewIn .45s var(--ease) both}
+@keyframes previewIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mini-nav{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px}
+.mini-logo{font-family:var(--serif);font-size:24px;letter-spacing:-.05em}
+.mini-links{display:flex;gap:8px;flex-wrap:wrap}
+.mini-links span{padding:7px 10px;border-radius:999px;border:1px solid rgba(20,19,19,.10);color:rgba(20,19,19,.58);font-size:11px;font-weight:750}
+.mini-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:14px}
+.mini-main{min-height:232px;border-radius:24px;padding:22px;display:grid;align-content:end;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--case1),var(--case2));color:#fff}
+.mini-main::before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-70px;top:-70px;background:rgba(255,255,255,.18)}
+.mini-main small,.mini-main h4,.mini-main b{position:relative;z-index:1}
+.mini-main small{font-weight:850;letter-spacing:.14em;text-transform:uppercase;opacity:.72;margin-bottom:14px}
+.mini-main h4{margin:0 0 14px;font-family:var(--serif);font-size:clamp(28px,4vw,50px);font-weight:400;letter-spacing:-.07em;line-height:.9}
+.mini-main b{width:max-content;max-width:100%;padding:10px 14px;border-radius:999px;background:#fff;color:#171717;font-size:12px}
+.mini-side{display:grid;gap:12px}
+.mini-panel{padding:16px;border-radius:20px;background:#fff8ee;border:1px solid rgba(20,19,19,.08)}
+.mini-panel strong{display:block;margin-bottom:6px;font-size:15px}
+.mini-panel span{display:block;font-size:12px;line-height:1.45;color:#645e57}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.mini-card{min-height:122px;padding:14px;border-radius:20px;background:#fff8ef;border:1px solid rgba(20,19,19,.08);display:grid;align-content:space-between}
+.mini-card .img{height:42px;border-radius:14px;background:linear-gradient(135deg,var(--case1),var(--case2));opacity:.92}
+.mini-card strong{font-size:14px}
+.mini-card span{font-size:12px;color:#665f58}
+.mini-footer{margin-top:14px;padding:16px;border-radius:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#171717;color:#fff}
+.mini-footer span{font-size:12px;color:rgba(255,255,255,.72)}
+.mini-footer b{color:#ffd26d}
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:42px}
+.step{padding:24px;min-height:210px;background:#fff}
+.step small{color:#7a5cff;font-weight:900;letter-spacing:.13em}
+.step strong{display:block;margin-top:36px;font-family:var(--serif);font-size:clamp(24px,2.3vw,36px);font-weight:400;letter-spacing:-.05em;color:#171717}
+.faq-list{border-top:1px solid var(--line);margin-top:38px}
+.faq{display:grid;grid-template-columns:minmax(220px,.52fr) 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}
+.contact{background:linear-gradient(180deg,#fffdf9 0%,#f7f0e5 100%)}
+.contact-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,430px);gap:clamp(32px,6vw,86px);align-items:end;margin-top:42px}
+.contact-card{padding:28px;border-radius:30px;position:relative}
+.contact-card::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at 80% 20%,rgba(122,92,255,.12),transparent 12rem),radial-gradient(circle at 10% 90%,rgba(255,170,43,.10),transparent 10rem);pointer-events:none}
+.contact-actions{display:grid;gap:10px;margin-top:24px}
+.contact-line{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#655f58;font-size:14px}
+.contact-line strong{color:#171717}
+.footer{margin-top:68px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#655f58;font-size:13px}
+.footer strong{font-family:var(--serif);font-size:20px;font-weight:400;color:#171717;letter-spacing:-.04em}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+
+.mobile-audio-hint{font-size:11px;color:#6a655e;margin-top:8px}
+@media(max-width:760px){
+  .runner-glow{animation-duration:14s;opacity:.22}
+  .runner-orbit.orbit-a{animation-duration:18s}
+  .runner-orbit.orbit-b{animation-duration:15s}
+  .runner-rig{animation-duration:1s!important}
+  .arm-back-upper,.arm-back-lower,.arm-front-upper,.arm-front-lower,.leg-back-upper,.leg-back-lower,.leg-front-upper,.leg-front-lower,.foot-back,.foot-front{animation-duration:1s!important}
+  .runner-energy{animation-duration:4s}
+  .runner-energy.e2{animation-duration:5s}
+  .runner-trails .t1{animation-duration:1.8s}
+  .runner-trails .t2{animation-duration:2s}
+  .runner-trails .t3{animation-duration:2.2s}
+  .runner-particles span{animation-duration:6s!important}
+}
+
+/* premium visual refresh */
+body{background:linear-gradient(180deg,#071332 0%,#0f1f47 16%,#f7e8eb 40%,#fffaf4 62%,#fffdf9 100%)}
+.hero.section{min-height:100vh;padding-top:140px;padding-bottom:120px;background:radial-gradient(circle at 50% 46%,rgba(81,255,220,.10),transparent 18rem),radial-gradient(circle at 50% 32%,rgba(59,89,255,.18),transparent 20rem),linear-gradient(180deg,#081535 0%,#09183b 56%,#112651 100%);color:#fff;position:relative}
+.hero.section::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:180px;background:linear-gradient(to bottom,rgba(247,232,235,0),#f7e8eb 72%);pointer-events:none}
+.hero.section .eyebrow,.hero.section p,.hero.section .lead{color:rgba(255,250,242,.82)}
+.hero.section .eyebrow::before{background:rgba(255,250,242,.5)}
+.hero.section h1{color:#fffaf2;max-width:11ch;text-transform:uppercase;font-family:var(--sans);font-weight:800;line-height:.92;letter-spacing:-.06em}
+.hero.section .gradient-text{background:none;color:#fffaf2}
+.hero.section .btn.ghost{border-color:rgba(255,255,255,.22);color:#fffaf2}
+.hero.section .btn.ghost:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero.section .btn{box-shadow:0 22px 45px rgba(13,13,40,.28)}
+.hero-layout{align-items:center}
+.hero-art{min-height:620px;display:grid;place-items:center;position:relative}
+.hero-art::before{content:"";position:absolute;inset:8% 10% auto 10%;height:70%;background:radial-gradient(circle at 50% 35%,rgba(128,255,231,.30),transparent 20%),radial-gradient(circle at 30% 58%,rgba(95,235,215,.24),transparent 17%),radial-gradient(circle at 70% 58%,rgba(95,235,215,.24),transparent 17%);filter:blur(16px);opacity:.95}
+.hero-art::after{content:"";position:absolute;inset:14% 18%;background:radial-gradient(circle at 50% 50%,rgba(0,0,0,.25),transparent 60%);filter:blur(60px)}
+.visual-frame{width:min(620px,100%);min-height:560px;border-radius:40px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));backdrop-filter:blur(12px);position:relative;overflow:hidden;box-shadow:0 35px 90px rgba(0,0,0,.35)}
+.visual-glow{position:absolute;inset:8% 11%;border-radius:40px;background:radial-gradient(circle at 50% 20%,rgba(112,255,226,.62),transparent 17%),radial-gradient(circle at 30% 56%,rgba(112,255,226,.58),transparent 16%),radial-gradient(circle at 70% 56%,rgba(112,255,226,.58),transparent 16%),radial-gradient(circle at 50% 74%,rgba(18,55,205,.36),transparent 28%);filter:blur(18px);mix-blend-mode:screen;animation:floatShape 9s ease-in-out infinite alternate}
+.visual-copy{position:absolute;inset:0;display:grid;place-items:center;padding:50px}
+.visual-copy h3{font-family:var(--sans);font-weight:800;text-transform:uppercase;color:#fff9ef;font-size:clamp(56px,7vw,110px);line-height:.9;letter-spacing:-.07em;text-align:center;max-width:8ch;text-shadow:0 15px 30px rgba(0,0,0,.22)}
+.visual-chip{position:absolute;top:26px;left:28px;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:12px;color:#fffaf2}
+.visual-badge{position:absolute;right:28px;bottom:28px;padding:12px 16px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fffaf2;font-size:12px;max-width:220px}
+.intro-blush{background:radial-gradient(circle at 50% 20%,rgba(255,242,248,.9),transparent 28rem),linear-gradient(180deg,#f7e8eb 0%,#f3bcc6 38%,#d95d69 100%);color:#fffaf1;position:relative}
+.intro-blush::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 46%,rgba(255,255,255,.42),transparent 14rem);filter:blur(8px);opacity:.8;pointer-events:none}
+.intro-blush .statement{align-items:end}
+.intro-blush .chapter-no,.intro-blush .eyebrow{color:#e9ffe8}
+.intro-blush .eyebrow::before{background:currentColor}
+.intro-blush h2,.intro-blush p,.intro-blush .statement-card p{color:#fff8f2}
+.intro-blush .statement-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);box-shadow:none}
+.price-band{background:#fffdf9}
+.loader{background:radial-gradient(circle at 50% 30%,rgba(96,255,227,.16),transparent 18rem),radial-gradient(circle at 50% 65%,rgba(255,141,173,.12),transparent 16rem),linear-gradient(180deg,#081535 0%,#112650 72%,#f6e7e9 100%)}
+.loader-top,.loader-bottom,.loader-sub,.loader-choice-note,.loader-percent{color:#fff9f1}
+.loader-title{color:#fff9f1}
+.loader-line,.loader-progress-track{background:rgba(255,255,255,.15)}
+.loader-progress-fill{background:linear-gradient(90deg,#79ffe5,#b7fff4,#fff7f2)}
+.choice-btn{border-color:rgba(255,255,255,.18);color:#fff9f1;background:rgba(255,255,255,.05)}
+.choice-btn:hover{background:rgba(255,255,255,.1)}
+.runner-stage.hero-visual-stage{position:relative;width:min(620px,90vw);height:330px;margin:10px auto 0}
+.hero-noise{position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle at 50% 44%,black,transparent 76%);opacity:.3}
+.hero-aurora{position:absolute;border-radius:50%;filter:blur(40px);mix-blend-mode:screen;opacity:.78;animation:auroraDrift 9s ease-in-out infinite alternate}
+.hero-aurora.a1{width:240px;height:240px;left:18%;top:6%;background:radial-gradient(circle,#75ffe2 0%,rgba(117,255,226,.18) 48%,transparent 72%)}
+.hero-aurora.a2{width:240px;height:240px;right:18%;top:6%;background:radial-gradient(circle,#75ffe2 0%,rgba(117,255,226,.18) 48%,transparent 72%);animation-delay:.5s}
+.hero-aurora.a3{width:280px;height:220px;left:50%;bottom:2%;transform:translateX(-50%);background:radial-gradient(circle,#3754d8 0%,rgba(55,84,216,.18) 42%,transparent 72%);animation-delay:.9s}
+.hero-core-shape{position:absolute;inset:0}
+.shape-lobe,.shape-halo{position:absolute;display:block;border-radius:999px;filter:blur(16px)}
+.shape-lobe{background:radial-gradient(circle at 50% 45%,#c9fff7 0%,#77ffe3 34%,rgba(119,255,227,.24) 58%,transparent 76%)}
+.shape-lobe.left{width:160px;height:245px;left:31%;top:18%;transform:rotate(28deg);animation:morphLeft 6.8s ease-in-out infinite}
+.shape-lobe.right{width:160px;height:245px;right:31%;top:18%;transform:rotate(-28deg);animation:morphRight 6.8s ease-in-out infinite}
+.shape-lobe.bottom{width:200px;height:165px;left:50%;bottom:16%;transform:translateX(-50%);background:radial-gradient(circle at 50% 38%,#94fff2 0%,#5eead4 34%,rgba(82,108,255,.28) 62%,transparent 84%);animation:morphBottom 7.2s ease-in-out infinite}
+.shape-halo{inset:14% 22%;background:radial-gradient(circle at 50% 35%,rgba(142,255,235,.16),transparent 58%),radial-gradient(circle at 50% 72%,rgba(62,78,255,.16),transparent 54%);filter:blur(34px)}
+@keyframes auroraDrift{from{transform:translateY(-8px) scale(1)}to{transform:translateY(18px) scale(1.08)}}
+@keyframes morphLeft{0%,100%{border-radius:60% 40% 54% 46% / 42% 46% 54% 58%;transform:rotate(28deg) translateY(0)}50%{border-radius:48% 52% 36% 64% / 58% 36% 64% 42%;transform:rotate(20deg) translate(-8px,10px)}}
+@keyframes morphRight{0%,100%{border-radius:40% 60% 46% 54% / 44% 58% 42% 56%;transform:rotate(-28deg) translateY(0)}50%{border-radius:58% 42% 60% 40% / 48% 34% 66% 52%;transform:rotate(-20deg) translate(8px,10px)}}
+@keyframes morphBottom{0%,100%{border-radius:58% 42% 55% 45% / 52% 58% 42% 48%;transform:translateX(-50%) scale(1)}50%{border-radius:42% 58% 38% 62% / 62% 42% 58% 38%;transform:translateX(-50%) scale(1.08)}}
+@keyframes floatShape{from{transform:translateY(-10px)}to{transform:translateY(12px)}}
+.showcase{grid-template-columns:300px minmax(0,1fr)}
+.preview-stage{padding:18px;border-radius:34px;background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,247,239,.9));border:1px solid rgba(255,255,255,.78);box-shadow:0 30px 70px rgba(14,15,44,.12)}
+.browser{border-radius:28px;background:linear-gradient(180deg,#fff,#fff8f0);overflow:hidden;border:1px solid rgba(20,19,19,.07)}
+.browser-top{min-height:44px;padding:0 18px;background:#fff;border-bottom:1px solid rgba(20,19,19,.06)}
+.urlbar{height:10px;background:linear-gradient(90deg,rgba(20,19,19,.08),rgba(20,19,19,.03));width:34%}
+.work-btn{padding:18px 18px 18px 20px;border-radius:24px;background:rgba(255,255,255,.72);border:1px solid rgba(20,19,19,.07);box-shadow:0 15px 30px rgba(14,15,44,.05)}
+.work-btn.active{background:#fff;border-color:rgba(122,92,255,.2);transform:translateX(8px)}
+.mini{min-height:590px;padding:28px;background:linear-gradient(180deg,#fffefc,#fff8f1);color:#171717}
+.mini-nav{margin-bottom:24px}
+.mini-logo{font-size:27px}
+.mini-links span{background:rgba(255,255,255,.68)}
+.mini-hero{gap:16px}
+.mini-main{min-height:278px;border-radius:30px;padding:28px;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 20px 40px rgba(20,19,19,.10)}
+.mini-main::before{width:300px;height:300px;right:-84px;top:-84px;background:rgba(255,255,255,.20)}
+.mini-main::after{content:"";position:absolute;left:18px;right:18px;bottom:18px;height:1px;background:rgba(255,255,255,.22)}
+.mini-main h4{font-family:var(--sans);font-size:clamp(34px,4.2vw,58px);font-weight:800;line-height:.92;text-transform:uppercase;letter-spacing:-.06em;max-width:8ch}
+.mini-main b{padding:12px 16px;border-radius:999px;font-weight:800}
+.mini-panel{padding:18px;border-radius:24px;background:rgba(255,255,255,.86);box-shadow:0 12px 26px rgba(20,19,19,.06)}
+.mini-grid{gap:12px;margin-top:16px}
+.mini-card{min-height:142px;padding:18px;border-radius:24px;background:#fff;box-shadow:0 12px 24px rgba(20,19,19,.05)}
+.mini-card .img{height:62px;border-radius:18px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.35),transparent 24%),linear-gradient(135deg,var(--case1),var(--case2))}
+.mini-footer{margin-top:16px;padding:18px 20px;border-radius:24px;background:#151826;color:#fff;box-shadow:0 18px 40px rgba(20,19,19,.18)}
+.mini-footer b{font-size:14px;color:#fff4d5}
+@media(max-width:760px){
+  body{background:linear-gradient(180deg,#081535 0%,#132b59 16%,#f6d6dc 38%,#fffaf4 60%,#fffdf8 100%)}
+  .hero.section{padding-top:118px;padding-bottom:86px}
+  .hero.section h1{font-size:clamp(48px,15vw,74px)}
+  .hero-art{min-height:400px}
+  .visual-frame{min-height:360px;border-radius:28px}
+  .visual-copy h3{font-size:clamp(38px,12vw,54px)}
+  .runner-stage.hero-visual-stage{height:250px;width:min(94vw,500px)}
+  .shape-lobe.left,.shape-lobe.right{width:110px;height:180px;top:16%}
+  .shape-lobe.left{left:26%}
+  .shape-lobe.right{right:26%}
+  .shape-lobe.bottom{width:150px;height:125px;bottom:20%}
+  .intro-blush{padding-top:70px}
+  .showcase{grid-template-columns:1fr}
+  .work-btn.active{transform:none}
+  .mini{min-height:auto;padding:20px}
+  .mini-hero{grid-template-columns:1fr}
+  .mini-main{min-height:220px}
+  .mini-main h4{font-size:clamp(28px,10vw,40px)}
+  .mini-grid{grid-template-columns:1fr}
+}
+
+@media(max-width:1120px){.nav{display:none}.mobile-menu{display:grid;place-items:center}.chapter,.hero-layout,.statement,.price-head,.work-intro,.showcase,.contact-panel{grid-template-columns:1fr}.chapter-no{padding-top:0}.prices{grid-template-columns:1fr}.service{grid-template-columns:50px 1fr}.service p{grid-column:2}.process{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.topbar{top:12px;left:12px;right:12px}.brand span:last-child{display:none}.sound-toggle{padding-inline:10px}.sound-toggle .sound-text{display:none}.cta-small{display:none}.hero{padding-top:102px}.hero-actions{flex-direction:column}.btn{width:100%}.hero-meta{grid-template-columns:1fr}.service{grid-template-columns:1fr;gap:10px}.service p{grid-column:auto}.preview-stage,.browser{border-radius:24px}.mini{padding:14px;min-height:auto}.mini-nav{flex-direction:column;align-items:flex-start}.mini-hero,.mini-grid,.process,.faq,.contact-line{grid-template-columns:1fr;display:grid}.faq{gap:10px}.mini-footer{flex-direction:column;align-items:flex-start}.loader-top,.loader-bottom{flex-direction:column;align-items:flex-start;gap:8px}.loader-choice{width:100%}.choice-btn{width:100%}}
+@media(max-width:430px){.wrap{padding-inline:18px}h1{font-size:clamp(48px,15vw,64px)}h2{font-size:clamp(38px,13vw,54px)}.section{padding:70px 0}.section.tight{padding:56px 0}.runner-stage{height:220px}.runner-svg{width:min(420px,92vw)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<audio id="siteAudio" src="sitemissie-sfeer.mp3" loop preload="auto" playsinline webkit-playsinline></audio>
+
+<div class="loader" id="loader">
+  <div class="loader-aura"></div>
+  <div class="loader-top"><span>Sitemissie</span><span>Website experience</span></div>
+  <div class="loader-center">
+    <div>
+      <div class="loader-title">Sitemissie</div>
+      <p class="loader-sub">Heldere websites met meer uitstraling.</p>
+      <div class="runner-stage hero-visual-stage">
+        <div class="hero-noise"></div>
+        <div class="hero-aurora a1"></div>
+        <div class="hero-aurora a2"></div>
+        <div class="hero-aurora a3"></div>
+        <div class="hero-core-shape">
+          <span class="shape-lobe left"></span>
+          <span class="shape-lobe right"></span>
+          <span class="shape-lobe bottom"></span>
+          <span class="shape-halo"></span>
+        </div>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-percent" id="loaderPercent">0%</div>
+        <div class="loader-line-wrap"><div class="loader-line"><div class="loader-fill" id="loaderFill"></div></div></div>
+        <div class="loader-choice">
+          <button class="choice-btn primary" id="enterWithSound" type="button">Betreed met muziek</button>
+          <button class="choice-btn" id="enterSilent" type="button">Zonder muziek</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loader-bottom"><span>Van 0 naar 100</span><span>Klaar om binnen te komen</span></div>
+</div>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Sitemissie home"><span class="brand-mark">S</span><span>Sitemissie</span></a>
+  <nav class="nav" aria-label="Navigatie">
+    <a href="#prijzen">Prijzen</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#werk">Werk</a>
+    <a href="#proces">Proces</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="top-actions">
+    <button class="sound-toggle" id="soundToggle" type="button" aria-label="Sfeer aan of uit">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-text">Sfeer uit</span>
+    </button>
+    <a class="cta-small" href="https://wa.me/31681511950">App mij direct</a>
+    <button class="mobile-menu" id="menuBtn" type="button" aria-label="Menu openen">☰</button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <nav>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#werk">Werk</a>
+    <a href="#proces">Proces</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<main id="top">
+<section class="hero section">
+  <div class="blob a"></div><div class="blob b"></div><div class="blob c"></div><div class="grid-fade"></div>
+  <div class="wrap">
+    <div class="hero-layout">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Luxe webdesign</p>
+        <h1>Websites met <span class="gradient-text">luxe uitstraling</span> en een heldere route naar contact.</h1>
+        <p class="lead narrow">Modern, wit, kleurrijk en strak opgebouwd. Voor ondernemers die professioneel willen overkomen zonder overbodige tekst of rommel.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
+          <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+        </div>
+      </div>
+      <div class="hero-art reveal delay-2">
+        <div class="visual-frame">
+          <div class="visual-chip">Sitemissie / Visual direction</div>
+          <div class="visual-glow"></div>
+          <div class="visual-copy"><h3>Artist level presence for modern websites.</h3></div>
+          <div class="visual-badge">Luxe, vertrouwd en uitgesproken. Een abstracte visual die direct een premium gevoel neerzet.</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-meta reveal">
+      <div class="meta-card glass"><strong>Premium</strong><span>Meer uitstraling</span></div>
+      <div class="meta-card glass"><strong>Mobiel sterk</strong><span>Ook op telefoon clean</span></div>
+      <div class="meta-card glass"><strong>Direct contact</strong><span>WhatsApp en bellen</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section intro-blush">
+  <div class="blob d"></div>
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//01</div>
+      <div class="statement">
+        <div>
+          <p class="eyebrow reveal">Waarom Sitemissie</p>
+          <h2 class="reveal">Een website hoeft niet druk te zijn om indruk te maken.</h2>
+        </div>
+        <div class="statement-card glass reveal">
+          <p>De beste sites voelen rustig, modern en vanzelfsprekend. Ze laten in één oogopslag zien wie je bent, wat je doet en hoe klanten contact opnemen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight price-band" id="prijzen">
+  <div class="wrap">
+    <div class="price-head">
+      <div>
+        <p class="eyebrow reveal">Prijzen vanaf</p>
+        <h2 class="reveal">Duidelijk in beeld. Niet verstopt onderaan.</h2>
+      </div>
+      <p class="reveal">Je ziet direct wat de basisrichtingen zijn. Start compact en breid uit wanneer dat nodig is.</p>
+    </div>
+    <div class="prices">
+      <article class="price glass reveal">
+        <div class="price-badge">Compact</div>
+        <h3>Starter</h3>
+        <div class="amount">€299<small>vanaf</small></div>
+        <p>Voor ondernemers die snel professioneel online willen staan.</p>
+        <ul>
+          <li>One-page website</li>
+          <li>Mobiel responsive</li>
+          <li>WhatsApp en belknop</li>
+          <li>Basis SEO</li>
+        </ul>
+        <a class="btn ghost" href="https://wa.me/31681511950">Bespreek starter</a>
+      </article>
+      <article class="price featured reveal">
+        <div class="price-badge">Meest gekozen</div>
+        <h3>Business</h3>
+        <div class="amount">€499<small>vanaf</small></div>
+        <p>Voor ondernemers die meer structuur, overtuiging en bewijs nodig hebben.</p>
+        <ul>
+          <li>Uitgebreidere homepage</li>
+          <li>Diensten en werkwijze</li>
+          <li>Portfolio of reviews</li>
+          <li>Contactflow via WhatsApp</li>
+        </ul>
+        <a class="btn light" href="https://wa.me/31681511950">Vraag website-check aan</a>
+      </article>
+      <article class="price glass reveal">
+        <div class="price-badge">Uitgebreid</div>
+        <h3>Premium</h3>
+        <div class="amount">€799<small>vanaf</small></div>
+        <p>Voor bedrijven die groter en sterker willen binnenkomen.</p>
+        <ul>
+          <li>Meerdere pagina’s</li>
+          <li>Scherpere copy</li>
+          <li>Extra visuele afwerking</li>
+          <li>Doorontwikkeling mogelijk</li>
+        </ul>
+        <a class="btn ghost" href="https://wa.me/31681511950">Bespreek premium</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="diensten">
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//02</div>
+      <div>
+        <p class="eyebrow reveal">Diensten</p>
+        <h2 class="reveal narrow">Alles wat je site nodig heeft. Niets wat afleidt.</h2>
+        <div class="services">
+          <article class="service reveal"><span class="service-number">01</span><h3>Website laten maken</h3><p>Een professionele website die direct vertrouwen wekt en makkelijk contact oplevert.</p></article>
+          <article class="service reveal"><span class="service-number">02</span><h3>Landingspagina</h3><p>Een compacte pagina voor acties, advertenties of één duidelijke dienst.</p></article>
+          <article class="service reveal"><span class="service-number">03</span><h3>Uitstraling</h3><p>Kleuren, typografie en structuur die jouw merk sterker laten voelen.</p></article>
+          <article class="service reveal"><span class="service-number">04</span><h3>Contactflow</h3><p>WhatsApp, bellen en aanvragen precies op de juiste plekken.</p></article>
+          <article class="service reveal"><span class="service-number">05</span><h3>SEO basis</h3><p>Een nette basis voor vindbaarheid, snelheid en vertrouwen.</p></article>
+          <article class="service reveal"><span class="service-number">06</span><h3>Onderhoud</h3><p>Kleine updates en verbeteringen zonder gedoe.</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="werk">
+  <div class="blob a" style="top:10%;right:-120px;opacity:.22"></div>
+  <div class="blob c" style="top:auto;bottom:8%;left:-60px;right:auto;opacity:.18"></div>
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//03</div>
+      <div>
+        <div class="work-intro">
+          <div>
+            <p class="eyebrow reveal">Voorbeeldsites</p>
+            <h2 class="reveal">Voorbeeldlayouts die direct luxe en richting laten voelen.</h2>
+          </div>
+          <p class="reveal">Geen lege mockups. Elke preview voelt als een echte mini-ervaring met meer sfeer, meer detail en een luxere opbouw.</p>
+        </div>
+        <div class="showcase reveal">
+          <div class="work-list">
+            <button class="work-btn active" type="button" data-work="kapper"><small>01</small><strong>Kapper</strong><span>Salon, sfeer en boeking.</span></button>
+            <button class="work-btn" type="button" data-work="fitness"><small>02</small><strong>Fitness</strong><span>Membership, ritme en energie.</span></button>
+            <button class="work-btn" type="button" data-work="restaurant"><small>03</small><strong>Restaurant</strong><span>Menu, sfeer en reserveren.</span></button>
+            <button class="work-btn" type="button" data-work="schilder"><small>04</small><strong>Schilder</strong><span>Portfolio, vakwerk en offerte.</span></button>
+            <button class="work-btn" type="button" data-work="webshop"><small>05</small><strong>Webshop</strong><span>Collectie, details en checkout.</span></button>
+          </div>
+          <div class="preview-stage glass">
+            <div class="browser">
+              <div class="browser-top"><span class="dots"></span><span class="urlbar"></span></div>
+              <div class="mini active" data-mini="kapper" style="--case1:#7a5cff;--case2:#ff7ab2">
+                <div class="mini-nav"><div class="mini-logo">Maison Hair</div><div class="mini-links"><span>Services</span><span>Prijzen</span><span>Boeken</span></div></div>
+                <div class="mini-hero"><div class="mini-main"><small>Premium salon</small><h4>Strak geknipt. Makkelijk geboekt.</h4><b>Boek afspraak</b></div><div class="mini-side"><div class="mini-panel"><strong>★★★★★ 4.9</strong><span>Rustige salon, strak resultaat en direct boeken.</span></div><div class="mini-panel"><strong>Vandaag plek</strong><span>Knippen, baard en styling helder zichtbaar.</span></div></div></div>
+                <div class="mini-grid"><div class="mini-card"><span class="img"></span><strong>Knippen</strong><span>Vanaf €29</span></div><div class="mini-card"><span class="img"></span><strong>Baard</strong><span>15 minuten</span></div><div class="mini-card"><span class="img"></span><strong>Styling</strong><span>Kleur & finish</span></div></div>
+                <div class="mini-footer"><span>Open voor nieuwe aanvragen</span><b>Plan je moment</b></div>
+              </div>
+              <div class="mini" data-mini="fitness" style="--case1:#20d6c7;--case2:#4eb26a">
+                <div class="mini-nav"><div class="mini-logo">Pulse Club</div><div class="mini-links"><span>Rooster</span><span>Coaches</span><span>Join</span></div></div>
+                <div class="mini-hero"><div class="mini-main"><small>Local fitness</small><h4>Train sterker. Start laagdrempelig.</h4><b>Plan proefles</b></div><div class="mini-side"><div class="mini-panel"><strong>Memberships</strong><span>Basic, Coach en Small Group overzichtelijk uitgelegd.</span></div><div class="mini-panel"><strong>Deze week</strong><span>HIIT · Strength · Mobility · Boxing</span></div></div></div>
+                <div class="mini-grid"><div class="mini-card"><span class="img"></span><strong>Basic</strong><span>Vrij trainen</span></div><div class="mini-card"><span class="img"></span><strong>Coach</strong><span>Schema + check</span></div><div class="mini-card"><span class="img"></span><strong>Group</strong><span>3x per week</span></div></div>
+                <div class="mini-footer"><span>Proefles zonder verplichting</span><b>Start vandaag</b></div>
+              </div>
+              <div class="mini" data-mini="restaurant" style="--case1:#ffaa2b;--case2:#ff6aa9">
+                <div class="mini-nav"><div class="mini-logo">Bistro Zuid</div><div class="mini-links"><span>Menu</span><span>Sfeer</span><span>Reserveer</span></div></div>
+                <div class="mini-hero"><div class="mini-main"><small>Restaurant</small><h4>Sfeer proeven. Tafel reserveren.</h4><b>Reserveer tafel</b></div><div class="mini-side"><div class="mini-panel"><strong>Chef menu</strong><span>3 gangen · seizoensproducten · lokaal ingekocht.</span></div><div class="mini-panel"><strong>Open</strong><span>Wo t/m zo · lunch en diner.</span></div></div></div>
+                <div class="mini-grid"><div class="mini-card"><span class="img"></span><strong>Pasta huis</strong><span>€18</span></div><div class="mini-card"><span class="img"></span><strong>Steak grill</strong><span>€29</span></div><div class="mini-card"><span class="img"></span><strong>Dessert</strong><span>Special</span></div></div>
+                <div class="mini-footer"><span>Menu, openingstijden en reserveren in één flow</span><b>Boek tafel</b></div>
+              </div>
+              <div class="mini" data-mini="schilder" style="--case1:#7a5cff;--case2:#20d6c7">
+                <div class="mini-nav"><div class="mini-logo">Damen Schilderwerken</div><div class="mini-links"><span>Werk</span><span>Diensten</span><span>Offerte</span></div></div>
+                <div class="mini-hero"><div class="mini-main"><small>Vakwerk</small><h4>Net schilderwerk. Zichtbaar bewijs.</h4><b>Vraag offerte aan</b></div><div class="mini-side"><div class="mini-panel"><strong>Voor / na</strong><span>Projecten tonen kwaliteit voordat iemand belt.</span></div><div class="mini-panel"><strong>Betrouwbaar</strong><span>Binnen · Buiten · Lakwerk · Onderhoud</span></div></div></div>
+                <div class="mini-grid"><div class="mini-card"><span class="img"></span><strong>Binnen</strong><span>Muren & plafonds</span></div><div class="mini-card"><span class="img"></span><strong>Buiten</strong><span>Kozijnen & gevel</span></div><div class="mini-card"><span class="img"></span><strong>Lakwerk</strong><span>Strak afgewerkt</span></div></div>
+                <div class="mini-footer"><span>Projecten, reviews en offerteknop duidelijk in beeld</span><b>Offerte</b></div>
+              </div>
+              <div class="mini" data-mini="webshop" style="--case1:#ff6aa9;--case2:#ffaa2b">
+                <div class="mini-nav"><div class="mini-logo">Local Goods</div><div class="mini-links"><span>Shop</span><span>Sale</span><span>Cart</span></div></div>
+                <div class="mini-hero"><div class="mini-main"><small>E-commerce</small><h4>Producten die makkelijker gekozen worden.</h4><b>Bekijk collectie</b></div><div class="mini-side"><div class="mini-panel"><strong>Sale actief</strong><span>Badges, productgrid en vertrouwen bij checkout.</span></div><div class="mini-panel"><strong>iDEAL</strong><span>Betaalvertrouwen direct zichtbaar.</span></div></div></div>
+                <div class="mini-grid"><div class="mini-card"><span class="img"></span><strong>Product A</strong><span>€24</span></div><div class="mini-card"><span class="img"></span><strong>Product B</strong><span>€39</span></div><div class="mini-card"><span class="img"></span><strong>Product C</strong><span>Sale</span></div></div>
+                <div class="mini-footer"><span>Collectie, winkelmand en actie in één rustige flow</span><b>Shop nu</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="proces">
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//04</div>
+      <div>
+        <p class="eyebrow reveal">Proces</p>
+        <h2 class="reveal narrow">Rustig traject. Strak eindresultaat.</h2>
+        <div class="process">
+          <div class="step reveal"><small>01</small><strong>Kennismaking</strong><p>We bepalen wat je site moet doen en voor wie.</p></div>
+          <div class="step reveal"><small>02</small><strong>Richting</strong><p>Stijl, inhoud en flow worden helder uitgewerkt.</p></div>
+          <div class="step reveal"><small>03</small><strong>Bouwen</strong><p>Alles wordt schoon en responsive opgebouwd.</p></div>
+          <div class="step reveal"><small>04</small><strong>Live zetten</strong><p>Testen, finetunen en klaarzetten voor publicatie.</p></div>
+          <div class="step reveal"><small>05</small><strong>Verbeteren</strong><p>Na livegang kunnen we uitbreiden waar nodig.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//05</div>
+      <div>
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="reveal">Snel duidelijk.</h2>
+        <div class="faq-list">
+          <article class="faq reveal"><h3>Hoe snel kan mijn site live?</h3><p>Een compacte website kan vaak binnen enkele werkdagen live zodra de richting en inhoud helder zijn.</p></article>
+          <article class="faq reveal"><h3>Kan WhatsApp erin?</h3><p>Ja. De website krijgt duidelijke knoppen waarmee bezoekers direct kunnen appen of bellen.</p></article>
+          <article class="faq reveal"><h3>Voor wie is dit bedoeld?</h3><p>Voor ondernemers die online sterker, professioneler en luxer willen overkomen zonder onnodig groot traject.</p></article>
+          <article class="faq reveal"><h3>Kan ik later uitbreiden?</h3><p>Ja. Je kunt compact starten en later extra pagina’s, secties of functies toevoegen.</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="blob b" style="bottom:-130px;left:auto;right:-100px;opacity:.18"></div>
+  <div class="wrap">
+    <div class="chapter">
+      <div class="chapter-no reveal">//06</div>
+      <div>
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="reveal">Laat je website sterker binnenkomen.</h2>
+        <div class="contact-panel">
+          <p class="lead reveal">Stuur een bericht. Ik kijk met je mee en geef eerlijk aan wat beter kan.</p>
+          <aside class="contact-card glass reveal">
+            <p>Vrijblijvende website-check. Kort, direct en zonder verplichting.</p>
+            <div class="contact-actions">
+              <a class="btn" href="https://wa.me/31681511950">App mij direct</a>
+              <a class="btn ghost" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
+            </div>
+            <div class="contact-line"><span>Direct contact</span><strong>06 81 51 19 50</strong></div>
+          </aside>
+        </div>
+        <footer class="footer">
+          <strong>Sitemissie</strong>
+          <span>Luxe websites met uitstraling</span>
+          <span>06 81 51 19 50</span>
+          <span>© 2026</span>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var audio=document.getElementById("siteAudio");
+  var loader=document.getElementById("loader");
+  var loaderPercent=document.getElementById("loaderPercent");
+  var loaderFill=document.getElementById("loaderFill");
+  var enterWithSound=document.getElementById("enterWithSound");
+  var enterSilent=document.getElementById("enterSilent");
+  var soundToggle=document.getElementById("soundToggle");
+  var soundText=soundToggle.querySelector(".sound-text");
+  var menuBtn=document.getElementById("menuBtn");
+  var mobilePanel=document.getElementById("mobilePanel");
+  var isMobile=window.matchMedia('(max-width: 760px)').matches || window.matchMedia('(pointer: coarse)').matches;
+  var soundOn=false, fadeTimer=null, loaded=false, percent=0, audioReady=false, audioBusy=false;
+  var loadInterval=isMobile?120:95;
+  var autoFinishDelay=isMobile?3900:2800;
+  audio.volume=0;
+  audio.muted=false;
+  try{ audio.setAttribute('playsinline',''); audio.setAttribute('webkit-playsinline',''); }catch(e){}
+
+  function setSoundUI(){
+    soundToggle.classList.toggle("active",soundOn);
+    soundText.textContent=soundOn?"Sfeer aan":"Sfeer uit";
+  }
+
+  function clearFade(){ if(fadeTimer){ clearInterval(fadeTimer); fadeTimer=null; } }
+
+  function fadeTo(target,cb){
+    clearFade();
+    fadeTimer=setInterval(function(){
+      var current=audio.volume;
+      var factor=isMobile?0.09:0.12;
+      var next=current+(target-current)*factor;
+      if(Math.abs(target-current)<0.006){
+        audio.volume=target;
+        clearFade();
+        if(cb)cb();
+        return;
+      }
+      audio.volume=Math.max(0,Math.min(0.16,next));
+    },50);
+  }
+
+  async function safePlayAudio(){
+    if(audioBusy) return false;
+    audioBusy=true;
+    try{
+      if(!audioReady){
+        try{ audio.load(); }catch(e){}
+      }
+      var playResult=audio.play();
+      if(playResult && typeof playResult.then === 'function'){
+        await playResult;
+      }
+      audioReady=true;
+      return true;
+    }catch(err){
+      return false;
+    }finally{
+      audioBusy=false;
+    }
+  }
+
+  async function startAudio(){
+    var ok=await safePlayAudio();
+    if(ok){
+      soundOn=true;
+      setSoundUI();
+      fadeTo(0.14);
+    }else{
+      soundOn=false;
+      setSoundUI();
+    }
+    return ok;
+  }
+
+  function stopAudio(){
+    soundOn=false;
+    setSoundUI();
+    fadeTo(0,function(){
+      try{ audio.pause(); }catch(e){}
+    });
+  }
+
+  function closeLoader(){
+    loader.classList.add("hide");
+    setTimeout(function(){ loader.style.display="none"; },900);
+  }
+
+  async function enterSite(withSound){
+    if(withSound){ await startAudio(); }
+    closeLoader();
+  }
+
+  function finishLoading(){
+    loaded=true;
+    percent=100;
+    loaderPercent.textContent="100%";
+    loaderFill.style.width="100%";
+    loader.classList.add("ready");
+  }
+
+  var loadTimer=setInterval(function(){
+    if(loaded) return;
+    percent += isMobile ? (Math.random()*3.2+1.8) : (Math.random()*5+2.8);
+    if(percent>=100){
+      clearInterval(loadTimer);
+      finishLoading();
+      return;
+    }
+    loaderPercent.textContent=Math.round(percent)+"%";
+    loaderFill.style.width=percent+"%";
+  }, loadInterval);
+
+  setTimeout(function(){
+    if(!loaded){
+      clearInterval(loadTimer);
+      finishLoading();
+    }
+  }, autoFinishDelay);
+
+  enterWithSound.addEventListener("click",function(){ enterSite(true); });
+  enterSilent.addEventListener("click",function(){ stopAudio(); enterSite(false); });
+
+  soundToggle.addEventListener("click",async function(){
+    if(soundOn){
+      stopAudio();
+    }else{
+      await startAudio();
+    }
+  });
+
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden){ clearFade(); }
+  });
+
+  setSoundUI();
+
+  menuBtn.addEventListener("click",function(){ mobilePanel.classList.toggle("open"); });
+  mobilePanel.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click",function(){ mobilePanel.classList.remove("open"); });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener("click",function(e){
+      var target=document.querySelector(link.getAttribute("href"));
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:"smooth",block:"start"});
+      }
+    });
+  });
+
+  var revealItems=document.querySelectorAll(".reveal");
+  var revealObserver=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.12,rootMargin:"0px 0px -30px 0px"});
+  revealItems.forEach(function(item){ revealObserver.observe(item); });
+
+  var workButtons=document.querySelectorAll(".work-btn");
+  var minis=document.querySelectorAll(".mini");
+  function setWork(name){
+    workButtons.forEach(function(btn){ btn.classList.toggle("active",btn.dataset.work===name); });
+    minis.forEach(function(mini){ mini.classList.toggle("active",mini.dataset.mini===name); });
+  }
+  workButtons.forEach(function(btn){
+    btn.addEventListener("mouseenter",function(){ if(!isMobile) setWork(btn.dataset.work); });
+    btn.addEventListener("focus",function(){ setWork(btn.dataset.work); });
+    btn.addEventListener("click",function(){ setWork(btn.dataset.work); });
+  });
+})();</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Sitemissie","url":"https://sitemissie.nl/","telephone":"+31681511950","email":"info@sitemissie.nl","areaServed":"Nederland","description":"Luxe websites met uitstraling, vloeiende visuals en een heldere route naar contact.","priceRange":"€299 - €799"}
+</script>
+</body>
+</html>
