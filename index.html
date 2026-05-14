@@ -3,652 +3,822 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sitemissie | Premium websites voor lokale ondernemers in Brabant</title>
-<meta name="description" content="Sitemissie bouwt premium websites voor lokale ondernemers in Brabant die vertrouwen wekken, aanvragen opleveren en snel live staan. Bel of WhatsApp 06 81 51 19 50.">
+<title>Sitemissie | High-end websites laten maken in Brabant</title>
+<meta name="description" content="Sitemissie maakt high-end websites voor lokale ondernemers in Brabant. Premium design, snelle statische sites en contactflows die meer aanvragen opleveren. Bel of WhatsApp 06 81 51 19 50.">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#080A12">
+<meta name="theme-color" content="#07070A">
 <link rel="canonical" href="https://sitemissie.nl/">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sitemissie">
-<meta property="og:title" content="Sitemissie | Premium websites voor ondernemers in Brabant">
-<meta property="og:description" content="Donkere, snelle, professionele websites voor lokale ondernemers die meer aanvragen willen. Vanaf &euro;299.">
+<meta property="og:title" content="Sitemissie | Websites laten maken voor ondernemers in Brabant">
+<meta property="og:description" content="High-end websites voor lokale ondernemers die meer aanvragen willen. Snel, premium en commercieel scherp.">
 <meta property="og:url" content="https://sitemissie.nl/">
-<meta property="og:image" content="https://sitemissie.nl/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sitemissie | Websites die aanvragen opleveren">
-<meta name="twitter:description" content="Premium websites voor lokale ondernemers in Brabant. Snel live, sterk design, gemaakt om klanten te overtuigen.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sitemissie | Premium websites in Brabant">
+<meta name="twitter:description" content="Websites laten maken door Sitemissie: sterk design, duidelijke copy en directe WhatsApp- en belroutes.">
 <style>
 :root {
-  --bg: #070914;
-  --bg-2: #0c1020;
-  --panel: rgba(255,255,255,.075);
-  --panel-strong: rgba(255,255,255,.13);
-  --line: rgba(255,255,255,.16);
-  --text: #f8fbff;
-  --muted: #aeb8cb;
-  --soft: #dfe7ff;
-  --gold: #ffd166;
-  --gold-2: #ff9f1c;
-  --cyan: #4df5ff;
-  --pink: #ff4fd8;
-  --green: #5dffb2;
-  --violet: #8b5cf6;
-  --shadow: 0 28px 90px rgba(0,0,0,.5);
-  --radius: 24px;
-  --font: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --serif: "Playfair Display", Georgia, serif;
+  --black: #07070a;
+  --ink: #101014;
+  --white: #f5f0e8;
+  --paper: #eee6d7;
+  --muted: #a8a4a0;
+  --muted-dark: #55514d;
+  --line: rgba(245,240,232,.18);
+  --line-dark: rgba(7,7,10,.16);
+  --acid: #d7ff45;
+  --orange: #ff5d2e;
+  --blue: #47d7ff;
+  --pink: #ff4fba;
+  --green: #2dff9a;
+  --violet: #815cff;
+  --shadow: 0 34px 100px rgba(0,0,0,.42);
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; background: var(--bg); }
+html { scroll-behavior: smooth; background: var(--black); }
 body {
   min-height: 100vh;
-  font-family: var(--font);
-  color: var(--text);
-  background:
-    radial-gradient(circle at 15% 10%, rgba(77,245,255,.22), transparent 30rem),
-    radial-gradient(circle at 85% 8%, rgba(255,79,216,.2), transparent 28rem),
-    radial-gradient(circle at 50% 60%, rgba(255,209,102,.14), transparent 34rem),
-    linear-gradient(135deg, #060814 0%, #101729 52%, #070914 100%);
   overflow-x: hidden;
+  color: var(--white);
+  background: var(--black);
+  font-family: var(--sans);
   cursor: none;
 }
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  inset: -30vmax;
+  z-index: -4;
   pointer-events: none;
-  z-index: -2;
   background:
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(to bottom, black, transparent 82%);
+    radial-gradient(circle at 15% 12%, rgba(71,215,255,.22), transparent 32vmax),
+    radial-gradient(circle at 85% 8%, rgba(255,79,186,.18), transparent 30vmax),
+    radial-gradient(circle at 50% 76%, rgba(215,255,69,.16), transparent 35vmax),
+    conic-gradient(from 180deg at 50% 50%, rgba(255,93,46,.13), rgba(71,215,255,.14), rgba(129,92,255,.13), rgba(215,255,69,.1), rgba(255,93,46,.13));
+  filter: blur(58px);
+  animation: atmosphere 18s ease-in-out infinite alternate;
 }
 body::after {
   content: "";
   position: fixed;
-  inset: -30%;
-  pointer-events: none;
+  inset: 0;
   z-index: -3;
-  background: conic-gradient(from 120deg, rgba(77,245,255,.13), rgba(255,79,216,.14), rgba(255,209,102,.12), rgba(93,255,178,.1), rgba(77,245,255,.13));
-  filter: blur(80px);
-  animation: aurora 16s ease-in-out infinite alternate;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(to bottom, black 0 48%, transparent 92%);
 }
-@keyframes aurora {
-  0% { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
-  100% { transform: translate3d(3%, 2%, 0) rotate(18deg) scale(1.08); }
+@keyframes atmosphere {
+  0% { transform: translate3d(-3%, -2%, 0) rotate(0deg) scale(1); }
+  100% { transform: translate3d(3%, 2%, 0) rotate(14deg) scale(1.08); }
 }
 
 a { color: inherit; text-decoration: none; }
-button, input, textarea, select { font: inherit; }
-img, svg { display: block; max-width: 100%; }
-section { position: relative; padding: 110px 5vw; }
-.wrap { width: min(1180px, 100%); margin: 0 auto; }
-.eyebrow {
+button { font: inherit; }
+svg { display: block; }
+section { position: relative; }
+.wrap { width: min(1540px, 100%); margin: 0 auto; padding: 0 clamp(18px, 4vw, 70px); }
+.light { color: var(--black); background: var(--paper); }
+.dark { color: var(--white); background: var(--black); }
+.split-line { overflow: hidden; }
+.section-shell {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: clamp(18px, 4vw, 72px);
+  padding: clamp(82px, 11vw, 170px) 0;
+  border-top: 1px solid currentColor;
+  border-color: rgba(255,255,255,.16);
+}
+.light .section-shell { border-color: rgba(7,7,10,.16); }
+.section-no {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  font-size: clamp(34px, 5.4vw, 88px);
+  font-weight: 950;
+  letter-spacing: -.1em;
+  line-height: .85;
+  color: transparent;
+  -webkit-text-stroke: 1.5px currentColor;
+  opacity: .5;
+}
+.section-kicker {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 18px;
-  color: var(--cyan);
+  gap: 12px;
+  margin-bottom: 22px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: .18em;
   text-transform: uppercase;
 }
-.eyebrow::before {
+.section-kicker::before {
   content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 999px;
-  background: var(--green);
-  box-shadow: 0 0 22px var(--green);
+  width: 42px;
+  height: 1px;
+  background: currentColor;
 }
-.section-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr);
-  gap: 32px;
-  align-items: end;
-  margin-bottom: 48px;
+h1, h2, h3, h4 {
+  font-weight: 950;
+  line-height: .88;
+  letter-spacing: -.075em;
 }
-h1, h2, h3 { line-height: .94; letter-spacing: -.055em; }
-h1 {
-  max-width: 1120px;
-  font-size: clamp(58px, 10vw, 158px);
-  font-weight: 900;
-}
-h2 {
-  font-size: clamp(44px, 6.5vw, 92px);
-  font-weight: 900;
-}
-h3 {
-  font-size: clamp(26px, 2.8vw, 44px);
-  font-weight: 850;
-}
-p { color: var(--muted); line-height: 1.7; }
-.lead { font-size: clamp(18px, 2vw, 24px); color: var(--soft); }
-.gradient-text {
+h1 { font-size: clamp(68px, 14.3vw, 236px); max-width: 1500px; }
+h2 { font-size: clamp(52px, 9vw, 150px); max-width: 1280px; }
+h3 { font-size: clamp(34px, 4.5vw, 82px); }
+h4 { font-size: clamp(24px, 2.6vw, 46px); }
+p { color: var(--muted); font-size: clamp(16px, 1.3vw, 20px); line-height: 1.65; }
+.light p { color: var(--muted-dark); }
+.serif { font-family: var(--serif); font-style: italic; font-weight: 700; letter-spacing: -.09em; }
+.impact {
   color: transparent;
-  background: linear-gradient(90deg, #fff 0%, var(--cyan) 28%, var(--gold) 58%, var(--pink) 100%);
+  background: linear-gradient(90deg, var(--white), var(--acid), var(--blue), var(--pink));
+  background-size: 240% 100%;
   -webkit-background-clip: text;
   background-clip: text;
-  filter: drop-shadow(0 0 24px rgba(77,245,255,.18));
+  animation: textflow 8s linear infinite;
 }
-.serif { font-family: var(--serif); font-style: italic; letter-spacing: -.06em; }
+@keyframes textflow {
+  0% { background-position: 0 50%; }
+  100% { background-position: 240% 50%; }
+}
 
 .cursor-dot, .cursor-ring {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   pointer-events: none;
   border-radius: 999px;
   transform: translate(-50%, -50%);
-  z-index: 9999;
 }
 .cursor-dot {
-  width: 12px;
-  height: 12px;
-  background: #fff;
-  border: 2px solid var(--cyan);
-  box-shadow: 0 0 18px var(--cyan), 0 0 36px rgba(255,255,255,.65);
+  width: 13px;
+  height: 13px;
+  background: linear-gradient(135deg, var(--acid), var(--blue));
+  border: 2px solid #07070a;
+  box-shadow: 0 0 0 2px var(--white), 0 0 26px rgba(71,215,255,.75);
 }
 .cursor-ring {
-  width: 46px;
-  height: 46px;
-  border: 2px solid rgba(255,255,255,.75);
-  box-shadow: 0 0 26px rgba(77,245,255,.35), inset 0 0 20px rgba(255,255,255,.12);
-  transition: width .2s ease, height .2s ease, border-color .2s ease, background .2s ease;
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--white);
+  box-shadow: 0 0 0 1px #07070a, inset 0 0 0 1px rgba(7,7,10,.9), 0 0 28px rgba(215,255,69,.4);
+  transition: width .22s ease, height .22s ease, border-color .22s ease, background .22s ease;
 }
 .cursor-ring.is-hover {
-  width: 76px;
-  height: 76px;
-  border-color: var(--gold);
-  background: rgba(255,209,102,.08);
+  width: 82px;
+  height: 82px;
+  background: rgba(215,255,69,.11);
+  border-color: var(--acid);
 }
 
 .nav {
   position: fixed;
-  inset: 20px 5vw auto;
-  z-index: 80;
-  display: flex;
+  top: 22px;
+  left: clamp(14px, 3vw, 44px);
+  right: clamp(14px, 3vw, 44px);
+  z-index: 90;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 13px 15px 13px 22px;
-  border: 1px solid rgba(255,255,255,.16);
+  gap: 22px;
+  padding: 12px 12px 12px 20px;
+  color: var(--white);
+  border: 1px solid rgba(245,240,232,.18);
   border-radius: 999px;
-  background: rgba(7,9,20,.62);
+  background: rgba(7,7,10,.68);
   backdrop-filter: blur(22px);
-  box-shadow: 0 18px 60px rgba(0,0,0,.35);
+  box-shadow: 0 18px 62px rgba(0,0,0,.35);
 }
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 900;
-  letter-spacing: -.04em;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 950;
+  letter-spacing: -.05em;
 }
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  color: #071019;
-  background: linear-gradient(135deg, var(--cyan), var(--gold));
-  box-shadow: 0 0 28px rgba(77,245,255,.35);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: var(--black);
+  background: var(--acid);
+  box-shadow: 0 0 28px rgba(215,255,69,.55);
 }
-.nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  list-style: none;
+}
 .nav-links a {
   display: inline-flex;
-  padding: 10px 13px;
+  padding: 11px 13px;
   border-radius: 999px;
-  color: rgba(248,251,255,.78);
-  font-size: 13px;
-  font-weight: 700;
-  transition: .2s ease;
+  color: rgba(245,240,232,.72);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: .02em;
+  transition: color .2s ease, background .2s ease;
 }
-.nav-links a:hover { color: #fff; background: rgba(255,255,255,.1); }
-.nav-cta, .btn, .mini-cta {
+.nav-links a:hover { color: var(--white); background: rgba(255,255,255,.1); }
+.nav-cta, .btn, .chip-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border: 0;
+  border: 1px solid rgba(245,240,232,.2);
   border-radius: 999px;
-  color: #061019;
-  background: linear-gradient(135deg, var(--gold), var(--cyan));
-  font-weight: 900;
-  box-shadow: 0 14px 42px rgba(77,245,255,.22), 0 0 0 1px rgba(255,255,255,.28) inset;
-  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  font-weight: 950;
+  letter-spacing: -.02em;
+  transition: transform .22s ease, box-shadow .22s ease, color .22s ease, background .22s ease;
 }
-.nav-cta { padding: 12px 17px; font-size: 13px; }
-.btn { min-height: 58px; padding: 0 24px; }
-.btn:hover, .nav-cta:hover, .mini-cta:hover {
-  transform: translateY(-3px);
-  filter: saturate(1.18);
-  box-shadow: 0 24px 70px rgba(77,245,255,.3), 0 0 38px rgba(255,209,102,.18);
+.nav-cta {
+  min-height: 44px;
+  padding: 0 18px;
+  color: var(--black);
+  background: var(--white);
 }
-.btn.secondary {
-  color: var(--text);
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.18);
-  box-shadow: none;
+.btn {
+  min-height: 64px;
+  padding: 0 24px;
+  color: var(--black);
+  background: var(--acid);
+  box-shadow: 0 18px 56px rgba(215,255,69,.22);
 }
-.btn.secondary:hover { background: rgba(255,255,255,.14); }
+.btn.dark-btn { color: var(--white); background: var(--black); box-shadow: 0 18px 56px rgba(0,0,0,.22); }
+.btn.ghost { color: currentColor; background: transparent; border-color: currentColor; box-shadow: none; }
+.nav-cta:hover, .btn:hover, .chip-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 80px rgba(71,215,255,.22);
+}
 .mobile-toggle { display: none; }
 
 .hero {
   min-height: 100svh;
   display: grid;
-  align-items: center;
-  padding-top: 160px;
-  padding-bottom: 70px;
+  align-items: end;
+  padding: 150px 0 42px;
+  overflow: hidden;
 }
-.hero::before {
-  content: "SITEMISSIE";
+.hero-bg-word {
   position: absolute;
-  top: 112px;
   left: 50%;
+  top: 48%;
   z-index: -1;
-  transform: translateX(-50%);
-  font-size: clamp(86px, 18vw, 260px);
-  font-weight: 900;
-  letter-spacing: -.09em;
-  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-5deg);
   color: rgba(255,255,255,.035);
-  -webkit-text-stroke: 1px rgba(255,255,255,.08);
+  font-size: clamp(150px, 33vw, 560px);
+  font-weight: 950;
+  letter-spacing: -.14em;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px rgba(255,255,255,.09);
 }
-.hero-grid {
+.hero-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: clamp(32px, 7vw, 96px);
+  color: rgba(245,240,232,.72);
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+.hero-title {
+  max-width: 1500px;
+  margin-bottom: 32px;
+}
+.hero-lower {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(330px, .92fr);
-  gap: 50px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  gap: clamp(28px, 6vw, 90px);
+  align-items: end;
 }
-.hero-copy { position: relative; z-index: 2; }
-.hero-copy .lead { max-width: 680px; margin: 26px 0 32px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
-.proof-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 34px;
-  max-width: 720px;
+.hero-copy {
+  max-width: 760px;
+  color: var(--white);
+  font-size: clamp(19px, 2vw, 29px);
+  line-height: 1.36;
 }
-.proof {
-  padding: 17px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255,255,255,.06);
-  backdrop-filter: blur(18px);
-}
-.proof strong { display: block; color: #fff; font-size: 25px; letter-spacing: -.05em; }
-.proof span { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-
-.hero-showcase {
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+.hero-object {
   position: relative;
-  perspective: 1200px;
-  min-height: 560px;
+  min-height: 380px;
+  perspective: 1400px;
 }
-.showcase-card {
+.agency-card {
   position: absolute;
-  inset: 36px 0 auto;
-  min-height: 430px;
-  padding: 22px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 30px;
+  inset: 0;
+  padding: 20px;
+  border: 1px solid rgba(245,240,232,.22);
+  border-radius: 36px;
   background:
-    linear-gradient(145deg, rgba(255,255,255,.16), rgba(255,255,255,.055)),
-    radial-gradient(circle at top right, rgba(77,245,255,.22), transparent 55%);
+    linear-gradient(145deg, rgba(245,240,232,.14), rgba(245,240,232,.045)),
+    radial-gradient(circle at 75% 15%, rgba(215,255,69,.3), transparent 19rem);
   backdrop-filter: blur(22px);
-  box-shadow: var(--shadow), 0 0 80px rgba(77,245,255,.13);
-  transform: rotateY(-12deg) rotateX(7deg) rotateZ(1deg);
-  transform-style: preserve-3d;
-  animation: floatCard 6s ease-in-out infinite;
+  box-shadow: var(--shadow);
+  transform: rotateX(9deg) rotateY(-14deg) rotateZ(2deg);
+  animation: cardlift 6.5s ease-in-out infinite;
 }
-@keyframes floatCard {
-  0%, 100% { transform: rotateY(-12deg) rotateX(7deg) rotateZ(1deg) translateY(0); }
-  50% { transform: rotateY(-8deg) rotateX(4deg) rotateZ(-1deg) translateY(-18px); }
+@keyframes cardlift {
+  0%, 100% { transform: rotateX(9deg) rotateY(-14deg) rotateZ(2deg) translateY(0); }
+  50% { transform: rotateX(4deg) rotateY(-8deg) rotateZ(-1deg) translateY(-18px); }
 }
-.browser-bar {
+.mini-browser {
+  overflow: hidden;
+  min-height: 100%;
+  border: 1px solid rgba(245,240,232,.18);
+  border-radius: 27px;
+  background: #121218;
+}
+.browser-top {
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 34px;
-  padding: 0 10px;
-  border-radius: 14px;
-  background: rgba(0,0,0,.28);
-  border: 1px solid rgba(255,255,255,.12);
+  gap: 9px;
+  height: 38px;
+  padding: 0 14px;
+  background: rgba(0,0,0,.38);
 }
-.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--pink); box-shadow: 16px 0 0 var(--gold), 32px 0 0 var(--green); }
-.url {
+.browser-dots {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 16px 0 var(--acid), 32px 0 var(--green);
+}
+.browser-url {
+  width: 52%;
+  height: 10px;
   margin-left: 42px;
-  width: 55%;
-  height: 12px;
   border-radius: 999px;
-  background: rgba(255,255,255,.12);
+  background: rgba(245,240,232,.16);
 }
-.mock-hero {
-  margin-top: 18px;
-  padding: 28px;
-  min-height: 230px;
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at 70% 10%, rgba(255,209,102,.35), transparent 20rem),
-    linear-gradient(135deg, rgba(77,245,255,.24), rgba(139,92,246,.16), rgba(255,79,216,.16));
-  border: 1px solid rgba(255,255,255,.14);
-}
-.mock-kicker { width: 170px; height: 12px; border-radius: 999px; background: var(--cyan); box-shadow: 0 0 24px rgba(77,245,255,.55); }
-.mock-title { margin-top: 26px; width: 82%; height: 54px; border-radius: 18px; background: rgba(255,255,255,.88); }
-.mock-title.small { margin-top: 12px; width: 52%; height: 26px; background: rgba(255,255,255,.5); }
-.mock-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; margin-top: 18px; }
-.mock-block, .mock-side {
-  min-height: 104px;
-  border-radius: 20px;
-  background: rgba(5,9,20,.45);
-  border: 1px solid rgba(255,255,255,.12);
-}
-.mock-side { background: linear-gradient(135deg, rgba(255,209,102,.25), rgba(77,245,255,.18)); }
-.floating-pill {
-  position: absolute;
-  right: -18px;
-  bottom: 88px;
-  padding: 16px 18px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 18px;
-  background: rgba(7,9,20,.72);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 20px 60px rgba(0,0,0,.38);
-}
-.floating-pill strong { display: block; color: var(--gold); font-size: 28px; letter-spacing: -.05em; }
-.floating-pill span { color: var(--soft); font-size: 12px; font-weight: 700; text-transform: uppercase; }
-
-.glass {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.045));
-  backdrop-filter: blur(20px);
-  box-shadow: 0 18px 70px rgba(0,0,0,.3);
-}
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.why-card, .service-card, .price-card, .faq-item, .step {
-  position: relative;
-  overflow: hidden;
-  padding: 28px;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: var(--radius);
-  background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.045));
-  backdrop-filter: blur(20px);
-  box-shadow: 0 18px 70px rgba(0,0,0,.28);
-  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
-}
-.why-card::before, .service-card::before, .price-card::before, .portfolio-card::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  opacity: 0;
-  background: linear-gradient(135deg, rgba(77,245,255,.45), rgba(255,209,102,.25), rgba(255,79,216,.35));
-  filter: blur(20px);
-  transition: opacity .24s ease;
-  z-index: -1;
-}
-.why-card:hover, .service-card:hover, .price-card:hover, .portfolio-card:hover, .step:hover {
-  transform: translateY(-8px) rotateX(2deg);
-  border-color: rgba(77,245,255,.36);
-  box-shadow: 0 30px 90px rgba(0,0,0,.38), 0 0 44px rgba(77,245,255,.12);
-}
-.why-card:hover::before, .service-card:hover::before, .price-card:hover::before, .portfolio-card:hover::before { opacity: 1; }
-.icon {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  margin-bottom: 28px;
-  border-radius: 18px;
-  color: #061019;
-  background: linear-gradient(135deg, var(--cyan), var(--gold));
-  box-shadow: 0 0 32px rgba(77,245,255,.28);
-  font-weight: 900;
-}
-.why-card h3, .service-card h3 { margin-bottom: 14px; font-size: 30px; letter-spacing: -.045em; }
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-.service-card { min-height: 310px; }
-.service-card ul, .price-card ul {
-  display: grid;
-  gap: 11px;
-  margin-top: 22px;
-  list-style: none;
-}
-.service-card li, .price-card li {
-  color: var(--soft);
-  font-size: 14px;
-  line-height: 1.45;
-}
-.service-card li::before, .price-card li::before {
-  content: "+";
-  margin-right: 10px;
-  color: var(--green);
-  font-weight: 900;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-.portfolio-card {
-  position: relative;
-  display: block;
-  min-height: 470px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,.16);
-  border-radius: 30px;
-  background: rgba(255,255,255,.08);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 24px 80px rgba(0,0,0,.36);
-  transform-style: preserve-3d;
-  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
-}
-.portfolio-preview {
-  margin: 16px;
+.browser-stage {
   min-height: 310px;
-  overflow: hidden;
-  border-radius: 22px;
-  border: 1px solid rgba(255,255,255,.16);
-  background: #0c1020;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255,79,186,.38), transparent 11rem),
+    radial-gradient(circle at 20% 80%, rgba(71,215,255,.3), transparent 12rem),
+    linear-gradient(135deg, #181720, #251c38 55%, #101014);
 }
-.preview-top {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  height: 36px;
-  padding: 0 12px;
-  background: rgba(0,0,0,.34);
-}
-.preview-dots { width: 8px; height: 8px; border-radius: 50%; background: #ff5f57; box-shadow: 14px 0 #ffbd2e, 28px 0 #28c840; }
-.preview-url { margin-left: 34px; width: 48%; height: 10px; border-radius: 999px; background: rgba(255,255,255,.18); }
-.preview-body { min-height: 274px; padding: 22px; }
-.preview-a { background: radial-gradient(circle at 80% 12%, rgba(255,209,102,.38), transparent 12rem), linear-gradient(145deg, #15111c, #2a1632 52%, #101b2a); }
-.preview-b { background: radial-gradient(circle at 72% 20%, rgba(93,255,178,.34), transparent 12rem), linear-gradient(145deg, #071b19, #122b39 60%, #09101f); }
-.preview-c { background: radial-gradient(circle at 70% 12%, rgba(77,245,255,.36), transparent 12rem), linear-gradient(145deg, #0c1228, #26143c 58%, #101016); }
-.site-badge {
+.browser-label {
   display: inline-flex;
   padding: 8px 10px;
   border-radius: 999px;
-  color: #061019;
-  background: rgba(255,255,255,.88);
+  color: var(--black);
+  background: var(--acid);
   font-size: 11px;
-  font-weight: 900;
+  font-weight: 950;
   text-transform: uppercase;
-  letter-spacing: .08em;
+  letter-spacing: .12em;
 }
-.preview-headline {
-  width: 88%;
-  height: 58px;
-  margin-top: 22px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.62));
+.browser-h {
+  width: 84%;
+  height: 64px;
+  margin-top: 26px;
+  border-radius: 17px;
+  background: rgba(245,240,232,.92);
 }
-.preview-copy {
-  width: 64%;
-  height: 15px;
-  margin-top: 14px;
+.browser-p {
+  width: 58%;
+  height: 14px;
+  margin-top: 16px;
   border-radius: 999px;
-  background: rgba(255,255,255,.28);
-  box-shadow: 0 24px 0 rgba(255,255,255,.18);
+  background: rgba(245,240,232,.33);
+  box-shadow: 0 24px rgba(245,240,232,.2);
 }
-.preview-layout {
+.browser-tiles {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr .85fr;
   gap: 12px;
   margin-top: 58px;
 }
-.preview-tile {
-  min-height: 70px;
-  border-radius: 16px;
-  background: rgba(255,255,255,.13);
-  border: 1px solid rgba(255,255,255,.14);
+.browser-tile {
+  min-height: 82px;
+  border: 1px solid rgba(245,240,232,.16);
+  border-radius: 18px;
+  background: rgba(7,7,10,.42);
 }
-.portfolio-content { padding: 0 24px 24px; }
-.portfolio-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-.tag {
-  display: inline-flex;
-  padding: 7px 9px;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 999px;
-  color: var(--soft);
-  background: rgba(255,255,255,.07);
-  font-size: 12px;
-  font-weight: 800;
-}
-.portfolio-content h3 { margin-bottom: 10px; font-size: 32px; }
-.portfolio-content p { margin-bottom: 18px; }
-.mini-cta { width: fit-content; padding: 12px 15px; font-size: 13px; }
-
-.steps {
+.hero-stamp {
+  position: absolute;
+  right: -8px;
+  bottom: -18px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  counter-reset: step;
+  place-items: center;
+  width: 142px;
+  height: 142px;
+  border: 1px solid rgba(245,240,232,.28);
+  border-radius: 50%;
+  color: var(--black);
+  background: var(--white);
+  font-size: 13px;
+  font-weight: 950;
+  text-align: center;
+  line-height: 1.05;
+  text-transform: uppercase;
+  animation: spin 18s linear infinite;
 }
-.step { min-height: 250px; }
-.step::before {
-  counter-increment: step;
-  content: "0" counter(step);
-  display: block;
-  margin-bottom: 38px;
-  color: rgba(255,255,255,.24);
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: -.08em;
-}
-.step h3 { margin-bottom: 12px; font-size: 26px; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-.prices {
-  background:
-    radial-gradient(circle at 50% 0%, rgba(255,209,102,.16), transparent 35rem),
-    linear-gradient(180deg, transparent, rgba(255,255,255,.035), transparent);
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr);
+  gap: clamp(34px, 6vw, 90px);
+  align-items: start;
 }
-.price-grid {
+.about-copy {
+  display: grid;
+  gap: 24px;
+  max-width: 720px;
+}
+.metric-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 12px;
+  margin-top: 36px;
 }
-.price-card { padding: 32px; }
-.price-card.featured {
-  border-color: rgba(255,209,102,.42);
-  background: linear-gradient(145deg, rgba(255,209,102,.13), rgba(255,255,255,.06));
-  transform: translateY(-12px);
+.metric {
+  min-height: 164px;
+  padding: 20px;
+  border: 1px solid var(--line-dark);
+  border-radius: 999px 999px 28px 28px;
+  background: rgba(7,7,10,.04);
 }
-.price-label { color: var(--cyan); font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: .14em; }
-.price { margin: 18px 0; font-size: 58px; font-weight: 900; letter-spacing: -.07em; }
-.price small { color: var(--muted); font-size: 16px; letter-spacing: 0; }
-.price-card .btn { width: 100%; margin-top: 26px; }
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.faq-item h3 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  letter-spacing: -.04em;
-}
-
-.contact {
-  padding-bottom: 70px;
-}
-.contact-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 390px;
-  gap: 28px;
-  padding: 34px;
-  border-radius: 34px;
-  border: 1px solid rgba(255,255,255,.18);
-  background:
-    radial-gradient(circle at 10% 10%, rgba(77,245,255,.22), transparent 28rem),
-    linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.055));
-  backdrop-filter: blur(22px);
-  box-shadow: var(--shadow);
-}
-.contact-panel h2 { margin-bottom: 20px; }
-.contact-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-.contact-card {
-  display: grid;
-  gap: 14px;
-  align-content: start;
-  padding: 22px;
-  border-radius: 24px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(0,0,0,.2);
-}
-.contact-line {
-  padding: 16px;
-  border-radius: 18px;
-  background: rgba(255,255,255,.075);
-  border: 1px solid rgba(255,255,255,.12);
-}
-.contact-line span {
+.metric strong {
   display: block;
-  margin-bottom: 6px;
-  color: var(--muted);
+  font-size: clamp(34px, 4vw, 64px);
+  line-height: .9;
+  letter-spacing: -.08em;
+}
+.metric span {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted-dark);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-.contact-line strong { color: #fff; font-size: 18px; }
 
-.footer {
-  padding: 34px 5vw 46px;
-  color: var(--muted);
-  border-top: 1px solid rgba(255,255,255,.1);
+.service-list {
+  display: grid;
+  border-top: 1px solid var(--line);
 }
-.footer-inner {
+.service-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) minmax(260px, 430px);
+  gap: 28px;
+  align-items: center;
+  padding: clamp(28px, 4.5vw, 62px) 0;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.service-row::before {
+  content: "";
+  position: absolute;
+  inset: 10px -20px;
+  z-index: -1;
+  border-radius: 34px;
+  background: linear-gradient(90deg, rgba(215,255,69,.17), rgba(71,215,255,.13), rgba(255,79,186,.12));
+  opacity: 0;
+  transform: scaleX(.96);
+  transition: opacity .24s ease, transform .24s ease;
+}
+.service-row:hover::before { opacity: 1; transform: scaleX(1); }
+.service-index {
+  color: var(--acid);
+  font-size: 18px;
+  font-weight: 950;
+}
+.service-row h3 { font-size: clamp(42px, 6.8vw, 112px); }
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  display: inline-flex;
+  padding: 9px 11px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: rgba(245,240,232,.78);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.work-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: end;
+  margin-bottom: 46px;
+}
+.work-board {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  grid-auto-rows: minmax(280px, auto);
+  gap: 18px;
+}
+.project {
+  position: relative;
+  min-height: 560px;
+  display: grid;
+  align-content: end;
+  overflow: hidden;
+  border-radius: 34px;
+  border: 1px solid rgba(7,7,10,.18);
+  color: var(--white);
+  background: #111;
+  box-shadow: 0 28px 80px rgba(7,7,10,.22);
+  transform-style: preserve-3d;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.project.small { min-height: 410px; }
+.project.wide { grid-column: 1 / -1; min-height: 470px; }
+.project:hover {
+  transform: translateY(-10px) rotateX(2deg);
+  box-shadow: 0 38px 110px rgba(7,7,10,.32);
+}
+.project-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255,255,255,.28), transparent 16rem),
+    linear-gradient(135deg, #211515, #4a192a 45%, #161a22);
+  transition: transform .45s ease, filter .45s ease;
+}
+.project:nth-child(2) .project-bg {
+  background:
+    radial-gradient(circle at 70% 18%, rgba(45,255,154,.32), transparent 14rem),
+    linear-gradient(135deg, #071c18, #123634 52%, #11151c);
+}
+.project:nth-child(3) .project-bg {
+  background:
+    radial-gradient(circle at 78% 20%, rgba(71,215,255,.32), transparent 16rem),
+    linear-gradient(135deg, #10172c, #291c48 48%, #131318);
+}
+.project:hover .project-bg { transform: scale(1.06); filter: saturate(1.2); }
+.project-preview {
+  position: absolute;
+  inset: 24px 24px auto;
+  min-height: 330px;
+  overflow: hidden;
+  border: 1px solid rgba(245,240,232,.22);
+  border-radius: 26px;
+  background: rgba(7,7,10,.3);
+  backdrop-filter: blur(12px);
+}
+.project.small .project-preview { min-height: 220px; }
+.project.wide .project-preview { inset: 24px 24px 140px; min-height: auto; }
+.preview-bar {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  background: rgba(0,0,0,.34);
+}
+.preview-ui {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 14px;
+  min-height: 292px;
+  padding: 20px;
+}
+.project.small .preview-ui { min-height: 186px; }
+.project.wide .preview-ui { min-height: 280px; grid-template-columns: 1.4fr .6fr; }
+.mock-panel {
+  border: 1px solid rgba(245,240,232,.16);
+  border-radius: 20px;
+  background: rgba(245,240,232,.12);
+}
+.mock-panel.hero-panel {
+  padding: 22px;
+  background: rgba(245,240,232,.18);
+}
+.fake-badge {
+  width: 130px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--acid);
+}
+.fake-head {
+  width: 82%;
+  height: 62px;
+  margin-top: 22px;
+  border-radius: 16px;
+  background: var(--white);
+}
+.fake-line {
+  width: 56%;
+  height: 13px;
+  margin-top: 16px;
+  border-radius: 999px;
+  background: rgba(245,240,232,.42);
+  box-shadow: 0 24px rgba(245,240,232,.22);
+}
+.project-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+  background: linear-gradient(to top, rgba(0,0,0,.72), transparent);
+}
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project-title-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+}
+.project-title-row h3 { font-size: clamp(34px, 5vw, 86px); }
+.project-arrow {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  color: var(--black);
+  background: var(--white);
+  font-size: 24px;
+  font-weight: 950;
+  transition: transform .24s ease, background .24s ease;
+}
+.project:hover .project-arrow { transform: rotate(-35deg) scale(1.06); background: var(--acid); }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.step {
+  min-height: 360px;
+  padding: 26px;
+  background: var(--black);
+  transition: background .22s ease, color .22s ease;
+}
+.step:hover { color: var(--black); background: var(--acid); }
+.step-no {
+  display: block;
+  margin-bottom: 110px;
+  font-size: 15px;
+  font-weight: 950;
+}
+.step h3 { margin-bottom: 16px; font-size: clamp(28px, 3.2vw, 52px); }
+.step:hover p { color: rgba(7,7,10,.74); }
+
+.price-stage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 44px;
+}
+.price-card {
+  position: relative;
+  min-height: 480px;
+  overflow: hidden;
+  padding: 26px;
+  border: 1px solid var(--line-dark);
+  border-radius: 34px;
+  background: rgba(7,7,10,.045);
+  transition: transform .24s ease, background .24s ease;
+}
+.price-card:hover { transform: translateY(-10px); background: rgba(7,7,10,.08); }
+.price-card.featured {
+  color: var(--white);
+  background: var(--black);
+  border-color: var(--black);
+  box-shadow: var(--shadow);
+}
+.price-card h3 { font-size: clamp(38px, 5vw, 78px); }
+.price {
+  margin: 30px 0;
+  font-size: clamp(58px, 8vw, 118px);
+  font-weight: 950;
+  line-height: .85;
+  letter-spacing: -.1em;
+}
+.price small {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.price-card ul {
+  display: grid;
+  gap: 11px;
+  margin: 28px 0 34px;
+  list-style: none;
+}
+.price-card li {
+  color: var(--muted-dark);
+  font-weight: 750;
+}
+.price-card.featured li { color: rgba(245,240,232,.74); }
+.price-card li::before {
+  content: "/";
+  margin-right: 11px;
+  color: var(--orange);
+  font-weight: 950;
+}
+.price-card .btn { position: absolute; left: 26px; right: 26px; bottom: 26px; }
+
+.faq-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+.faq-item {
+  display: grid;
+  grid-template-columns: minmax(260px, .7fr) minmax(0, 1fr);
+  gap: 34px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+.faq-item h3 { font-size: clamp(26px, 3.8vw, 58px); }
+
+.contact-section {
+  min-height: 100svh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+.contact-section::before {
+  content: "LET'S BUILD";
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+  color: rgba(245,240,232,.045);
+  font-size: clamp(120px, 24vw, 400px);
+  font-weight: 950;
+  letter-spacing: -.13em;
+  white-space: nowrap;
+}
+.contact-inner {
+  position: relative;
+  padding: clamp(90px, 12vw, 180px) 0 40px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  gap: clamp(34px, 6vw, 90px);
+  align-items: end;
+}
+.contact-title {
+  font-size: clamp(70px, 15vw, 238px);
+}
+.contact-card {
+  padding: 28px;
+  border: 1px solid rgba(245,240,232,.18);
+  border-radius: 36px;
+  background: rgba(245,240,232,.08);
+  backdrop-filter: blur(22px);
+  box-shadow: var(--shadow);
+}
+.contact-actions {
+  display: grid;
+  gap: 12px;
+  margin: 26px 0;
+}
+.contact-line {
   display: flex;
   justify-content: space-between;
   gap: 18px;
-  width: min(1180px, 100%);
-  margin: 0 auto;
+  padding: 18px 0;
+  border-top: 1px solid rgba(245,240,232,.14);
+  color: rgba(245,240,232,.78);
+}
+.contact-line strong { color: var(--white); text-align: right; }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 90px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(245,240,232,.14);
+  color: rgba(245,240,232,.62);
   font-size: 14px;
 }
 
@@ -656,41 +826,45 @@ p { color: var(--muted); line-height: 1.7; }
   position: fixed;
   right: 22px;
   bottom: 22px;
-  z-index: 70;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 62px;
-  height: 62px;
-  border-radius: 22px;
-  color: #061019;
-  background: linear-gradient(135deg, var(--green), var(--cyan));
-  box-shadow: 0 20px 60px rgba(93,255,178,.28), 0 0 34px rgba(77,245,255,.22);
-  transition: transform .2s ease;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: var(--black);
+  background: var(--acid);
+  box-shadow: 0 18px 54px rgba(215,255,69,.32), 0 0 0 1px rgba(7,7,10,.1) inset;
+  transition: transform .22s ease;
 }
-.wa-float:hover { transform: translateY(-4px) scale(1.04); }
+.wa-float:hover { transform: translateY(-5px) scale(1.05); }
 
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity .7s ease, transform .7s ease;
+  transform: translateY(42px);
+  transition: opacity .8s ease, transform .8s ease;
 }
-.reveal.in-view { opacity: 1; transform: translateY(0); }
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-@media (max-width: 1040px) {
+@media (max-width: 1180px) {
   body { cursor: auto; }
   .cursor-dot, .cursor-ring { display: none; }
-  .nav { border-radius: 26px; align-items: flex-start; }
+  .nav {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-radius: 28px;
+  }
   .mobile-toggle {
     display: inline-flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255,255,255,.14);
-    border-radius: 16px;
-    color: #fff;
-    background: rgba(255,255,255,.08);
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid rgba(245,240,232,.18);
+    border-radius: 999px;
+    color: var(--white);
+    background: rgba(245,240,232,.08);
   }
   .nav-links {
     position: absolute;
@@ -699,35 +873,45 @@ p { color: var(--muted); line-height: 1.7; }
     right: 0;
     display: none;
     padding: 12px;
+    border: 1px solid rgba(245,240,232,.16);
     border-radius: 24px;
-    background: rgba(7,9,20,.9);
-    border: 1px solid rgba(255,255,255,.14);
-    backdrop-filter: blur(20px);
+    background: rgba(7,7,10,.94);
+    backdrop-filter: blur(22px);
   }
   .nav.is-open .nav-links { display: grid; }
-  .nav-links a { padding: 13px 16px; }
+  .nav-links a { padding: 14px 16px; }
   .nav-cta { display: none; }
-  .hero-grid, .section-head, .contact-panel { grid-template-columns: 1fr; }
-  .hero-showcase { min-height: 500px; }
-  .services-grid, .steps { grid-template-columns: repeat(2, 1fr); }
-  .portfolio-grid, .why-grid, .price-grid { grid-template-columns: 1fr; }
-  .price-card.featured { transform: none; }
+  .section-shell { grid-template-columns: 1fr; }
+  .section-no { position: static; }
+  .hero-lower, .about-grid, .work-intro, .contact-grid { grid-template-columns: 1fr; }
+  .hero-object { min-height: 450px; }
+  .service-row { grid-template-columns: 70px 1fr; }
+  .service-tags { grid-column: 2; }
+  .work-board, .price-stage { grid-template-columns: 1fr; }
+  .project.wide { grid-column: auto; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 680px) {
-  section { padding: 78px 20px; }
-  .nav { inset: 12px 14px auto; padding-left: 14px; }
+@media (max-width: 720px) {
+  .wrap { padding: 0 18px; }
+  .nav { top: 12px; left: 12px; right: 12px; padding-left: 14px; }
   .brand span:last-child { display: none; }
-  .hero { padding-top: 130px; }
-  .hero-grid { gap: 24px; }
-  .hero-showcase { min-height: 430px; }
-  .showcase-card { inset: 10px 0 auto; min-height: 380px; padding: 14px; transform: none; }
-  .floating-pill { right: 10px; bottom: 22px; }
-  .proof-row, .services-grid, .steps, .faq-grid { grid-template-columns: 1fr; }
-  .portfolio-card { min-height: auto; }
-  .contact-panel { padding: 22px; }
-  .footer-inner { display: grid; }
-  .wa-float { width: 56px; height: 56px; right: 16px; bottom: 16px; }
+  .hero { padding-top: 120px; }
+  .hero-topline { display: grid; gap: 10px; }
+  .hero-object { min-height: 390px; }
+  .agency-card { transform: none; }
+  .hero-stamp { width: 112px; height: 112px; font-size: 11px; }
+  .metric-row, .process-grid { grid-template-columns: 1fr; }
+  .service-row { grid-template-columns: 1fr; }
+  .service-tags { grid-column: auto; }
+  .project, .project.small, .project.wide { min-height: 560px; }
+  .project-preview, .project.wide .project-preview { inset: 16px 16px auto; min-height: 300px; }
+  .preview-ui { grid-template-columns: 1fr; }
+  .project-title-row { align-items: start; }
+  .project-arrow { width: 54px; height: 54px; }
+  .faq-item { grid-template-columns: 1fr; gap: 14px; }
+  .footer { display: grid; }
+  .wa-float { right: 16px; bottom: 16px; width: 58px; height: 58px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -751,288 +935,290 @@ p { color: var(--muted); line-height: 1.7; }
   </a>
   <button class="mobile-toggle" type="button" aria-label="Menu openen" aria-expanded="false">Menu</button>
   <ul class="nav-links">
-    <li><a href="#waarom">Waarom</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#diensten">Diensten</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#werkwijze">Werkwijze</a></li>
+    <li><a href="#werk">Werk</a></li>
+    <li><a href="#proces">Proces</a></li>
     <li><a href="#prijzen">Prijzen</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a class="nav-cta" href="https://wa.me/31681511950">WhatsApp</a>
+  <a class="nav-cta" href="https://wa.me/31681511950">Let's talk</a>
 </nav>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow reveal">Websites voor lokale ondernemers in Brabant</div>
-        <h1 class="reveal">Niet gewoon online. <span class="gradient-text">Onmisbaar</span> online.</h1>
-        <p class="lead reveal">Sitemissie bouwt premium websites die direct vertrouwen pakken, klanten laten doorklikken en aanvragen opleveren. Scherp design, snelle techniek en korte lijnen met Jordy.</p>
-        <div class="hero-actions reveal">
-          <a class="btn" href="https://wa.me/31681511950">Plan via WhatsApp</a>
-          <a class="btn secondary" href="#portfolio">Bekijk voorbeelden</a>
+  <section class="hero dark" aria-label="Hero">
+    <div class="hero-bg-word">STUDIO</div>
+    <div class="wrap">
+      <div class="hero-topline reveal">
+        <span>Websites laten maken / Brabant</span>
+        <span>Design + copy + conversie</span>
+        <span>06 81 51 19 50</span>
+      </div>
+      <h1 class="hero-title reveal">Websites voor ondernemers die <span class="impact">niet klein willen lijken.</span></h1>
+      <div class="hero-lower">
+        <div>
+          <p class="hero-copy reveal">Sitemissie bouwt premium websites voor lokale bedrijven. Groot in uitstraling. Snel in techniek. Duidelijk in doel: meer aanvragen.</p>
+          <div class="hero-actions reveal">
+            <a class="btn" href="https://wa.me/31681511950">Start via WhatsApp</a>
+            <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+          </div>
         </div>
-        <div class="proof-row reveal" aria-label="Belangrijke voordelen">
-          <div class="proof"><strong>7 dagen</strong><span>kan al live</span></div>
-          <div class="proof"><strong>&euro;299+</strong><span>heldere startprijs</span></div>
-          <div class="proof"><strong>1-op-1</strong><span>direct met maker</span></div>
+        <div class="hero-object reveal" aria-hidden="true">
+          <div class="agency-card">
+            <div class="mini-browser">
+              <div class="browser-top"><span class="browser-dots"></span><span class="browser-url"></span></div>
+              <div class="browser-stage">
+                <span class="browser-label">Local hero</span>
+                <div class="browser-h"></div>
+                <div class="browser-p"></div>
+                <div class="browser-tiles">
+                  <div class="browser-tile"></div>
+                  <div class="browser-tile"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-stamp">Premium static websites</div>
         </div>
       </div>
-      <div class="hero-showcase reveal" aria-hidden="true">
-        <div class="showcase-card">
-          <div class="browser-bar"><span class="dot"></span><span class="url"></span></div>
-          <div class="mock-hero">
-            <div class="mock-kicker"></div>
-            <div class="mock-title"></div>
-            <div class="mock-title small"></div>
-            <div class="mock-grid">
-              <div class="mock-block"></div>
-              <div class="mock-side"></div>
+    </div>
+  </section>
+
+  <section class="light" id="about">
+    <div class="wrap">
+      <div class="section-shell">
+        <div class="section-no">01</div>
+        <div>
+          <div class="section-kicker reveal">About / Waarom Sitemissie</div>
+          <div class="about-grid">
+            <div>
+              <h2 class="reveal">Je site is geen visitekaartje. Het is je beste verkoper.</h2>
+              <div class="metric-row reveal" aria-label="Sitemissie voordelen">
+                <div class="metric"><strong>7d</strong><span>kan al live</span></div>
+                <div class="metric"><strong>1:1</strong><span>direct met Jordy</span></div>
+                <div class="metric"><strong>24/7</strong><span>aanvragen vangen</span></div>
+              </div>
+            </div>
+            <div class="about-copy reveal">
+              <p>Lokale klanten kijken snel. Binnen seconden voelen ze of je professioneel bent. Daarom ontwerp ik websites die direct vertrouwen geven, helder vertellen wat je doet en bezoekers naar bellen of WhatsApp sturen.</p>
+              <p>Geen brave template met een logo erop. Wel een scherpe online presentatie voor schilders, hoveniers, salons, vakmensen en dienstverleners in Brabant.</p>
             </div>
           </div>
         </div>
-        <div class="floating-pill"><strong>+aanvragen</strong><span>gebouwd om te converteren</span></div>
       </div>
     </div>
   </section>
 
-  <section id="waarom">
+  <section class="dark" id="diensten">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-shell">
+        <div class="section-no">02</div>
         <div>
-          <div class="eyebrow reveal">Waarom Sitemissie</div>
-          <h2 class="reveal">Je website moet verkopen voordat jij opneemt.</h2>
-        </div>
-        <p class="lead reveal">Lokale klanten beslissen snel. Daarom krijgt je site een premium eerste indruk, glasheldere boodschap en contactknoppen die niet te missen zijn.</p>
-      </div>
-      <div class="why-grid">
-        <article class="why-card reveal">
-          <div class="icon">01</div>
-          <h3>Direct vertrouwen</h3>
-          <p>Een uitstraling die groter voelt dan je bedrijf, zonder nep te worden. Perfect voor vakmensen, salons, hoveniers, schilders en lokale dienstverleners.</p>
-        </article>
-        <article class="why-card reveal">
-          <div class="icon">02</div>
-          <h3>Meer aanvragen</h3>
-          <p>Elke sectie stuurt naar actie: bellen, appen of een offerte aanvragen. Minder ruis, meer serieuze klanten.</p>
-        </article>
-        <article class="why-card reveal">
-          <div class="icon">03</div>
-          <h3>Snel geregeld</h3>
-          <p>Geen maandenlange bureauroute. Jij levert input, ik bouw, we scherpen aan en je staat strak online.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="diensten">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow reveal">Diensten</div>
-          <h2 class="reveal">Alles wat je nodig hebt om serieus gekozen te worden.</h2>
-        </div>
-        <p class="lead reveal">Van eerste indruk tot contactmoment. Sitemissie maakt je online aanwezigheid snel, premium en commercieel scherp.</p>
-      </div>
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <div class="icon">UX</div>
-          <h3>Website design</h3>
-          <p>Een moderne site die past bij je vak, regio en doelgroep.</p>
-          <ul><li>Grote typografie</li><li>Premium visuals</li><li>Mobiel perfect</li></ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="icon">SEO</div>
-          <h3>Lokale vindbaarheid</h3>
-          <p>Gebouwd met zoekmachines en lokale klanten in gedachten.</p>
-          <ul><li>Brabant focus</li><li>Slimme metadata</li><li>Snelle structuur</li></ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="icon">CTA</div>
-          <h3>Conversie</h3>
-          <p>Niet alleen mooi, maar gemaakt om contact op te leveren.</p>
-          <ul><li>WhatsApp knoppen</li><li>Bel-links</li><li>Heldere routes</li></ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="icon">GO</div>
-          <h3>Livegang</h3>
-          <p>Technisch strak en klaar voor Vercel of je eigen domein.</p>
-          <ul><li>Statische site</li><li>Snel laden</li><li>Netjes afgerond</li></ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow reveal">Portfolio / voorbeeldsites</div>
-          <h2 class="reveal">Preview-cards die al laten voelen wat je krijgt.</h2>
-        </div>
-        <p class="lead reveal">Geen witte vakken. Elke preview laat een richting zien: sfeer, layout, knoppen, badges en een echte website-ervaring.</p>
-      </div>
-      <div class="portfolio-grid">
-        <a class="portfolio-card reveal" href="https://v0-schilderwerken-d-a-damen-website.vercel.app/" target="_blank" rel="noopener">
-          <div class="portfolio-preview preview-a">
-            <div class="preview-top"><span class="preview-dots"></span><span class="preview-url"></span></div>
-            <div class="preview-body">
-              <span class="site-badge">Schilderbedrijf</span>
-              <div class="preview-headline"></div>
-              <div class="preview-copy"></div>
-              <div class="preview-layout"><div class="preview-tile"></div><div class="preview-tile"></div></div>
-            </div>
+          <div class="section-kicker reveal">What I Do / Diensten</div>
+          <h2 class="reveal">Van eerste klik naar serieuze aanvraag.</h2>
+          <div class="service-list reveal">
+            <article class="service-row">
+              <span class="service-index">2.1</span>
+              <h3>Design direction</h3>
+              <div class="service-tags"><span class="tag">Premium look</span><span class="tag">Mobiel sterk</span><span class="tag">Merkgevoel</span></div>
+            </article>
+            <article class="service-row">
+              <span class="service-index">2.2</span>
+              <h3>Website build</h3>
+              <div class="service-tags"><span class="tag">Statisch</span><span class="tag">Snel</span><span class="tag">Vercel-ready</span></div>
+            </article>
+            <article class="service-row">
+              <span class="service-index">2.3</span>
+              <h3>Commercial copy</h3>
+              <div class="service-tags"><span class="tag">Kort</span><span class="tag">Lokaal</span><span class="tag">Aanvraaggericht</span></div>
+            </article>
+            <article class="service-row">
+              <span class="service-index">2.4</span>
+              <h3>Contact flow</h3>
+              <div class="service-tags"><span class="tag">WhatsApp</span><span class="tag">Bel-links</span><span class="tag">Offerteknoppen</span></div>
+            </article>
           </div>
-          <div class="portfolio-content">
-            <div class="portfolio-meta"><span class="tag">Vakwerk</span><span class="tag">Offertegericht</span></div>
-            <h3>D.A. Damen Schilderwerken</h3>
-            <p>Een vertrouwenwekkende site voor lokaal vakwerk, met duidelijke diensten en snelle contactroute.</p>
-            <span class="mini-cta">Live bekijken</span>
-          </div>
-        </a>
-        <a class="portfolio-card reveal" href="#contact">
-          <div class="portfolio-preview preview-b">
-            <div class="preview-top"><span class="preview-dots"></span><span class="preview-url"></span></div>
-            <div class="preview-body">
-              <span class="site-badge">Hovenier</span>
-              <div class="preview-headline"></div>
-              <div class="preview-copy"></div>
-              <div class="preview-layout"><div class="preview-tile"></div><div class="preview-tile"></div></div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <div class="portfolio-meta"><span class="tag">Groen</span><span class="tag">Seizoenswerk</span></div>
-            <h3>Hovenier preview</h3>
-            <p>Een stevige eerste indruk met projecten, pakketten en een offerteknop die direct zichtbaar is.</p>
-            <span class="mini-cta">Zoiets laten maken</span>
-          </div>
-        </a>
-        <a class="portfolio-card reveal" href="#contact">
-          <div class="portfolio-preview preview-c">
-            <div class="preview-top"><span class="preview-dots"></span><span class="preview-url"></span></div>
-            <div class="preview-body">
-              <span class="site-badge">Salon</span>
-              <div class="preview-headline"></div>
-              <div class="preview-copy"></div>
-              <div class="preview-layout"><div class="preview-tile"></div><div class="preview-tile"></div></div>
-            </div>
-          </div>
-          <div class="portfolio-content">
-            <div class="portfolio-meta"><span class="tag">Boekingen</span><span class="tag">Premium look</span></div>
-            <h3>Salon preview</h3>
-            <p>Een luxe uitstraling voor afspraakgedreven ondernemers die online meteen professioneel willen voelen.</p>
-            <span class="mini-cta">Start gesprek</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="werkwijze">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow reveal">Werkwijze</div>
-          <h2 class="reveal">Kort, duidelijk en zonder bureaugedoe.</h2>
         </div>
-        <p class="lead reveal">Je weet steeds waar je aan toe bent. Geen mistige trajecten, wel snel schakelen en strak opleveren.</p>
-      </div>
-      <div class="steps">
-        <article class="step reveal"><h3>Gesprek</h3><p>We bepalen wat je klanten moeten zien, voelen en doen.</p></article>
-        <article class="step reveal"><h3>Richting</h3><p>Ik vertaal je aanbod naar een sterke structuur en premium uitstraling.</p></article>
-        <article class="step reveal"><h3>Bouw</h3><p>De site wordt als statische, snelle website uitgewerkt en aangescherpt.</p></article>
-        <article class="step reveal"><h3>Live</h3><p>Je krijgt een website die klaar is om gedeeld, gevonden en gebruikt te worden.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="prijzen" class="prices">
+  <section class="light" id="werk">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-shell">
+        <div class="section-no">03</div>
         <div>
-          <div class="eyebrow reveal">Prijzen vanaf</div>
-          <h2 class="reveal">Premium kan betaalbaar beginnen.</h2>
+          <div class="section-kicker reveal">Featured Work / Voorbeeldsites</div>
+          <div class="work-intro">
+            <h2 class="reveal">Geen lege blokken. Wel mini-sites die iets beloven.</h2>
+            <p class="reveal">Elke kaart is een visuele richting: browser-frame, layout, labels, knoppen en sfeer. Zo zie je voor het klikken al wat voor niveau je mag verwachten.</p>
+          </div>
+          <div class="work-board">
+            <a class="project reveal" href="https://v0-schilderwerken-d-a-damen-website.vercel.app/" target="_blank" rel="noopener">
+              <div class="project-bg"></div>
+              <div class="project-preview">
+                <div class="preview-bar"><span class="browser-dots"></span><span class="browser-url"></span></div>
+                <div class="preview-ui">
+                  <div class="mock-panel hero-panel">
+                    <div class="fake-badge"></div>
+                    <div class="fake-head"></div>
+                    <div class="fake-line"></div>
+                  </div>
+                  <div class="mock-panel"></div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span class="tag">Schilderbedrijf</span><span class="tag">Offerteflow</span></div>
+                <div class="project-title-row"><h3>D.A. Damen</h3><span class="project-arrow">↗</span></div>
+                <p>Vakwerk-site met stevige eerste indruk, diensten en duidelijke contactroute.</p>
+              </div>
+            </a>
+            <a class="project small reveal" href="#contact">
+              <div class="project-bg"></div>
+              <div class="project-preview">
+                <div class="preview-bar"><span class="browser-dots"></span><span class="browser-url"></span></div>
+                <div class="preview-ui">
+                  <div class="mock-panel hero-panel">
+                    <div class="fake-badge"></div>
+                    <div class="fake-head"></div>
+                    <div class="fake-line"></div>
+                  </div>
+                  <div class="mock-panel"></div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span class="tag">Hovenier</span><span class="tag">Projecten</span></div>
+                <div class="project-title-row"><h3>Groen preview</h3><span class="project-arrow">↘</span></div>
+                <p>Voor ondernemers die kwaliteit willen laten zien voordat iemand belt.</p>
+              </div>
+            </a>
+            <a class="project small wide reveal" href="#contact">
+              <div class="project-bg"></div>
+              <div class="project-preview">
+                <div class="preview-bar"><span class="browser-dots"></span><span class="browser-url"></span></div>
+                <div class="preview-ui">
+                  <div class="mock-panel hero-panel">
+                    <div class="fake-badge"></div>
+                    <div class="fake-head"></div>
+                    <div class="fake-line"></div>
+                  </div>
+                  <div class="mock-panel"></div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span class="tag">Salon</span><span class="tag">Boekingen</span><span class="tag">Luxe</span></div>
+                <div class="project-title-row"><h3>Beauty booking</h3><span class="project-arrow">→</span></div>
+                <p>Een premium afspraak-site voor salons, coaches en persoonlijke dienstverleners.</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <p class="lead reveal">Heldere pakketten voor lokale ondernemers. We kiezen samen wat logisch is voor jouw bedrijf en groeifase.</p>
-      </div>
-      <div class="price-grid">
-        <article class="price-card reveal">
-          <div class="price-label">Starter</div>
-          <div class="price">&euro;299 <small>vanaf</small></div>
-          <p>Voor wie snel professioneel online wil.</p>
-          <ul><li>One-page website</li><li>Mobiel responsive</li><li>WhatsApp en belknoppen</li></ul>
-          <a class="btn secondary" href="https://wa.me/31681511950">Vraag starter aan</a>
-        </article>
-        <article class="price-card featured reveal">
-          <div class="price-label">Populair</div>
-          <div class="price">&euro;499 <small>vanaf</small></div>
-          <p>Meer secties, sterkere verkoop en rijkere uitstraling.</p>
-          <ul><li>Premium designrichting</li><li>Diensten en portfolio</li><li>SEO basis voor Brabant</li></ul>
-          <a class="btn" href="https://wa.me/31681511950">Kies populair</a>
-        </article>
-        <article class="price-card reveal">
-          <div class="price-label">Premium</div>
-          <div class="price">&euro;799 <small>vanaf</small></div>
-          <p>Voor ondernemers die echt willen opvallen.</p>
-          <ul><li>Extra visuele impact</li><li>Conversie-copy</li><li>Uitgebreide afwerking</li></ul>
-          <a class="btn secondary" href="tel:+31681511950">Bel over premium</a>
-        </article>
       </div>
     </div>
   </section>
 
-  <section id="faq">
+  <section class="dark" id="proces">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-shell">
+        <div class="section-no">04</div>
         <div>
-          <div class="eyebrow reveal">Veelgestelde vragen</div>
-          <h2 class="reveal">Snel antwoord. Dan doorpakken.</h2>
+          <div class="section-kicker reveal">Proces / Werkwijze</div>
+          <h2 class="reveal">Snel schakelen. Strak opleveren.</h2>
+          <div class="process-grid reveal">
+            <article class="step"><span class="step-no">01</span><h3>Richting</h3><p>We bepalen aanbod, doelgroep en gewenste uitstraling.</p></article>
+            <article class="step"><span class="step-no">02</span><h3>Concept</h3><p>Ik maak de structuur, toon en visuele lijn scherp.</p></article>
+            <article class="step"><span class="step-no">03</span><h3>Bouw</h3><p>Alles wordt inline en statisch opgebouwd voor snelle hosting.</p></article>
+            <article class="step"><span class="step-no">04</span><h3>Live</h3><p>Je site staat klaar voor klanten, Google en Vercel.</p></article>
+          </div>
         </div>
-        <p class="lead reveal">Twijfel je wat je nodig hebt? App of bel. Dan weet je meestal binnen een paar minuten welke route past.</p>
-      </div>
-      <div class="faq-grid">
-        <article class="faq-item reveal"><h3>Voor wie bouw je websites?</h3><p>Voor lokale ondernemers in Brabant: vakmensen, dienstverleners, salons, winkels en kleine bedrijven die professioneler online willen staan.</p></article>
-        <article class="faq-item reveal"><h3>Hoe snel kan mijn site live?</h3><p>Bij een duidelijke scope kan een eerste versie snel staan. Voor kleinere websites is live binnen 7 dagen vaak haalbaar.</p></article>
-        <article class="faq-item reveal"><h3>Kan ik meteen gebeld of geappt worden?</h3><p>Ja. Bel- en WhatsApp-links worden prominent verwerkt, zodat klanten meteen contact kunnen opnemen via 06 81 51 19 50.</p></article>
-        <article class="faq-item reveal"><h3>Werkt dit op mobiel?</h3><p>Ja. De site wordt mobiel-first gecontroleerd, want je klanten kijken waarschijnlijk vaker op hun telefoon dan op desktop.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section class="light" id="prijzen">
     <div class="wrap">
-      <div class="contact-panel reveal">
+      <div class="section-shell">
+        <div class="section-no">05</div>
         <div>
-          <div class="eyebrow">Contact</div>
-          <h2>Klaar voor een website die niet verlegen binnenkomt?</h2>
-          <p class="lead">Bel of app Jordy. Vertel wat je doet, wat je wilt uitstralen en welke klanten je wilt aantrekken. Dan maken we er iets sterks van.</p>
+          <div class="section-kicker reveal">Prijzen vanaf</div>
+          <h2 class="reveal">High-end gevoel. Heldere instap.</h2>
+          <div class="price-stage">
+            <article class="price-card reveal">
+              <h3>Starter</h3>
+              <div class="price">&euro;299 <small>vanaf</small></div>
+              <p>Voor ondernemers die snel professioneel online willen.</p>
+              <ul><li>One-page website</li><li>Mobiel responsive</li><li>WhatsApp en bellen</li></ul>
+              <a class="btn dark-btn" href="https://wa.me/31681511950">Vraag aan</a>
+            </article>
+            <article class="price-card featured reveal">
+              <h3>Studio</h3>
+              <div class="price">&euro;499 <small>vanaf</small></div>
+              <p>Meer impact, meer secties en meer overtuigingskracht.</p>
+              <ul><li>Premium layout</li><li>Diensten en voorbeeldwerk</li><li>Lokale SEO basis</li></ul>
+              <a class="btn" href="https://wa.me/31681511950">Kies studio</a>
+            </article>
+            <article class="price-card reveal">
+              <h3>Signature</h3>
+              <div class="price">&euro;799 <small>vanaf</small></div>
+              <p>Voor wie online echt groter en scherper wil binnenkomen.</p>
+              <ul><li>Extra motion</li><li>Uitgebreide copy</li><li>Luxe afwerking</li></ul>
+              <a class="btn dark-btn" href="tel:+31681511950">Bel Jordy</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="faq">
+    <div class="wrap">
+      <div class="section-shell">
+        <div class="section-no">06</div>
+        <div>
+          <div class="section-kicker reveal">FAQ</div>
+          <h2 class="reveal">Kort antwoord. Geen ruis.</h2>
+          <div class="faq-list reveal">
+            <article class="faq-item"><h3>Voor wie is dit?</h3><p>Voor lokale ondernemers in Brabant die professioneler willen overkomen en meer aanvragen willen krijgen.</p></article>
+            <article class="faq-item"><h3>Hoe snel kan het?</h3><p>Bij een duidelijke scope kan een compacte site snel live. Vaak is een eerste versie binnen 7 dagen haalbaar.</p></article>
+            <article class="faq-item"><h3>Kan ik zelf input geven?</h3><p>Ja. Jij kent je bedrijf. Ik vertaal dat naar structuur, copy en design dat online werkt.</p></article>
+            <article class="faq-item"><h3>Werkt bellen en WhatsApp?</h3><p>Ja. Alle routes gaan naar 06 81 51 19 50 via WhatsApp of directe bel-link.</p></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section dark" id="contact">
+    <div class="wrap contact-inner">
+      <div class="section-kicker reveal">07 Contact</div>
+      <div class="contact-grid">
+        <div>
+          <h2 class="contact-title reveal">Let's build your local advantage.</h2>
+        </div>
+        <aside class="contact-card reveal">
+          <p>Wil je een website die direct professioneler voelt dan je concurrenten? App of bel. Dan prikken we snel door wat je nodig hebt.</p>
           <div class="contact-actions">
             <a class="btn" href="https://wa.me/31681511950">WhatsApp 06 81 51 19 50</a>
-            <a class="btn secondary" href="tel:+31681511950">Bel 06 81 51 19 50</a>
+            <a class="btn ghost" href="tel:+31681511950">Bel 06 81 51 19 50</a>
           </div>
-        </div>
-        <aside class="contact-card" aria-label="Contactgegevens">
           <div class="contact-line"><span>Telefoon</span><strong>06 81 51 19 50</strong></div>
           <div class="contact-line"><span>WhatsApp</span><strong>wa.me/31681511950</strong></div>
           <div class="contact-line"><span>E-mail</span><strong>info@sitemissie.nl</strong></div>
-          <div class="contact-line"><span>Werkgebied</span><strong>Brabant en omstreken</strong></div>
+          <div class="contact-line"><span>Werkgebied</span><strong>Brabant</strong></div>
         </aside>
       </div>
+      <footer class="footer">
+        <strong>Sitemissie</strong>
+        <span>Websites laten maken in Brabant</span>
+        <span>06 81 51 19 50</span>
+      </footer>
     </div>
   </section>
 </main>
 
 <a class="wa-float" href="https://wa.me/31681511950" aria-label="WhatsApp Sitemissie">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.44 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zM20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9a11.82 11.82 0 0 0-3.48-8.41z"/></svg>
+  <svg width="29" height="29" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.44 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zM20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9a11.82 11.82 0 0 0-3.48-8.41z"/></svg>
 </a>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <strong>Sitemissie</strong>
-    <span>Premium websites voor lokale ondernemers in Brabant</span>
-    <span>06 81 51 19 50</span>
-  </div>
-</footer>
 
 <script>
 (() => {
@@ -1040,7 +1226,7 @@ p { color: var(--muted); line-height: 1.7; }
   const toggle = document.querySelector(".mobile-toggle");
   const dot = document.querySelector(".cursor-dot");
   const ring = document.querySelector(".cursor-ring");
-  const interactive = "a, button, input, textarea, select, .portfolio-card, .why-card, .service-card, .price-card";
+  const interactive = "a, button, .project, .service-row, .price-card, .step";
 
   toggle?.addEventListener("click", () => {
     const open = nav.classList.toggle("is-open");
@@ -1055,24 +1241,24 @@ p { color: var(--muted); line-height: 1.7; }
   });
 
   if (window.matchMedia("(hover: hover) and (pointer: fine)").matches && dot && ring) {
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-    let ringX = mouseX;
-    let ringY = mouseY;
+    let mx = window.innerWidth / 2;
+    let my = window.innerHeight / 2;
+    let rx = mx;
+    let ry = my;
 
     window.addEventListener("mousemove", (event) => {
-      mouseX = event.clientX;
-      mouseY = event.clientY;
-      dot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+      mx = event.clientX;
+      my = event.clientY;
+      dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
     });
 
-    const tick = () => {
-      ringX += (mouseX - ringX) * 0.18;
-      ringY += (mouseY - ringY) * 0.18;
-      ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
-      requestAnimationFrame(tick);
+    const animateCursor = () => {
+      rx += (mx - rx) * .16;
+      ry += (my - ry) * .16;
+      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+      requestAnimationFrame(animateCursor);
     };
-    tick();
+    animateCursor();
 
     document.addEventListener("mouseover", (event) => {
       if (event.target.closest(interactive)) ring.classList.add("is-hover");
@@ -1082,29 +1268,28 @@ p { color: var(--muted); line-height: 1.7; }
     });
   }
 
-  const observer = new IntersectionObserver((entries) => {
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-        observer.unobserve(entry.target);
-      }
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("in-view");
+      revealObserver.unobserve(entry.target);
     });
-  }, { threshold: 0.14 });
+  }, { threshold: .12 });
 
-  document.querySelectorAll(".reveal").forEach((el, index) => {
-    el.style.transitionDelay = `${Math.min(index % 5, 4) * 70}ms`;
-    observer.observe(el);
+  document.querySelectorAll(".reveal").forEach((element, index) => {
+    element.style.transitionDelay = `${Math.min(index % 6, 5) * 55}ms`;
+    revealObserver.observe(element);
   });
 
-  document.querySelectorAll(".portfolio-card, .why-card, .service-card, .price-card").forEach((card) => {
+  document.querySelectorAll(".project, .price-card").forEach((card) => {
     card.addEventListener("mousemove", (event) => {
       if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
       const rect = card.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
-      const rotateY = ((x / rect.width) - .5) * 10;
-      const rotateX = ((.5 - y / rect.height)) * 10;
-      card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      const rotateY = ((x / rect.width) - .5) * 8;
+      const rotateX = ((.5 - y / rect.height)) * 8;
+      card.style.transform = `translateY(-10px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
     card.addEventListener("mouseleave", () => {
       card.style.transform = "";
@@ -1121,7 +1306,7 @@ p { color: var(--muted); line-height: 1.7; }
   "telephone": "+31681511950",
   "email": "info@sitemissie.nl",
   "areaServed": "Brabant",
-  "description": "Premium websites voor lokale ondernemers in Brabant die meer aanvragen willen."
+  "description": "High-end websites voor lokale ondernemers in Brabant."
 }
 </script>
 </body>
