@@ -4,142 +4,187 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sitemissie | Website laten maken Brabant | Webdesign lokale ondernemers</title>
-<meta name="description" content="Sitemissie bouwt premium websites voor lokale ondernemers in Brabant. Webdesign, mobiel sterke sites, lokale vindbaarheid en WhatsApp/contact conversie.">
+<meta name="description" content="Sitemissie bouwt premium websites voor lokale ondernemers in Brabant. Webdesign, mobiel sterke websites, lokale vindbaarheid en WhatsApp/contact conversie.">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#07070a">
+<meta name="theme-color" content="#050609">
 <link rel="canonical" href="https://sitemissie.nl/">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sitemissie">
-<meta property="og:title" content="Sitemissie | Webdesign Brabant voor lokale ondernemers">
-<meta property="og:description" content="Website laten maken in Brabant? Sitemissie maakt professionele websites die vertrouwen pakken en contact opleveren.">
+<meta property="og:title" content="Sitemissie | Website laten maken in Brabant">
+<meta property="og:description" content="High-end webdesign voor lokale ondernemers in Brabant. Websites die vertrouwen pakken en contact opleveren.">
 <meta property="og:url" content="https://sitemissie.nl/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sitemissie | Website laten maken Brabant">
-<meta name="twitter:description" content="Premium webdesign voor lokale ondernemers in Brabant.">
+<meta name="twitter:title" content="Sitemissie | Webdesign Brabant">
+<meta name="twitter:description" content="Premium websites voor lokale ondernemers die professioneel online willen staan.">
 <style>
 :root {
-  --black: #07070a;
-  --black-2: #111118;
-  --cream: #f5ecdb;
-  --paper: #fff7e7;
-  --ink: #111116;
-  --muted: #aaa194;
-  --muted-dark: #5d554b;
-  --line: rgba(245,236,219,.16);
-  --line-dark: rgba(17,17,22,.14);
-  --acid: #dcff35;
-  --blue: #47d8ff;
-  --pink: #ff4faf;
-  --orange: #ff7442;
-  --green: #35e99b;
-  --purple: #8a64ff;
-  --shadow: 0 30px 100px rgba(0,0,0,.38);
+  --bg: #050609;
+  --bg2: #0b0d12;
+  --panel: rgba(245,239,228,.075);
+  --panel-strong: rgba(245,239,228,.12);
+  --cream: #f5efe4;
+  --ink: #111216;
+  --muted: #a9a196;
+  --line: rgba(245,239,228,.15);
+  --line-dark: rgba(17,18,22,.13);
+  --acid: #d8ff3e;
+  --cyan: #55ddff;
+  --rose: #ff5da8;
+  --ember: #ff7a3d;
+  --green: #36e79a;
+  --radius: 28px;
+  --shadow: 0 30px 100px rgba(0,0,0,.42);
   --sans: Arial, Helvetica, sans-serif;
-  --serif: Georgia, "Times New Roman", serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; min-width: 0; }
-html { overflow-x: hidden; scroll-behavior: smooth; background: var(--black); }
+html { overflow-x: hidden; scroll-behavior: smooth; background: var(--bg); }
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
   color: var(--cream);
-  background: var(--black);
+  background: var(--bg);
   font-family: var(--sans);
   cursor: none;
+  transition: background-color .8s ease;
 }
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -3;
+  z-index: -4;
   pointer-events: none;
   background:
-    radial-gradient(circle at 12% 14%, rgba(71,216,255,.18), transparent 28rem),
-    radial-gradient(circle at 78% 12%, rgba(255,79,175,.14), transparent 30rem),
-    radial-gradient(circle at 55% 80%, rgba(220,255,53,.1), transparent 34rem),
-    linear-gradient(135deg, #07070a, #111119 52%, #060607);
+    radial-gradient(circle at var(--x1, 74%) var(--y1, 18%), var(--g1, rgba(85,221,255,.18)), transparent 29rem),
+    radial-gradient(circle at var(--x2, 15%) var(--y2, 78%), var(--g2, rgba(216,255,62,.12)), transparent 32rem),
+    linear-gradient(135deg, var(--s1, #050609), var(--s2, #0c0f16) 55%, var(--s3, #040405));
+  transition: background 900ms ease;
 }
+
 body::after {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 1000;
   pointer-events: none;
-  opacity: .15;
+  opacity: .14;
   background-image:
-    linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,.28) .7px, transparent 1px);
-  background-size: 84px 84px, 84px 84px, 5px 5px;
-  mix-blend-mode: overlay;
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 86px 86px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
 }
 
+body.scene-hero { --x1: 74%; --y1: 18%; --x2: 15%; --y2: 78%; --g1: rgba(85,221,255,.18); --g2: rgba(216,255,62,.12); --s1: #050609; --s2: #0c0f16; --s3: #040405; }
+body.scene-conviction { --x1: 18%; --y1: 22%; --x2: 84%; --y2: 72%; --g1: rgba(216,255,62,.15); --g2: rgba(245,239,228,.1); --s1: #0c0a07; --s2: #17110d; --s3: #050505; }
+body.scene-services { --x1: 80%; --y1: 25%; --x2: 18%; --y2: 70%; --g1: rgba(216,255,62,.14); --g2: rgba(85,221,255,.14); --s1: #060807; --s2: #101710; --s3: #040506; }
+body.scene-work { --x1: 76%; --y1: 16%; --x2: 20%; --y2: 78%; --g1: rgba(255,93,168,.18); --g2: rgba(85,221,255,.14); --s1: #09060a; --s2: #161020; --s3: #040405; }
+body.scene-process { --x1: 18%; --y1: 70%; --x2: 82%; --y2: 20%; --g1: rgba(85,221,255,.14); --g2: rgba(255,122,61,.11); --s1: #05080c; --s2: #0f1520; --s3: #040506; }
+body.scene-contact { --x1: 15%; --y1: 78%; --x2: 82%; --y2: 20%; --g1: rgba(216,255,62,.2); --g2: rgba(255,93,168,.11); --s1: #0a0705; --s2: #18100c; --s3: #040405; }
+
 a { color: inherit; text-decoration: none; }
-button { appearance: none; border: 0; margin: 0; padding: 0; color: inherit; font: inherit; background: none; cursor: pointer; }
+button { appearance: none; margin: 0; padding: 0; border: 0; color: inherit; font: inherit; background: none; cursor: pointer; }
 ul { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, h4, p { margin: 0; }
 section { position: relative; overflow: clip; }
-.wrap { width: min(1380px, 100%); margin: 0 auto; padding: 0 clamp(18px, 4vw, 64px); }
-.light { color: var(--ink); background: var(--paper); }
-.dark { color: var(--cream); background: transparent; }
+.wrap { width: min(1360px, 100%); margin: 0 auto; padding: 0 clamp(18px, 4vw, 64px); }
 
 h1, h2, h3, h4 {
   font-weight: 950;
+  letter-spacing: -.058em;
   line-height: .94;
-  letter-spacing: -.062em;
   text-wrap: balance;
 }
-h1 { max-width: 1050px; font-size: clamp(46px, 8.2vw, 116px); }
-h2 { max-width: 1000px; font-size: clamp(38px, 6.8vw, 96px); }
-h3 { font-size: clamp(25px, 3.1vw, 50px); }
-h4 { font-size: clamp(19px, 2vw, 32px); }
-p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62; }
-.light p { color: var(--muted-dark); }
-.lead { max-width: 720px; color: currentColor; font-size: clamp(18px, 1.8vw, 28px); line-height: 1.3; letter-spacing: -.02em; }
-.accent-text {
-  color: transparent;
-  background: linear-gradient(90deg, var(--cream), var(--acid), var(--blue), var(--pink), var(--cream));
-  background-size: 260% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: textFlow 9s linear infinite;
-}
-@keyframes textFlow { to { background-position: 260% 50%; } }
+h1 { max-width: 1050px; font-size: clamp(48px, 8.6vw, 124px); }
+h2 { max-width: 960px; font-size: clamp(40px, 7vw, 104px); }
+h3 { font-size: clamp(26px, 3vw, 48px); }
+h4 { font-size: clamp(18px, 1.8vw, 30px); }
+p { color: var(--muted); font-size: clamp(16px, 1.1vw, 19px); line-height: 1.62; }
+.lead { max-width: 720px; color: var(--cream); font-size: clamp(18px, 1.75vw, 27px); line-height: 1.34; letter-spacing: -.02em; }
+.accent { color: var(--acid); }
 
-.section-shell {
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: clamp(22px, 4vw, 58px);
-  padding: clamp(78px, 10vw, 140px) 0;
-  border-top: 1px solid var(--line);
+  grid-template-rows: auto 1fr auto;
+  padding: clamp(20px, 4vw, 56px);
+  color: var(--cream);
+  background: #030305;
+  overflow: hidden;
+  transition: opacity .9s ease, visibility .9s ease, transform .9s ease;
 }
-.light .section-shell { border-color: var(--line-dark); }
-.section-no {
-  position: sticky;
-  top: 108px;
-  align-self: start;
-  color: transparent;
-  -webkit-text-stroke: 1.2px currentColor;
-  opacity: .46;
-  font-size: clamp(32px, 4.8vw, 70px);
-  font-weight: 950;
-  line-height: .85;
-  letter-spacing: -.08em;
+.loader.is-done { opacity: 0; visibility: hidden; transform: translateY(-2%); }
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 70% 25%, rgba(85,221,255,.24), transparent 28rem),
+    radial-gradient(circle at 30% 80%, rgba(216,255,62,.18), transparent 24rem),
+    conic-gradient(from 160deg, rgba(216,255,62,.12), rgba(85,221,255,.16), rgba(255,93,168,.14), rgba(255,122,61,.12), rgba(216,255,62,.12));
+  filter: blur(48px);
+  animation: field 3.6s ease-in-out infinite alternate;
 }
-.section-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 18px;
+@keyframes field { to { transform: rotate(16deg) scale(1.06); } }
+.loader-top, .loader-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  color: rgba(245,239,228,.74);
   font-size: 12px;
   font-weight: 950;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
-.section-label::before { content: ""; width: 42px; height: 1px; flex: 0 0 42px; background: currentColor; }
+.loader-center { display: grid; place-items: center; text-align: center; }
+.loader-word { font-size: clamp(50px, 13vw, 178px); font-weight: 950; letter-spacing: -.1em; line-height: .86; }
+.loader-percent { color: var(--acid); font-size: clamp(38px, 7vw, 96px); font-weight: 950; line-height: .86; letter-spacing: -.07em; }
+.loader-line { position: absolute; left: 0; right: 0; bottom: clamp(84px, 12vw, 150px); height: 2px; background: rgba(245,239,228,.12); overflow: hidden; }
+.loader-line span { display: block; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, var(--acid), var(--cyan), transparent); transform: translateX(-100%); animation: scan 1.35s ease-in-out infinite; }
+@keyframes scan { to { transform: translateX(100%); } }
+
+.cursor-dot, .cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10001;
+  pointer-events: none;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+.cursor-dot { width: 10px; height: 10px; background: #fff; box-shadow: 0 0 0 2px #000; }
+.cursor-ring { width: 48px; height: 48px; border: 2px solid #fff; transition: width .2s ease, height .2s ease, background .2s ease; }
+.cursor-ring.is-hover { width: 74px; height: 74px; background: rgba(255,255,255,.12); }
+
+.hud {
+  position: fixed;
+  inset: 20px clamp(14px, 3vw, 44px) auto;
+  z-index: 90;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+  min-height: 62px;
+  padding: 10px 12px 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(5,6,9,.7);
+  backdrop-filter: blur(22px);
+}
+.brand { display: inline-flex; align-items: center; gap: 11px; white-space: nowrap; font-size: 15px; font-weight: 950; letter-spacing: -.04em; }
+.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: var(--bg); background: var(--cream); }
+.nav { display: flex; justify-content: center; gap: 2px; }
+.nav a { display: inline-flex; padding: 10px 12px; border-radius: 999px; color: rgba(245,239,228,.72); font-size: 12px; font-weight: 900; }
+.nav a:hover { color: var(--cream); background: rgba(255,255,255,.09); }
+.hud-cta { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 17px; border-radius: 999px; color: var(--bg); background: var(--acid); font-size: 14px; font-weight: 950; white-space: nowrap; }
+.menu-toggle { display: none; }
 
 .btn {
   display: inline-flex;
@@ -149,302 +194,109 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
   padding: 0 22px;
   border: 1px solid transparent;
   border-radius: 999px;
-  color: var(--black);
+  color: var(--bg);
   background: var(--acid);
   font-weight: 950;
   letter-spacing: -.02em;
   text-align: center;
-  box-shadow: 0 18px 54px rgba(220,255,53,.18);
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
 }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 24px 70px rgba(71,216,255,.18); }
-.btn.ghost { color: currentColor; border-color: currentColor; background: transparent; box-shadow: none; }
-.btn.dark-btn { color: var(--cream); background: var(--black); }
+.btn.ghost { color: currentColor; border-color: currentColor; background: transparent; }
+.btn.dark { color: var(--cream); background: var(--bg); }
 
-/* Loading */
-.loader {
-  position: fixed;
-  inset: 0;
-  z-index: 10000;
+.chapter {
+  min-height: 100svh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: 24px;
-  overflow: hidden;
-  padding: clamp(20px, 4vw, 56px);
-  color: var(--cream);
-  background: #030305;
-  transition: opacity .85s ease, visibility .85s ease, transform .85s ease;
-}
-.loader.is-done { opacity: 0; visibility: hidden; transform: translateY(-2%); }
-.loader::before {
-  content: "";
-  position: absolute;
-  inset: -35%;
-  z-index: -2;
-  background:
-    radial-gradient(circle at 30% 34%, rgba(220,255,53,.18), transparent 24rem),
-    radial-gradient(circle at 72% 44%, rgba(71,216,255,.22), transparent 30rem),
-    conic-gradient(from 90deg, rgba(255,116,66,.18), rgba(255,79,175,.16), rgba(71,216,255,.17), rgba(220,255,53,.13), rgba(255,116,66,.18));
-  filter: blur(48px);
-  animation: loaderField 3.4s ease-in-out infinite alternate;
-}
-.loader::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  opacity: .34;
-  background:
-    linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px);
-  background-size: 68px 68px;
-  mask-image: radial-gradient(circle, black 0 48%, transparent 78%);
-}
-@keyframes loaderField {
-  from { transform: translate3d(-2%, -1%, 0) rotate(0deg) scale(1); }
-  to { transform: translate3d(2%, 2%, 0) rotate(14deg) scale(1.07); }
-}
-.loader-top, .loader-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  color: rgba(245,236,219,.72);
-  font-size: 12px;
-  font-weight: 950;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-.loader-center { display: grid; place-items: center; text-align: center; }
-.loader-word {
-  position: relative;
-  max-width: 100%;
-  font-size: clamp(48px, 12vw, 170px);
-  font-weight: 950;
-  letter-spacing: -.1em;
-  line-height: .85;
-}
-.loader-word::before {
-  content: "SITEMISSIE";
-  position: absolute;
-  inset: 0;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(245,236,219,.28);
-  transform: translate(1.3vw, 1.1vw);
-}
-.loader-scan {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: clamp(82px, 12vw, 150px);
-  height: 2px;
-  overflow: hidden;
-  background: rgba(245,236,219,.12);
-}
-.loader-scan span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, var(--acid), var(--blue), transparent);
-  transform: translateX(-100%);
-  animation: scanLine 1.3s ease-in-out infinite;
-}
-@keyframes scanLine { to { transform: translateX(100%); } }
-.loader-percent { color: var(--acid); font-size: clamp(36px, 7vw, 96px); font-weight: 950; line-height: .86; letter-spacing: -.07em; }
-
-/* Cursor */
-.cursor-dot, .cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10001;
-  pointer-events: none;
-  border-radius: 999px;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-}
-.cursor-dot { width: 10px; height: 10px; background: #fff; box-shadow: 0 0 0 2px #000, 0 0 24px rgba(255,255,255,.8); }
-.cursor-ring { width: 48px; height: 48px; border: 2px solid #fff; transition: width .22s ease, height .22s ease, background .22s ease; }
-.cursor-ring.is-hover { width: 76px; height: 76px; background: rgba(255,255,255,.12); }
-
-/* Nav */
-.nav {
-  position: fixed;
-  top: 18px;
-  left: clamp(12px, 3vw, 42px);
-  right: clamp(12px, 3vw, 42px);
-  z-index: 90;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 18px;
-  min-height: 64px;
-  padding: 10px 12px 10px 18px;
-  border: 1px solid rgba(245,236,219,.18);
-  border-radius: 999px;
-  background: rgba(7,7,10,.72);
-  backdrop-filter: blur(22px);
-  box-shadow: 0 16px 56px rgba(0,0,0,.34);
+  padding: 120px 0 clamp(70px, 9vw, 130px);
 }
-.brand { display: inline-flex; align-items: center; gap: 11px; white-space: nowrap; font-size: 15px; font-weight: 950; letter-spacing: -.04em; }
-.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: var(--black); background: var(--cream); }
-.nav-links { display: flex; justify-content: center; gap: 2px; }
-.nav-links a { display: inline-flex; padding: 10px 12px; border-radius: 999px; color: rgba(245,236,219,.72); font-size: 12px; font-weight: 900; transition: color .2s ease, background .2s ease; }
-.nav-links a:hover { color: var(--cream); background: rgba(255,255,255,.1); }
-.nav-cta { min-height: 42px; padding: 0 17px; border-radius: 999px; color: var(--black); background: var(--acid); font-size: 14px; font-weight: 950; white-space: nowrap; }
-.mobile-toggle { display: none; }
-
-/* Hero */
-.hero { min-height: 100svh; display: grid; align-items: center; padding: 118px 0 56px; }
-.hero::before {
-  content: "";
-  position: absolute;
-  width: min(680px, 62vw);
-  aspect-ratio: 1;
-  right: max(-14vw, -230px);
-  top: 10svh;
-  z-index: -1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 36% 36%, rgba(245,236,219,.32), transparent 9rem),
-    conic-gradient(from 30deg, var(--pink), var(--blue), var(--acid), var(--orange), var(--pink));
-  filter: blur(24px) saturate(1.1);
-  opacity: .42;
-  animation: heroOrb 16s ease-in-out infinite alternate;
+.chapter.compact { min-height: auto; }
+.chapter-grid {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 68px);
+  align-items: start;
 }
-@keyframes heroOrb {
-  from { transform: rotate(0deg) scale(1); }
-  to { transform: rotate(26deg) scale(1.06); }
-}
-.hero-meta {
+.chapter-no { color: rgba(245,239,228,.58); font-size: 14px; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
+.chapter-kicker { margin-bottom: 18px; color: rgba(245,239,228,.7); font-size: 12px; font-weight: 950; letter-spacing: .16em; text-transform: uppercase; }
+.chapter-copy { display: grid; gap: 26px; max-width: 900px; }
+.hero-title { margin-top: clamp(40px, 8vw, 96px); }
+.hero-footer {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
-  margin-bottom: clamp(34px, 6vw, 82px);
-  color: rgba(245,236,219,.72);
-  font-size: clamp(11px, .9vw, 14px);
-  font-weight: 950;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
-.hero-title span { display: block; }
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(290px, 440px);
-  gap: clamp(28px, 5vw, 72px);
+  gap: 24px;
   align-items: end;
-  margin-top: 28px;
+  margin-top: clamp(38px, 6vw, 78px);
 }
-.hero-copy { max-width: 700px; color: var(--cream); font-size: clamp(18px, 1.8vw, 26px); line-height: 1.34; letter-spacing: -.02em; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-.signal-card {
-  min-height: 270px;
-  display: grid;
-  align-content: space-between;
-  padding: 24px;
-  border: 1px solid rgba(245,236,219,.2);
-  border-radius: 28px;
-  background: linear-gradient(145deg, rgba(245,236,219,.12), rgba(245,236,219,.045));
-  backdrop-filter: blur(20px);
-  box-shadow: var(--shadow);
-}
-.signal-label { color: rgba(245,236,219,.72); font-size: 12px; font-weight: 950; letter-spacing: .15em; text-transform: uppercase; }
-.signal-word { color: var(--acid); font-size: clamp(38px, 4.2vw, 66px); font-weight: 950; line-height: .9; letter-spacing: -.07em; }
-.signal-track { height: 6px; overflow: hidden; border-radius: 999px; background: rgba(245,236,219,.12); }
-.signal-track span { display: block; width: 100%; height: 100%; transform-origin: left; background: linear-gradient(90deg, var(--acid), var(--blue), var(--pink)); animation: signalProgress 2.2s linear infinite; }
-@keyframes signalProgress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.scroll-note { color: rgba(245,239,228,.65); font-size: 12px; font-weight: 950; letter-spacing: .14em; text-transform: uppercase; }
 
-.marquee { overflow: hidden; border-top: 1px solid rgba(245,236,219,.16); border-bottom: 1px solid rgba(245,236,219,.16); background: rgba(255,255,255,.018); }
+.marquee { overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
 .marquee-track { display: flex; width: max-content; animation: marquee 24s linear infinite; }
-.marquee span {
-  padding: 22px 26px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(245,236,219,.72);
-  font-size: clamp(40px, 6vw, 96px);
-  font-weight: 950;
-  line-height: .82;
-  letter-spacing: -.07em;
-  white-space: nowrap;
-}
+.marquee span { padding: 22px 26px; color: transparent; -webkit-text-stroke: 1px rgba(245,239,228,.72); font-size: clamp(42px, 6vw, 96px); font-weight: 950; line-height: .82; letter-spacing: -.07em; white-space: nowrap; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
-/* Intro */
-.intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(290px, 450px); gap: clamp(28px, 5vw, 72px); align-items: start; }
-.intro-copy { display: grid; gap: 22px; }
-.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 38px; }
-.proof { min-height: 148px; display: grid; align-content: space-between; padding: 20px; border: 1px solid var(--line-dark); border-radius: 22px; background: rgba(17,17,22,.035); }
-.proof strong { font-size: clamp(20px, 2vw, 30px); line-height: 1.05; letter-spacing: -.04em; }
-.proof span { color: var(--muted-dark); font-size: 12px; font-weight: 950; letter-spacing: .09em; text-transform: uppercase; }
-.visual-note {
-  min-height: 430px;
+.belief-panel {
+  margin-top: 42px;
   display: grid;
-  align-content: space-between;
-  padding: 26px;
-  border: 1px solid var(--line-dark);
-  border-radius: 32px;
-  color: var(--cream);
-  background:
-    radial-gradient(circle at 74% 16%, rgba(255,79,175,.3), transparent 14rem),
-    radial-gradient(circle at 18% 86%, rgba(71,216,255,.22), transparent 12rem),
-    linear-gradient(135deg, #0e0e14, #241a2b 58%, #101018);
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--line);
+  background: var(--line);
+  gap: 1px;
 }
-.visual-note p { color: rgba(245,236,219,.76); }
+.belief { min-height: 210px; display: grid; align-content: space-between; padding: 24px; background: rgba(5,6,9,.82); }
+.belief strong { font-size: clamp(24px, 3vw, 42px); line-height: 1; letter-spacing: -.05em; }
+.belief span { color: var(--muted); font-size: 12px; font-weight: 950; letter-spacing: .1em; text-transform: uppercase; }
 
-/* Services */
-.service-rows { margin-top: 42px; border-top: 1px solid var(--line); }
+.service-list { margin-top: 44px; border-top: 1px solid var(--line); }
 .service-row {
   display: grid;
-  grid-template-columns: 70px minmax(0, .9fr) minmax(260px, 1fr);
+  grid-template-columns: 72px minmax(0, .8fr) minmax(260px, 1fr);
   gap: 24px;
   align-items: center;
   padding: clamp(24px, 4vw, 48px) 0;
   border-bottom: 1px solid var(--line);
 }
 .service-row small { color: var(--acid); font-weight: 950; }
-.service-row h3 { font-size: clamp(32px, 5vw, 78px); }
-.service-row p { max-width: 520px; }
+.service-row h3 { font-size: clamp(34px, 5vw, 78px); }
+.service-row p { max-width: 540px; }
 
-/* Featured work */
-.work-stage { display: grid; grid-template-columns: minmax(280px, 360px) minmax(0, 1fr); gap: clamp(26px, 5vw, 68px); align-items: start; margin-top: 42px; }
-.work-list { display: grid; border-top: 1px solid var(--line-dark); }
+.work-layout {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: minmax(270px, 350px) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: start;
+}
+.work-list { display: grid; border-top: 1px solid var(--line); }
 .work-item {
-  width: 100%;
   display: grid;
   grid-template-columns: 38px minmax(0, 1fr) 38px;
   gap: 14px;
   align-items: center;
+  width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid var(--line-dark);
-  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  color: var(--cream);
   text-align: left;
-  transition: padding-left .2s ease, color .2s ease;
 }
-.work-item:hover, .work-item.is-active { padding-left: 10px; color: #000; }
-.work-item .num { color: var(--muted-dark); font-size: 12px; font-weight: 950; }
-.work-item h3 { margin-bottom: 5px; font-size: clamp(24px, 2.4vw, 38px); }
+.work-item .num { color: var(--muted); font-size: 12px; font-weight: 950; }
+.work-item h3 { margin-bottom: 5px; font-size: clamp(24px, 2.5vw, 38px); }
 .work-item p { font-size: 13px; line-height: 1.35; }
-.work-item .arrow { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line-dark); border-radius: 50%; font-weight: 950; transition: transform .2s ease, background .2s ease; }
-.work-item:hover .arrow, .work-item.is-active .arrow { transform: rotate(-35deg); color: var(--black); background: var(--acid); }
-.project-link { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; margin-top: 18px; padding: 0 18px; border-radius: 999px; color: var(--black); background: var(--acid); font-weight: 950; }
-.preview-sticky { position: sticky; top: 108px; }
+.work-item .arrow { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 50%; font-weight: 950; }
+.work-item.is-active .arrow, .work-item:hover .arrow { color: var(--bg); background: var(--acid); transform: rotate(-35deg); }
+.project-link { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; margin-top: 18px; padding: 0 18px; border-radius: 999px; color: var(--bg); background: var(--acid); font-weight: 950; }
 
+.preview-shell { position: sticky; top: 110px; }
 .preview-frame {
   position: relative;
   overflow: hidden;
-  min-height: 680px;
-  border: 1px solid var(--line-dark);
-  border-radius: 34px;
-  color: var(--cream);
-  background: #121217;
-  box-shadow: 0 28px 80px rgba(0,0,0,.22);
-}
-.preview-frame::before {
-  content: "";
-  position: absolute;
-  inset: 0;
+  min-height: 690px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
   background:
-    radial-gradient(circle at 76% 10%, var(--case-glow), transparent 17rem),
-    radial-gradient(circle at 14% 88%, rgba(255,255,255,.12), transparent 14rem),
+    radial-gradient(circle at 78% 14%, var(--case-glow), transparent 17rem),
     linear-gradient(135deg, var(--case-a), var(--case-b) 52%, var(--case-c));
+  box-shadow: var(--shadow);
 }
 .mini-site {
   position: absolute;
@@ -452,133 +304,88 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
-  border: 1px solid rgba(245,236,219,.22);
+  border: 1px solid rgba(245,239,228,.22);
   border-radius: 26px;
-  background: rgba(7,7,10,.5);
+  background: rgba(5,6,9,.52);
   backdrop-filter: blur(12px);
 }
 .mini-browser { display: flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 14px; background: rgba(0,0,0,.34); }
-.dots { width: 9px; height: 9px; border-radius: 50%; background: var(--orange); box-shadow: 17px 0 var(--acid), 34px 0 var(--green); }
-.mini-url { width: min(250px, 45%); height: 10px; margin-left: 46px; border-radius: 999px; background: rgba(245,236,219,.22); }
-.mini-page { display: grid; grid-template-rows: auto auto auto auto auto; gap: 14px; padding: 18px; }
+.dots { width: 9px; height: 9px; border-radius: 50%; background: var(--ember); box-shadow: 17px 0 var(--acid), 34px 0 var(--green); }
+.mini-url { width: min(250px, 45%); height: 10px; margin-left: 46px; border-radius: 999px; background: rgba(245,239,228,.22); }
+.mini-page { display: grid; gap: 14px; padding: 18px; }
 .mini-nav { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
-.mini-logo { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 999px; color: var(--black); background: var(--case-accent); font-size: 12px; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
+.mini-logo { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: 999px; color: var(--bg); background: var(--case-accent); font-size: 12px; font-weight: 950; letter-spacing: .08em; text-transform: uppercase; }
 .mini-menu { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
-.mini-menu span { display: inline-flex; padding: 7px 9px; border: 1px solid rgba(245,236,219,.18); border-radius: 999px; color: rgba(245,236,219,.78); font-size: 10px; font-weight: 900; }
+.mini-menu span { display: inline-flex; padding: 7px 9px; border: 1px solid rgba(245,239,228,.18); border-radius: 999px; color: rgba(245,239,228,.78); font-size: 10px; font-weight: 900; }
 .mini-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(220px, .95fr); gap: 14px; }
-.mini-copy {
-  min-height: 220px;
-  display: grid;
-  align-content: center;
-  padding: 20px;
-  border: 1px solid rgba(245,236,219,.16);
-  border-radius: 22px;
-  background: rgba(245,236,219,.1);
+.mini-copy, .site-visual, .detail-card, .product-card, .wide-card {
+  border: 1px solid rgba(245,239,228,.16);
+  background: rgba(245,239,228,.09);
 }
+.mini-copy { min-height: 220px; display: grid; align-content: center; padding: 20px; border-radius: 22px; }
 .mini-kicker { color: var(--case-accent); font-size: 11px; font-weight: 950; letter-spacing: .13em; text-transform: uppercase; }
-.mini-copy h4 { margin: 11px 0; color: var(--cream); font-size: clamp(25px, 3vw, 46px); line-height: .96; }
-.mini-copy p { color: rgba(245,236,219,.78); font-size: 14px; line-height: 1.45; }
-.mini-cta { width: fit-content; margin-top: 16px; padding: 11px 13px; border-radius: 999px; color: var(--black); background: var(--case-accent); font-size: 12px; font-weight: 950; }
-.site-visual {
-  position: relative;
-  overflow: hidden;
-  min-height: 220px;
-  border: 1px solid rgba(245,236,219,.16);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at 42% 28%, var(--case-glow), transparent 7rem),
-    linear-gradient(150deg, rgba(245,236,219,.2), rgba(245,236,219,.06));
-}
-.site-visual::before { content: ""; position: absolute; inset: 14px; border: 1px solid rgba(245,236,219,.18); border-radius: 17px; }
-.visual-title { position: absolute; left: 18px; top: 18px; max-width: 70%; color: var(--cream); font-size: 26px; font-weight: 950; letter-spacing: -.05em; line-height: .95; }
-.visual-chip { position: absolute; right: 18px; top: 18px; padding: 8px 10px; border-radius: 999px; color: var(--black); background: var(--case-accent); font-size: 11px; font-weight: 950; }
+.mini-copy h4 { margin: 11px 0; font-size: clamp(25px, 3vw, 46px); }
+.mini-copy p { color: rgba(245,239,228,.78); font-size: 14px; line-height: 1.45; }
+.mini-cta { width: fit-content; margin-top: 16px; padding: 11px 13px; border-radius: 999px; color: var(--bg); background: var(--case-accent); font-size: 12px; font-weight: 950; }
+.site-visual { position: relative; overflow: hidden; min-height: 220px; border-radius: 22px; background: radial-gradient(circle at 42% 28%, var(--case-glow), transparent 7rem), linear-gradient(150deg, rgba(245,239,228,.18), rgba(245,239,228,.06)); }
+.visual-title { position: absolute; left: 18px; top: 18px; max-width: 70%; font-size: 26px; font-weight: 950; letter-spacing: -.05em; line-height: .95; }
+.visual-chip { position: absolute; right: 18px; top: 18px; padding: 8px 10px; border-radius: 999px; color: var(--bg); background: var(--case-accent); font-size: 11px; font-weight: 950; }
 .visual-photo { position: absolute; left: 18px; right: 18px; bottom: 18px; height: 42%; display: grid; grid-template-columns: 1.2fr .8fr; gap: 10px; }
-.visual-photo span { border-radius: 15px; border: 1px solid rgba(245,236,219,.18); background: rgba(245,236,219,.17); }
+.visual-photo span { border-radius: 15px; border: 1px solid rgba(245,239,228,.18); background: rgba(245,239,228,.17); }
 .visual-photo span:nth-child(2) { background: var(--case-accent); opacity: .78; }
 .mini-detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.detail-card { min-height: 105px; display: grid; align-content: space-between; padding: 13px; border: 1px solid rgba(245,236,219,.16); border-radius: 18px; background: rgba(245,236,219,.09); }
-.detail-card strong { color: var(--cream); font-size: 15px; line-height: 1.1; }
-.detail-card span { color: rgba(245,236,219,.7); font-size: 12px; line-height: 1.35; }
+.detail-card { min-height: 105px; display: grid; align-content: space-between; padding: 13px; border-radius: 18px; }
+.detail-card strong, .product-card strong, .wide-card strong { color: var(--cream); font-size: 15px; line-height: 1.1; }
+.detail-card span, .product-card span, .wide-card span { color: rgba(245,239,228,.7); font-size: 12px; line-height: 1.35; }
 .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-.product-card { min-height: 92px; padding: 12px; border: 1px solid rgba(245,236,219,.16); border-radius: 18px; background: rgba(0,0,0,.18); }
-.product-card strong { display: block; color: var(--cream); font-size: 13px; line-height: 1.1; }
-.product-card span { display: block; margin-top: 8px; color: rgba(245,236,219,.7); font-size: 11px; line-height: 1.3; }
+.product-card { min-height: 92px; padding: 12px; border-radius: 18px; }
+.product-card span { display: block; margin-top: 8px; }
 .mini-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.wide-card { min-height: 96px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px; border: 1px solid rgba(245,236,219,.16); border-radius: 18px; background: rgba(0,0,0,.18); }
-.wide-card strong { display: block; margin-bottom: 7px; color: var(--cream); font-size: 15px; }
-.wide-card span { color: rgba(245,236,219,.72); font-size: 12px; line-height: 1.35; }
-.pill { display: inline-flex; align-items: center; justify-content: center; min-width: 62px; height: 62px; padding: 0 8px; border-radius: 50%; color: var(--black); background: var(--case-accent); font-size: 14px; font-weight: 950; text-align: center; }
+.wide-card { min-height: 96px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px; border-radius: 18px; background: rgba(0,0,0,.18); }
+.pill { display: inline-flex; align-items: center; justify-content: center; min-width: 62px; height: 62px; padding: 0 8px; border-radius: 50%; color: var(--bg); background: var(--case-accent); font-size: 14px; font-weight: 950; text-align: center; }
 
-/* Process */
-.process-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin-top: 42px; border: 1px solid var(--line); background: var(--line); }
-.step { min-height: 260px; display: grid; align-content: space-between; padding: 22px; background: var(--black); transition: background .22s ease, color .22s ease; }
-.step:hover { color: var(--black); background: var(--acid); }
-.step small { font-size: 14px; font-weight: 950; }
+.process-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.step { min-height: 250px; display: grid; align-content: space-between; padding: 22px; background: rgba(5,6,9,.82); }
+.step small { font-size: 14px; font-weight: 950; color: var(--acid); }
 .step h3 { margin-bottom: 12px; font-size: clamp(23px, 2.6vw, 40px); }
-.step:hover p { color: rgba(7,7,10,.72); }
 
-/* Pricing */
-.price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 42px; }
-.price-card { min-height: 380px; display: grid; align-content: start; padding: 26px; border: 1px solid var(--line-dark); border-radius: 30px; background: rgba(17,17,22,.04); }
-.price-card.featured { color: var(--cream); background: radial-gradient(circle at 80% 12%, rgba(220,255,53,.2), transparent 13rem), var(--black); box-shadow: var(--shadow); }
+.price-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.price-card { min-height: 380px; display: grid; align-content: start; padding: 26px; border: 1px solid var(--line); border-radius: 30px; background: rgba(245,239,228,.08); }
+.price-card.featured { background: radial-gradient(circle at 80% 12%, rgba(216,255,62,.2), transparent 13rem), rgba(245,239,228,.1); box-shadow: var(--shadow); }
 .price-card h3 { font-size: clamp(32px, 4vw, 62px); }
 .price { margin: 28px 0 20px; font-size: clamp(46px, 5vw, 78px); font-weight: 950; line-height: .85; letter-spacing: -.08em; }
 .price small { display: block; margin-top: 10px; font-size: 13px; letter-spacing: .09em; text-transform: uppercase; }
 .price-card ul { display: grid; gap: 10px; margin: 26px 0 30px; }
-.price-card li { color: var(--muted-dark); font-weight: 800; }
-.price-card.featured li { color: rgba(245,236,219,.76); }
-.price-card li::before { content: "/"; margin-right: 10px; color: var(--orange); font-weight: 950; }
+.price-card li { color: rgba(245,239,228,.74); font-weight: 800; }
+.price-card li::before { content: "/"; margin-right: 10px; color: var(--ember); font-weight: 950; }
 
-/* FAQ */
-.faq-list { display: grid; margin-top: 38px; border-top: 1px solid var(--line); }
+.faq-list { margin-top: 40px; display: grid; border-top: 1px solid var(--line); }
 .faq { display: grid; grid-template-columns: minmax(220px, .65fr) minmax(0, 1fr); gap: 28px; padding: 30px 0; border-bottom: 1px solid var(--line); }
 .faq h3 { font-size: clamp(24px, 3vw, 44px); }
 
-/* Contact */
-.contact { min-height: 92svh; display: grid; align-items: end; }
-.contact::before {
-  content: "";
-  position: absolute;
-  width: min(760px, 70vw);
-  aspect-ratio: 1;
-  left: -20vw;
-  bottom: -28vw;
-  z-index: -1;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(220,255,53,.18), transparent 62%);
-  filter: blur(22px);
-}
-.contact-inner { padding: clamp(86px, 12vw, 170px) 0 42px; }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(290px, 500px); gap: clamp(30px, 5vw, 76px); align-items: end; }
-.contact-title { max-width: 900px; font-size: clamp(46px, 8vw, 126px); }
-.contact-card { padding: 26px; border: 1px solid rgba(245,236,219,.18); border-radius: 34px; background: linear-gradient(145deg, rgba(245,236,219,.11), rgba(245,236,219,.045)); backdrop-filter: blur(18px); box-shadow: var(--shadow); }
+.contact-card { padding: 26px; border: 1px solid var(--line); border-radius: 34px; background: linear-gradient(145deg, rgba(245,239,228,.11), rgba(245,239,228,.045)); box-shadow: var(--shadow); }
 .contact-actions { display: grid; gap: 12px; margin: 24px 0; }
-.contact-line { display: flex; justify-content: space-between; gap: 18px; padding: 16px 0; border-top: 1px solid rgba(245,236,219,.14); color: rgba(245,236,219,.72); }
+.contact-line { display: flex; justify-content: space-between; gap: 18px; padding: 16px 0; border-top: 1px solid var(--line); color: rgba(245,239,228,.72); }
 .contact-line strong { color: var(--cream); text-align: right; overflow-wrap: anywhere; }
-.footer { display: flex; justify-content: space-between; gap: 22px; margin-top: 76px; padding-top: 24px; border-top: 1px solid rgba(245,236,219,.14); color: rgba(245,236,219,.62); font-size: 14px; }
-.wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 92; display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; color: var(--black); background: var(--acid); box-shadow: 0 18px 54px rgba(220,255,53,.28); }
+.footer { display: flex; justify-content: space-between; gap: 22px; margin-top: 76px; padding-top: 24px; border-top: 1px solid var(--line); color: rgba(245,239,228,.62); font-size: 14px; }
+.wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 92; display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50%; color: var(--bg); background: var(--acid); box-shadow: 0 18px 54px rgba(216,255,62,.28); }
 
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .75s ease, transform .75s ease; }
 .reveal.in-view { opacity: 1; transform: translateY(0); }
-.site-ready .hero-title span, .site-ready .hero-meta, .site-ready .hero-grid { animation: heroIn .85s cubic-bezier(.2,.8,.2,1) both; }
-.site-ready .hero-title span:nth-child(2) { animation-delay: .1s; }
-.site-ready .hero-grid { animation-delay: .2s; }
-@keyframes heroIn {
-  from { opacity: 0; transform: translateY(44px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+.site-ready .hero-title, .site-ready .hero-footer { animation: heroIn .85s cubic-bezier(.2,.8,.2,1) both; }
+.site-ready .hero-footer { animation-delay: .16s; }
+@keyframes heroIn { from { opacity: 0; transform: translateY(44px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 1180px) {
-  .nav { grid-template-columns: auto auto; justify-content: space-between; border-radius: 28px; }
-  .mobile-toggle { display: inline-flex; min-height: 42px; align-items: center; padding: 0 14px; border: 1px solid rgba(245,236,219,.18); border-radius: 999px; background: rgba(245,236,219,.08); }
-  .nav-links { position: absolute; top: 66px; left: 0; right: 0; display: none; padding: 12px; border: 1px solid rgba(245,236,219,.16); border-radius: 24px; background: rgba(7,7,10,.95); backdrop-filter: blur(20px); }
-  .nav.is-open .nav-links { display: grid; }
-  .nav-links a { padding: 14px 16px; }
-  .nav-cta { display: none; }
-  .section-shell { grid-template-columns: 1fr; gap: 22px; }
-  .section-no { position: static; }
-  .hero-grid, .intro-grid, .work-stage, .contact-grid { grid-template-columns: 1fr; }
-  .preview-sticky { position: relative; top: auto; }
+  .hud { grid-template-columns: auto auto; justify-content: space-between; border-radius: 28px; }
+  .menu-toggle { display: inline-flex; min-height: 42px; align-items: center; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: rgba(245,239,228,.08); }
+  .nav { position: absolute; top: 66px; left: 0; right: 0; display: none; padding: 12px; border: 1px solid var(--line); border-radius: 24px; background: rgba(5,6,9,.95); backdrop-filter: blur(20px); }
+  .hud.is-open .nav { display: grid; justify-content: stretch; }
+  .nav a { padding: 14px 16px; }
+  .hud-cta { display: none; }
+  .chapter-grid, .work-layout, .contact-grid { grid-template-columns: 1fr; }
+  .preview-shell { position: relative; top: auto; }
   .service-row { grid-template-columns: 56px minmax(0, 1fr); }
   .service-row p { grid-column: 2; }
   .process-grid { grid-template-columns: repeat(3, 1fr); }
@@ -597,21 +404,19 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
   .loader { padding: 18px; }
   .loader-top, .loader-bottom { display: grid; gap: 8px; }
   .loader-word { font-size: clamp(44px, 14vw, 82px); letter-spacing: -.085em; }
-  .nav { top: 12px; left: 12px; right: 12px; min-height: 60px; padding-left: 14px; }
+  .hud { top: 12px; left: 12px; right: 12px; min-height: 60px; padding-left: 14px; }
   .brand span:last-child { display: none; }
-  .hero { min-height: auto; padding: 120px 0 54px; }
-  .hero::before { width: 420px; right: -230px; top: 120px; }
-  .hero-meta { display: grid; gap: 8px; margin-bottom: 36px; }
+  .chapter { min-height: auto; padding: 118px 0 72px; }
+  .chapter-grid { gap: 18px; }
+  .hero-footer { display: grid; gap: 24px; }
   .hero-actions, .contact-actions { display: grid; }
-  .btn { width: 100%; min-height: 56px; padding: 0 18px; }
-  .signal-card { min-height: 220px; }
-  .proof-grid { grid-template-columns: 1fr; }
-  .visual-note { min-height: 330px; }
+  .btn { width: 100%; }
+  .belief-panel { grid-template-columns: 1fr; }
   .service-row { grid-template-columns: 1fr; gap: 10px; }
   .service-row p { grid-column: auto; }
   .work-item { grid-template-columns: 34px minmax(0, 1fr); gap: 12px; }
   .work-item .arrow { grid-column: 2; justify-self: start; }
-  .preview-frame { min-height: 910px; border-radius: 28px; }
+  .preview-frame { min-height: 940px; border-radius: 28px; }
   .mini-site { inset: 14px; border-radius: 22px; }
   .mini-page { gap: 12px; padding: 14px; }
   .mini-menu { display: none; }
@@ -635,18 +440,16 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
 }
 
 @media (max-width: 430px) {
-  .section-shell { padding: 72px 0; }
-  .section-label { letter-spacing: .12em; }
-  .section-label::before { width: 30px; flex-basis: 30px; }
-  .preview-frame { min-height: 940px; }
+  .chapter { padding: 108px 0 66px; }
+  .preview-frame { min-height: 980px; }
 }
 
 @media (max-width: 375px) {
   .wrap { padding: 0 14px; }
-  .nav { left: 8px; right: 8px; }
   h1 { font-size: clamp(40px, 11.5vw, 58px); }
   h2 { font-size: clamp(32px, 10vw, 56px); }
-  .preview-frame { min-height: 980px; }
+  .hud { left: 8px; right: 8px; }
+  .preview-frame { min-height: 1020px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -656,117 +459,86 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
 }
 </style>
 </head>
-<body>
+<body class="scene-hero">
 <div class="loader" id="loader" aria-live="polite">
-  <div class="loader-top">
-    <span>Sitemissie</span>
-    <span>Website laten maken Brabant</span>
-  </div>
-  <div class="loader-center">
-    <div class="loader-word">SITEMISSIE</div>
-  </div>
-  <div class="loader-scan"><span></span></div>
-  <div class="loader-bottom">
-    <span>Premium web presence</span>
-    <span class="loader-percent" id="loaderPercent">0%</span>
-  </div>
+  <div class="loader-top"><span>Sitemissie</span><span>Website laten maken Brabant</span></div>
+  <div class="loader-center"><div class="loader-word">SITEMISSIE</div></div>
+  <div class="loader-line"><span></span></div>
+  <div class="loader-bottom"><span>Premium web presence</span><span class="loader-percent" id="loaderPercent">0%</span></div>
 </div>
 
 <div class="cursor-dot" aria-hidden="true"></div>
 <div class="cursor-ring" aria-hidden="true"></div>
 
-<nav class="nav" id="nav" aria-label="Hoofdnavigatie">
-  <a class="brand" href="#top" aria-label="Sitemissie home">
-    <span class="brand-mark">S</span>
-    <span>Sitemissie</span>
-  </a>
-  <button class="mobile-toggle" type="button" aria-label="Menu openen" aria-expanded="false">Menu</button>
-  <ul class="nav-links">
-    <li><a href="#intro">Waarom</a></li>
-    <li><a href="#diensten">Diensten</a></li>
-    <li><a href="#werk">Werk</a></li>
-    <li><a href="#proces">Proces</a></li>
-    <li><a href="#prijzen">Prijzen</a></li>
-    <li><a href="#faq">FAQ</a></li>
-  </ul>
-  <a class="nav-cta" href="https://wa.me/31681511950">App mij direct</a>
-</nav>
+<header class="hud" id="hud">
+  <a class="brand" href="#top"><span class="brand-mark">S</span><span>Sitemissie</span></a>
+  <button class="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false">Menu</button>
+  <nav class="nav" aria-label="Hoofdnavigatie">
+    <a href="#manifest">Manifest</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#werk">Werk</a>
+    <a href="#proces">Proces</a>
+    <a href="#prijzen">Prijzen</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="hud-cta" href="https://wa.me/31681511950">App mij direct</a>
+</header>
 
 <main id="top">
-  <section class="hero dark" aria-label="Hero">
+  <section class="chapter hero" data-scene="hero">
     <div class="wrap">
-      <div class="hero-meta">
-        <span>01 Hero</span>
-        <span>Webdesign Brabant</span>
-        <span>Sitemissie</span>
-      </div>
-      <h1 class="hero-title">
-        <span>Websites die niet alleen online staan.</span>
-        <span class="accent-text">Ze blijven hangen.</span>
-      </h1>
-      <div class="hero-grid">
+      <div class="chapter-grid">
+        <div class="chapter-no">Sitemissie</div>
         <div>
-          <p class="hero-copy">Voor lokale ondernemers die professioneel willen overkomen, mobiel sterk willen zijn en sneller contact willen krijgen.</p>
-          <div class="hero-actions">
-            <a class="btn" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
-            <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+          <div class="chapter-kicker">Webdesign Brabant / Lokale ondernemers</div>
+          <h1 class="hero-title">Websites die niet alleen online staan. <span class="accent">Ze blijven hangen.</span></h1>
+          <div class="hero-footer">
+            <div class="hero-actions">
+              <a class="btn" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
+              <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+            </div>
+            <p class="lead">Voor ondernemers die professioneel willen overkomen, mobiel sterk willen zijn en makkelijker contact willen krijgen.</p>
           </div>
         </div>
-        <aside class="signal-card">
-          <span class="signal-label">Sitemissie maakt</span>
-          <div class="signal-word" id="signalWord">Websites</div>
-          <p>Geen standaard template. Wel een site die vertrouwen geeft en contact logisch maakt.</p>
-          <div class="signal-track"><span></span></div>
-        </aside>
       </div>
     </div>
   </section>
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Lokale groei / Webdesign Brabant / Mobiel sterk / Conversie /</span>
-      <span>Lokale groei / Webdesign Brabant / Mobiel sterk / Conversie /</span>
+      <span>Design with conviction / Built for local growth / Mobile first /</span>
+      <span>Design with conviction / Built for local growth / Mobile first /</span>
     </div>
   </div>
 
-  <section class="light" id="intro">
+  <section class="chapter" id="manifest" data-scene="conviction">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">02</div>
-        <div>
-          <div class="section-label reveal">Intro / Waarom Sitemissie</div>
-          <div class="intro-grid">
-            <div>
-              <h2 class="reveal">Je website moet vertrouwen bouwen voordat jij iets zegt.</h2>
-              <div class="proof-grid reveal">
-                <div class="proof"><strong>Gericht op contact</strong><span>Bellen, appen, aanvragen</span></div>
-                <div class="proof"><strong>Mobiel eerst</strong><span>Gemaakt voor echte bezoekers</span></div>
-                <div class="proof"><strong>Eigen uitstraling</strong><span>Geen standaard template</span></div>
-              </div>
-            </div>
-            <div class="intro-copy reveal">
-              <p class="lead">Voor kappers, schilders, sportscholen, restaurants, hoveniers, salons en klusbedrijven in Brabant.</p>
-              <p>Sitemissie maakt websites die er professioneel uitzien, snel laden en bezoekers helpen om de volgende stap te zetten.</p>
-              <div class="visual-note">
-                <h3>Een eerste indruk die klopt.</h3>
-                <p>Kort, helder en commercieel. Geen lange verhalen. Wel precies genoeg om serieus gekozen te worden.</p>
-              </div>
-            </div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//01 Manifest</div>
+        <div class="chapter-copy">
+          <div class="chapter-kicker">Waarom Sitemissie</div>
+          <h2>Een site moet vertrouwen bouwen voordat jij iets zegt.</h2>
+          <p class="lead">Voor kappers, schilders, sportscholen, restaurants, hoveniers, salons en klusbedrijven in Brabant.</p>
+          <p>Geen standaard template. Wel een heldere online ervaring die laat zien wat je doet, waarom je goed bent en hoe klanten je bereiken.</p>
+          <div class="belief-panel">
+            <div class="belief"><strong>Contactgericht</strong><span>Bellen, appen, aanvragen</span></div>
+            <div class="belief"><strong>Mobiel eerst</strong><span>Gebouwd voor echte bezoekers</span></div>
+            <div class="belief"><strong>Eigen uitstraling</strong><span>Professioneel en herkenbaar</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="dark" id="diensten">
+  <section class="chapter" id="diensten" data-scene="services">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">03</div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//02 What I Do</div>
         <div>
-          <div class="section-label reveal">Diensten</div>
-          <h2 class="reveal">Alles wat je site nodig heeft om beter te werken.</h2>
-          <div class="service-rows reveal">
-            <article class="service-row"><small>01</small><h3>Website laten maken</h3><p>Een professionele site die duidelijk maakt waarom klanten jou moeten kiezen.</p></article>
+          <div class="chapter-kicker">Diensten</div>
+          <h2>Alles wat je site nodig heeft om beter te werken.</h2>
+          <div class="service-list">
+            <article class="service-row"><small>01</small><h3>Website laten maken</h3><p>Een professionele website die direct duidelijk maakt waarom klanten jou moeten kiezen.</p></article>
             <article class="service-row"><small>02</small><h3>Landingspagina</h3><p>Een scherpe pagina voor acties, advertenties, offertes of een nieuwe dienst.</p></article>
             <article class="service-row"><small>03</small><h3>Branding / uitstraling</h3><p>Meer merkgevoel, meer vertrouwen en minder standaard-template.</p></article>
             <article class="service-row"><small>04</small><h3>WhatsApp conversie</h3><p>Bel- en app-routes precies waar bezoekers willen doorpakken.</p></article>
@@ -778,37 +550,26 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
     </div>
   </section>
 
-  <section class="light" id="werk">
+  <section class="chapter" id="werk" data-scene="work">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">04</div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//03 Featured Work</div>
         <div>
-          <div class="section-label reveal">Featured Work / Voorbeeldsites</div>
-          <h2 class="reveal">Voorbeeldsites die als echte homepages voelen.</h2>
-          <div class="work-stage">
+          <div class="chapter-kicker">Voorbeeldsites</div>
+          <h2>Mini-homepages die gevuld voelen, niet als placeholders.</h2>
+          <div class="work-layout">
             <div>
-              <p class="lead reveal">Klik of hover op een branche. De preview wisselt live en toont een gevulde mini-website met eigen inhoud.</p>
-              <div class="work-list reveal" id="workList">
-                <button class="work-item is-active" type="button" data-case="kapper">
-                  <span class="num">01</span><span><h3>Kapper</h3><p>Salonstijl, services en afspraken.</p></span><span class="arrow">↗</span>
-                </button>
-                <button class="work-item" type="button" data-case="fitness">
-                  <span class="num">02</span><span><h3>Fitness</h3><p>Proefles, memberships en schema.</p></span><span class="arrow">↗</span>
-                </button>
-                <button class="work-item" type="button" data-case="restaurant">
-                  <span class="num">03</span><span><h3>Restaurant</h3><p>Menu, sfeer en reserveren.</p></span><span class="arrow">↗</span>
-                </button>
-                <button class="work-item" type="button" data-case="schilder">
-                  <span class="num">04</span><span><h3>Schilder</h3><p>Projecten, voor/na en offerte.</p></span><span class="arrow">↗</span>
-                </button>
-                <button class="work-item" type="button" data-case="webshop">
-                  <span class="num">05</span><span><h3>Webshop</h3><p>Productgrid, sale en checkout.</p></span><span class="arrow">↗</span>
-                </button>
+              <p class="lead">Klik of hover op een branche. De preview wisselt live met eigen inhoud, cards, CTA's en visuele richting.</p>
+              <div class="work-list" id="workList">
+                <button class="work-item is-active" type="button" data-case="kapper"><span class="num">01</span><span><h3>Kapper</h3><p>Salonstijl, services en afspraken.</p></span><span class="arrow">↗</span></button>
+                <button class="work-item" type="button" data-case="fitness"><span class="num">02</span><span><h3>Fitness</h3><p>Proefles, memberships en schema.</p></span><span class="arrow">↗</span></button>
+                <button class="work-item" type="button" data-case="restaurant"><span class="num">03</span><span><h3>Restaurant</h3><p>Menu, sfeer en reserveren.</p></span><span class="arrow">↗</span></button>
+                <button class="work-item" type="button" data-case="schilder"><span class="num">04</span><span><h3>Schilder</h3><p>Projecten, voor/na en offerte.</p></span><span class="arrow">↗</span></button>
+                <button class="work-item" type="button" data-case="webshop"><span class="num">05</span><span><h3>Webshop</h3><p>Productgrid, sale en checkout.</p></span><span class="arrow">↗</span></button>
               </div>
-              <a class="project-link reveal" id="projectLink" href="#contact">Deze richting bespreken</a>
+              <a class="project-link" id="projectLink" href="#contact">Deze richting bespreken</a>
             </div>
-
-            <div class="preview-sticky reveal">
+            <div class="preview-shell">
               <div class="preview-frame" id="previewFrame" style="--case-accent:#dcff35;--case-glow:rgba(220,255,53,.36);--case-a:#21141b;--case-b:#3a1f32;--case-c:#101018;">
                 <div class="mini-site">
                   <div class="mini-browser"><span class="dots"></span><span class="mini-url"></span></div>
@@ -843,14 +604,14 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
     </div>
   </section>
 
-  <section class="dark" id="proces">
+  <section class="chapter compact" id="proces" data-scene="process">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">05</div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//04 Process</div>
         <div>
-          <div class="section-label reveal">Proces / Werkwijze</div>
-          <h2 class="reveal">Een rustig proces. Een scherp resultaat.</h2>
-          <div class="process-grid reveal">
+          <div class="chapter-kicker">Werkwijze</div>
+          <h2>Een rustig proces. Een scherp resultaat.</h2>
+          <div class="process-grid">
             <article class="step"><small>01</small><div><h3>Kennismaking</h3><p>We bepalen wat je site moet doen en voor wie.</p></div></article>
             <article class="step"><small>02</small><div><h3>Designrichting</h3><p>Ik vertaal je bedrijf naar een duidelijke online uitstraling.</p></div></article>
             <article class="step"><small>03</small><div><h3>Bouwen</h3><p>De site wordt snel, statisch en responsive opgebouwd.</p></div></article>
@@ -862,84 +623,69 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
     </div>
   </section>
 
-  <section class="light" id="prijzen">
+  <section class="chapter compact" id="prijzen" data-scene="contact">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">06</div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//05 Pricing</div>
         <div>
-          <div class="section-label reveal">Prijzen vanaf</div>
-          <h2 class="reveal">Duidelijke indicatie. Geen mistig bureauverhaal.</h2>
+          <div class="chapter-kicker">Prijzen vanaf</div>
+          <h2>Duidelijke pakketten. Geen mistig bureauverhaal.</h2>
           <div class="price-grid">
-            <article class="price-card reveal">
-              <h3>Website</h3>
-              <div class="price">€299 <small>vanaf</small></div>
-              <p>Voor lokale ondernemers die professioneel online willen staan.</p>
-              <ul><li>Responsive one-page</li><li>WhatsApp en bellen</li><li>SEO basis</li></ul>
-              <a class="btn dark-btn" href="https://wa.me/31681511950">App mij direct</a>
-            </article>
-            <article class="price-card featured reveal">
-              <h3>Landingspagina</h3>
-              <div class="price">€199 <small>vanaf</small></div>
-              <p>Voor acties, advertenties of een specifieke dienst.</p>
-              <ul><li>Scherpe boodschap</li><li>Contactgerichte CTA</li><li>Snel live te zetten</li></ul>
-              <a class="btn" href="https://wa.me/31681511950">Vraag website-check aan</a>
-            </article>
-            <article class="price-card reveal">
-              <h3>Onderhoud</h3>
-              <div class="price">Optioneel <small>per maand</small></div>
-              <p>Voor ondernemers die updates en kleine aanpassingen willen uitbesteden.</p>
-              <ul><li>Tekstupdates</li><li>Kleine verbeteringen</li><li>Doorontwikkeling</li></ul>
-              <a class="btn dark-btn" href="tel:+31681511950">Bel direct</a>
-            </article>
+            <article class="price-card"><h3>Starter</h3><div class="price">€299 <small>vanaf</small></div><p>Voor ondernemers die snel professioneel online willen staan.</p><ul><li>One-page website</li><li>Mobiel responsive</li><li>WhatsApp en belknop</li></ul><a class="btn dark" href="https://wa.me/31681511950">App mij direct</a></article>
+            <article class="price-card featured"><h3>Populair</h3><div class="price">€499 <small>vanaf</small></div><p>Voor bedrijven die meer secties, bewijs en uitstraling nodig hebben.</p><ul><li>Diensten en werkwijze</li><li>Voorbeeldwerk of reviews</li><li>SEO basis Brabant</li></ul><a class="btn" href="https://wa.me/31681511950">Vraag website-check aan</a></article>
+            <article class="price-card"><h3>Premium</h3><div class="price">€799 <small>vanaf</small></div><p>Voor ondernemers die uitgebreider en sterker willen binnenkomen.</p><ul><li>Uitgebreidere structuur</li><li>Scherpere copy</li><li>Extra visuele afwerking</li></ul><a class="btn dark" href="tel:+31681511950">Bel direct</a></article>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="dark" id="faq">
+  <section class="chapter compact" id="faq" data-scene="process">
     <div class="wrap">
-      <div class="section-shell">
-        <div class="section-no">07</div>
+      <div class="chapter-grid">
+        <div class="chapter-no">//06 FAQ</div>
         <div>
-          <div class="section-label reveal">FAQ</div>
-          <h2 class="reveal">Korte antwoorden. Snel doorpakken.</h2>
-          <div class="faq-list reveal">
-            <article class="faq"><h3>Hoe snel kan mijn site live?</h3><p>Dat hangt af van de inhoud en omvang. Een compacte website kan vaak snel worden opgebouwd zodra tekst en richting helder zijn.</p></article>
+          <div class="chapter-kicker">FAQ</div>
+          <h2>Korte antwoorden. Snel doorpakken.</h2>
+          <div class="faq-list">
+            <article class="faq"><h3>Hoe snel kan mijn site live?</h3><p>Dat hangt af van inhoud en omvang. Een compacte website kan snel worden opgebouwd zodra richting en input helder zijn.</p></article>
             <article class="faq"><h3>Kan ik WhatsApp koppelen?</h3><p>Ja. Knoppen kunnen direct linken naar WhatsApp zodat bezoekers snel contact opnemen.</p></article>
             <article class="faq"><h3>Werk je voor lokale ondernemers?</h3><p>Ja. De focus ligt op lokale ondernemers in Brabant die professioneler online willen staan.</p></article>
-            <article class="faq"><h3>Kan ik later uitbreiden?</h3><p>Ja. Je kunt starten compact en later extra secties, pagina's of verbeteringen toevoegen.</p></article>
+            <article class="faq"><h3>Kan ik later uitbreiden?</h3><p>Ja. Je kunt compact starten en later extra secties, pagina's of verbeteringen toevoegen.</p></article>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact dark" id="contact">
-    <div class="wrap contact-inner">
-      <div class="section-label reveal">08 Contact / Footer</div>
-      <div class="contact-grid">
+  <section class="chapter" id="contact" data-scene="contact">
+    <div class="wrap">
+      <div class="chapter-grid">
+        <div class="chapter-no">//07 Contact</div>
         <div>
-          <h2 class="contact-title reveal">Laat je website werken.</h2>
-        </div>
-        <aside class="contact-card reveal">
-          <p class="lead">Klaar voor een website die professioneler voelt en makkelijker contact oplevert?</p>
-          <div class="contact-actions">
-            <a class="btn" href="https://wa.me/31681511950">App mij direct</a>
-            <a class="btn ghost" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
-            <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+          <div class="chapter-kicker">Contact</div>
+          <div class="contact-grid">
+            <h2>Laat je website werken.</h2>
+            <aside class="contact-card">
+              <p class="lead">Klaar voor een website die professioneler voelt en makkelijker contact oplevert?</p>
+              <div class="contact-actions">
+                <a class="btn" href="https://wa.me/31681511950">App mij direct</a>
+                <a class="btn ghost" href="https://wa.me/31681511950">Vraag gratis website-check aan</a>
+                <a class="btn ghost" href="#werk">Bekijk voorbeeldsites</a>
+              </div>
+              <div class="contact-line"><span>Telefoon</span><strong>06 81 51 19 50</strong></div>
+              <div class="contact-line"><span>Bel direct</span><strong><a href="tel:+31681511950">Telefonisch contact</a></strong></div>
+              <div class="contact-line"><span>WhatsApp</span><strong><a href="https://wa.me/31681511950">App mij direct</a></strong></div>
+              <div class="contact-line"><span>Werkgebied</span><strong>Brabant</strong></div>
+            </aside>
           </div>
-          <div class="contact-line"><span>Telefoon</span><strong>06 81 51 19 50</strong></div>
-          <div class="contact-line"><span>Bel direct</span><strong><a href="tel:+31681511950">tel:+31681511950</a></strong></div>
-          <div class="contact-line"><span>WhatsApp</span><strong><a href="https://wa.me/31681511950">wa.me/31681511950</a></strong></div>
-          <div class="contact-line"><span>Werkgebied</span><strong>Brabant</strong></div>
-        </aside>
+          <footer class="footer">
+            <strong>Sitemissie</strong>
+            <span>Website laten maken Brabant</span>
+            <span>Webdesign voor lokale ondernemers</span>
+          </footer>
+        </div>
       </div>
-      <footer class="footer">
-        <strong>Sitemissie</strong>
-        <span>Website laten maken Brabant</span>
-        <span>Webdesign voor lokale ondernemers</span>
-      </footer>
     </div>
   </section>
 </main>
@@ -951,56 +697,11 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
 <script>
 (() => {
   const portfolio = {
-    kapper: {
-      accent: "#dcff35", glow: "rgba(220,255,53,.36)", bg: ["#21141b", "#3a1f32", "#101018"],
-      logo: "Salon Noord", menu: ["Services", "Prijzen", "Boeken"], kicker: "Premium salon",
-      title: "Strak geknipt. Makkelijk geboekt.", text: "Een salon homepage met duidelijke services, reviews en een zichtbare boekknop.", cta: "Boek afspraak",
-      visual: ["Salon lookbook", "Open"],
-      details: [["Knippen", "Dames, heren en kids"], ["Baard", "Strak bijgewerkt"], ["Styling", "Kleur en finishing"]],
-      products: [["Knippen", "Vanaf €29"], ["Baard trim", "15 min"], ["Kleur", "Advies"], ["Review", "★★★★★"]],
-      bottom: [["Vandaag plek", "Afspraakblok met snelle actie.", "Boek"], ["Openingstijden", "Di t/m za, avond op afspraak.", "09:00"]],
-      href: "#contact"
-    },
-    fitness: {
-      accent: "#47d8ff", glow: "rgba(71,216,255,.36)", bg: ["#071417", "#163144", "#0d1017"],
-      logo: "Pulse Gym", menu: ["Training", "Rooster", "Join"], kicker: "Local fitness",
-      title: "Proefles boeken zonder drempel.", text: "Donkere gymstijl met memberships, schema's en een sterke proefles CTA.", cta: "Start proefles",
-      visual: ["Strength zone", "Trial"],
-      details: [["Basic", "Vrij trainen"], ["Coach", "Schema + check-ins"], ["Small group", "3x per week"]],
-      products: [["Ma", "Full body"], ["Wo", "HIIT"], ["Vr", "Strength"], ["Zo", "Mobility"]],
-      bottom: [["Membership", "Duidelijke pakketten zonder zoeken.", "€29"], ["Proefles", "Laagdrempelig starten met één klik.", "Start"]],
-      href: "#contact"
-    },
-    restaurant: {
-      accent: "#ff7442", glow: "rgba(255,116,66,.38)", bg: ["#21100b", "#432114", "#100f10"],
-      logo: "Bistro Zuid", menu: ["Menu", "Sfeer", "Reserveer"], kicker: "Restaurant",
-      title: "Sfeer proeven. Tafel reserveren.", text: "Menu highlights, openingstijden en reserveren in één duidelijke homepage.", cta: "Reserveer tafel",
-      visual: ["Chef special", "Dinner"],
-      details: [["Chef menu", "3 gangen special"], ["Lunch", "Dagelijks vers"], ["Terras", "Reserveer buiten"]],
-      products: [["Pasta", "huisgemaakt"], ["Steak", "grill"], ["Vega", "seizoen"], ["Dessert", "special"]],
-      bottom: [["Open tot 22:00", "Openingstijden meteen zichtbaar.", "Vandaag"], ["Populair gerecht", "Highlight card voor specials.", "Menu"]],
-      href: "#contact"
-    },
-    schilder: {
-      accent: "#ff4faf", glow: "rgba(255,79,175,.36)", bg: ["#1c1418", "#3e1730", "#11141b"],
-      logo: "D.A. Damen", menu: ["Werk", "Diensten", "Offerte"], kicker: "Schilderwerken",
-      title: "Vakwerk zichtbaar. Offerte dichtbij.", text: "Projectportfolio, voor/na blokken en duidelijke aanvraagroute voor schilderwerk.", cta: "Vraag offerte",
-      visual: ["Voor / na", "Offerte"],
-      details: [["Binnen", "Muren en plafonds"], ["Buiten", "Gevels en kozijnen"], ["Lakwerk", "Strakke afwerking"]],
-      products: [["Project 01", "kozijnen"], ["Project 02", "gevel"], ["Project 03", "interieur"], ["Review", "netjes"]],
-      bottom: [["Voor / na", "Projectblok dat kwaliteit laat zien.", "Bekijk"], ["Offerte snel", "Laagdrempelige aanvraagroute.", "Start"]],
-      href: "https://v0-schilderwerken-d-a-damen-website.vercel.app/"
-    },
-    webshop: {
-      accent: "#35e99b", glow: "rgba(53,233,155,.36)", bg: ["#071a13", "#143b2c", "#0e1112"],
-      logo: "Local Goods", menu: ["Shop", "Sale", "Cart"], kicker: "Webshop",
-      title: "Producten die sneller gekozen worden.", text: "Productgrid, sale badges en checkoutvertrouwen zonder rommelige winkelervaring.", cta: "Shop collectie",
-      visual: ["New arrivals", "Sale"],
-      details: [["Sale -20%", "Best sellers"], ["Nieuw", "Lokale collectie"], ["Bundel", "Meer waarde"]],
-      products: [["Product A", "€24"], ["Product B", "€39"], ["Product C", "€18"], ["Product D", "€49"]],
-      bottom: [["Veilig betalen", "Betaalvertrouwen dichtbij de koopknop.", "iDEAL"], ["Mandje", "Checkout visual met duidelijke status.", "3 items"]],
-      href: "#contact"
-    }
+    kapper: { accent: "#dcff35", glow: "rgba(220,255,53,.36)", bg: ["#21141b", "#3a1f32", "#101018"], logo: "Salon Noord", menu: ["Services", "Prijzen", "Boeken"], kicker: "Premium salon", title: "Strak geknipt. Makkelijk geboekt.", text: "Een salon homepage met duidelijke services, reviews en een zichtbare boekknop.", cta: "Boek afspraak", visual: ["Salon lookbook", "Open"], details: [["Knippen", "Dames, heren en kids"], ["Baard", "Strak bijgewerkt"], ["Styling", "Kleur en finishing"]], products: [["Knippen", "Vanaf €29"], ["Baard trim", "15 min"], ["Kleur", "Advies"], ["Review", "★★★★★"]], bottom: [["Vandaag plek", "Afspraakblok met snelle actie.", "Boek"], ["Openingstijden", "Di t/m za, avond op afspraak.", "09:00"]], href: "#contact" },
+    fitness: { accent: "#47d8ff", glow: "rgba(71,216,255,.36)", bg: ["#071417", "#163144", "#0d1017"], logo: "Pulse Gym", menu: ["Training", "Rooster", "Join"], kicker: "Local fitness", title: "Proefles boeken zonder drempel.", text: "Donkere gymstijl met memberships, schema's en een sterke proefles CTA.", cta: "Start proefles", visual: ["Strength zone", "Trial"], details: [["Basic", "Vrij trainen"], ["Coach", "Schema + check-ins"], ["Small group", "3x per week"]], products: [["Ma", "Full body"], ["Wo", "HIIT"], ["Vr", "Strength"], ["Zo", "Mobility"]], bottom: [["Membership", "Duidelijke pakketten zonder zoeken.", "€29"], ["Proefles", "Laagdrempelig starten met één klik.", "Start"]], href: "#contact" },
+    restaurant: { accent: "#ff7442", glow: "rgba(255,116,66,.38)", bg: ["#21100b", "#432114", "#100f10"], logo: "Bistro Zuid", menu: ["Menu", "Sfeer", "Reserveer"], kicker: "Restaurant", title: "Sfeer proeven. Tafel reserveren.", text: "Menu highlights, openingstijden en reserveren in één duidelijke homepage.", cta: "Reserveer tafel", visual: ["Chef special", "Dinner"], details: [["Chef menu", "3 gangen special"], ["Lunch", "Dagelijks vers"], ["Terras", "Reserveer buiten"]], products: [["Pasta", "huisgemaakt"], ["Steak", "grill"], ["Vega", "seizoen"], ["Dessert", "special"]], bottom: [["Open tot 22:00", "Openingstijden meteen zichtbaar.", "Vandaag"], ["Populair gerecht", "Highlight card voor specials.", "Menu"]], href: "#contact" },
+    schilder: { accent: "#ff4faf", glow: "rgba(255,79,175,.36)", bg: ["#1c1418", "#3e1730", "#11141b"], logo: "D.A. Damen", menu: ["Werk", "Diensten", "Offerte"], kicker: "Schilderwerken", title: "Vakwerk zichtbaar. Offerte dichtbij.", text: "Projectportfolio, voor/na blokken en duidelijke aanvraagroute voor schilderwerk.", cta: "Vraag offerte", visual: ["Voor / na", "Offerte"], details: [["Binnen", "Muren en plafonds"], ["Buiten", "Gevels en kozijnen"], ["Lakwerk", "Strakke afwerking"]], products: [["Project 01", "kozijnen"], ["Project 02", "gevel"], ["Project 03", "interieur"], ["Review", "netjes"]], bottom: [["Voor / na", "Projectblok dat kwaliteit laat zien.", "Bekijk"], ["Offerte snel", "Laagdrempelige aanvraagroute.", "Start"]], href: "https://v0-schilderwerken-d-a-damen-website.vercel.app/" },
+    webshop: { accent: "#35e99b", glow: "rgba(53,233,155,.36)", bg: ["#071a13", "#143b2c", "#0e1112"], logo: "Local Goods", menu: ["Shop", "Sale", "Cart"], kicker: "Webshop", title: "Producten die sneller gekozen worden.", text: "Productgrid, sale badges en checkoutvertrouwen zonder rommelige winkelervaring.", cta: "Shop collectie", visual: ["New arrivals", "Sale"], details: [["Sale -20%", "Best sellers"], ["Nieuw", "Lokale collectie"], ["Bundel", "Meer waarde"]], products: [["Product A", "€24"], ["Product B", "€39"], ["Product C", "€18"], ["Product D", "€49"]], bottom: [["Veilig betalen", "Betaalvertrouwen dichtbij de koopknop.", "iDEAL"], ["Mandje", "Checkout visual met duidelijke status.", "3 items"]], href: "#contact" }
   };
 
   const loader = document.querySelector("#loader");
@@ -1017,36 +718,18 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
       }, 420);
     }
   }, 46);
-  window.addEventListener("load", () => {
-    window.setTimeout(() => {
-      percent = 100;
-      loaderPercent.textContent = "100%";
-    }, 620);
-  });
+  window.addEventListener("load", () => setTimeout(() => { percent = 100; loaderPercent.textContent = "100%"; }, 620));
 
-  const nav = document.querySelector("#nav");
-  const toggle = document.querySelector(".mobile-toggle");
+  const hud = document.querySelector("#hud");
+  const toggle = document.querySelector(".menu-toggle");
   toggle?.addEventListener("click", () => {
-    const open = nav.classList.toggle("is-open");
+    const open = hud.classList.toggle("is-open");
     toggle.setAttribute("aria-expanded", String(open));
   });
-  document.querySelectorAll(".nav a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      toggle?.setAttribute("aria-expanded", "false");
-    });
-  });
-
-  const words = ["Websites", "Landingspagina's", "Branding", "Lokale groei", "Conversie"];
-  const signalWord = document.querySelector("#signalWord");
-  let wordIndex = 0;
-  window.setInterval(() => {
-    wordIndex = (wordIndex + 1) % words.length;
-    signalWord.animate([{ opacity: 1, transform: "translateY(0)" }, { opacity: 0, transform: "translateY(-12px)" }], { duration: 160, fill: "forwards" }).onfinish = () => {
-      signalWord.textContent = words[wordIndex];
-      signalWord.animate([{ opacity: 0, transform: "translateY(12px)" }, { opacity: 1, transform: "translateY(0)" }], { duration: 240, fill: "forwards" });
-    };
-  }, 2200);
+  document.querySelectorAll(".nav a").forEach((link) => link.addEventListener("click", () => {
+    hud.classList.remove("is-open");
+    toggle?.setAttribute("aria-expanded", "false");
+  }));
 
   const frame = document.querySelector("#previewFrame");
   const miniLogo = document.querySelector("#miniLogo");
@@ -1087,7 +770,6 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
     workItems.forEach((button) => button.classList.toggle("is-active", button.dataset.case === name));
   };
   setCase("kapper");
-
   workItems.forEach((button) => {
     button.addEventListener("mouseenter", () => setCase(button.dataset.case));
     button.addEventListener("focus", () => setCase(button.dataset.case));
@@ -1098,43 +780,35 @@ p { color: var(--muted); font-size: clamp(16px, 1.12vw, 19px); line-height: 1.62
     });
   });
 
-  const revealObserver = new IntersectionObserver((entries) => {
+  const sceneObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      entry.target.classList.add("in-view");
-      revealObserver.unobserve(entry.target);
+      const scene = entry.target.dataset.scene;
+      document.body.classList.remove("scene-hero", "scene-conviction", "scene-services", "scene-work", "scene-process", "scene-contact");
+      document.body.classList.add(`scene-${scene}`);
     });
-  }, { threshold: .12 });
-  document.querySelectorAll(".reveal").forEach((element, index) => {
-    element.style.transitionDelay = `${Math.min(index % 5, 4) * 50}ms`;
-    revealObserver.observe(element);
-  });
+  }, { threshold: .38 });
+  document.querySelectorAll("[data-scene]").forEach((section) => sceneObserver.observe(section));
 
   const dot = document.querySelector(".cursor-dot");
   const ring = document.querySelector(".cursor-ring");
-  const interactive = "a, button, .preview-frame, .step, .price-card";
   if (window.matchMedia("(hover: hover) and (pointer: fine)").matches && dot && ring) {
-    let mx = window.innerWidth / 2;
-    let my = window.innerHeight / 2;
-    let rx = mx;
-    let ry = my;
+    let mx = window.innerWidth / 2, my = window.innerHeight / 2, rx = mx, ry = my;
     window.addEventListener("mousemove", (event) => {
-      mx = event.clientX;
-      my = event.clientY;
+      mx = event.clientX; my = event.clientY;
       dot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
     });
     const moveRing = () => {
-      rx += (mx - rx) * .16;
-      ry += (my - ry) * .16;
+      rx += (mx - rx) * .16; ry += (my - ry) * .16;
       ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
       requestAnimationFrame(moveRing);
     };
     moveRing();
     document.addEventListener("mouseover", (event) => {
-      if (event.target.closest(interactive)) ring.classList.add("is-hover");
+      if (event.target.closest("a,button,.preview-frame,.step,.price-card")) ring.classList.add("is-hover");
     });
     document.addEventListener("mouseout", (event) => {
-      if (event.target.closest(interactive)) ring.classList.remove("is-hover");
+      if (event.target.closest("a,button,.preview-frame,.step,.price-card")) ring.classList.remove("is-hover");
     });
   }
 })();
